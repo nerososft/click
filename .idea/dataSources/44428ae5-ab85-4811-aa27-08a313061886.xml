@@ -1,0 +1,967 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - click@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="click">
+      <visible>1</visible>
+    </schema>
+    <table id="2" parent="1" name="gene"/>
+    <table id="3" parent="1" name="getmid"/>
+    <table id="4" parent="1" name="getq1"/>
+    <table id="5" parent="1" name="propgbmn"/>
+    <table id="6" parent="1" name="propgbmn_copy"/>
+    <table id="7" parent="1" name="propgbmt"/>
+    <table id="8" parent="1" name="proplggn"/>
+    <table id="9" parent="1" name="proplggt"/>
+    <table id="10" parent="1" name="propluadn"/>
+    <table id="11" parent="1" name="propluadt"/>
+    <table id="12" parent="1" name="propluscn"/>
+    <table id="13" parent="1" name="proplusct"/>
+    <table id="14" parent="1" name="relation"/>
+    <table id="15" parent="1" name="samplenum"/>
+    <routine id="16" parent="1" name="chromosome">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="17" parent="1" name="getRelation">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="18" parent="1" name="ji">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="19" parent="1" name="jiQ1">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="20" parent="1" name="jiQ3">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="21" parent="1" name="ou">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="22" parent="1" name="ouQ1">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="23" parent="1" name="ouQ3">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="24" parent="1" name="select">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="25" parent="1" name="TESTji">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="26" parent="1" name="TESTou">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="27" parent="1" name="tgbmn">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="28" parent="1" name="tgbmt">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="29" parent="1" name="tlggn">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="30" parent="1" name="tlggt">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="31" parent="1" name="tloggbmn">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="32" parent="1" name="tloggbmt">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="33" parent="1" name="tloglggn">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="34" parent="1" name="tloglggt">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="35" parent="1" name="tlogluadn">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="36" parent="1" name="tlogluadt">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="37" parent="1" name="tlogluscn">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="38" parent="1" name="tloglusct">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="39" parent="1" name="tluadn">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="40" parent="1" name="tluadt">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="41" parent="1" name="tluscn">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="42" parent="1" name="tlusct">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="43" parent="1" name="zhongzhi">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <column id="44" parent="2" name="geneID">
+      <mandatory>1</mandatory>
+      <data-type>int(5)|0</data-type>
+    </column>
+    <column id="45" parent="2" name="geneName">
+      <data-type>varchar(15)|0</data-type>
+    </column>
+    <column id="46" parent="2" name="ucChrom">
+      <data-type>varchar(4)|0</data-type>
+    </column>
+    <column id="47" parent="2" name="ucStart">
+      <data-type>int(7)|0</data-type>
+    </column>
+    <column id="48" parent="2" name="ucStop">
+      <data-type>int(7)|0</data-type>
+    </column>
+    <column id="49" parent="2" name="ucCyto">
+      <data-type>varchar(15)|0</data-type>
+    </column>
+    <column id="50" parent="2" name="ucArm">
+      <data-type>varchar(2)|0</data-type>
+    </column>
+    <column id="51" parent="2" name="avgGBMn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="52" parent="2" name="midGBMn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="53" parent="2" name="q1GBMn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="54" parent="2" name="q3GBMn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="55" parent="2" name="qupGBMn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="56" parent="2" name="qdownGBMn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="57" parent="2" name="tgbmn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="58" parent="2" name="avgGBMt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="59" parent="2" name="midGBMt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="60" parent="2" name="q1GBMt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="61" parent="2" name="q3GBMt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="62" parent="2" name="qupGBMt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="63" parent="2" name="qdownGBMt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="64" parent="2" name="tgbmt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="65" parent="2" name="avgLGGn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="66" parent="2" name="midLGGn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="67" parent="2" name="q1LGGn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="68" parent="2" name="q3LGGn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="69" parent="2" name="qupLGGn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="70" parent="2" name="qdownLGGn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="71" parent="2" name="avgLGGt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="72" parent="2" name="midLGGt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="73" parent="2" name="q1LGGt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="74" parent="2" name="q3LGGt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="75" parent="2" name="qupLGGt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="76" parent="2" name="qdownLGGt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="77" parent="2" name="avgLUADn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="78" parent="2" name="midLUADn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="79" parent="2" name="q1LUADn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="80" parent="2" name="q3LUADn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="81" parent="2" name="qupLUADn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="82" parent="2" name="qdownLUADn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="83" parent="2" name="avgLUADt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="84" parent="2" name="midLUADt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="85" parent="2" name="q1LUADt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="86" parent="2" name="q3LUADt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="87" parent="2" name="qupLUADt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="88" parent="2" name="qdownLUADT">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="89" parent="2" name="avgLUSCn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="90" parent="2" name="midLUSCn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="91" parent="2" name="q1LUSCn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="92" parent="2" name="q3LUSCn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="93" parent="2" name="qupLUSCn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="94" parent="2" name="qdownLUSCn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="95" parent="2" name="avgLUSCt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="96" parent="2" name="midLUSCt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="97" parent="2" name="q1LUSCt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="98" parent="2" name="q3LUSCt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="99" parent="2" name="qupLUSCt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="100" parent="2" name="qdownLUSCt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="101" parent="2" name="lavggbmn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="102" parent="2" name="lmidgbmn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="103" parent="2" name="lqdowngbmn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="104" parent="2" name="lq1gbmn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="105" parent="2" name="lq3gbmn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="106" parent="2" name="lqupgbmn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="107" parent="2" name="lavggbmt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="108" parent="2" name="lmidgbmt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="109" parent="2" name="lqdowngbmt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="110" parent="2" name="lq1gbmt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="111" parent="2" name="lq3gbmt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="112" parent="2" name="lqupgbmt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="113" parent="2" name="lavglggn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="114" parent="2" name="lmidlggn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="115" parent="2" name="lqdownlggn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="116" parent="2" name="lq1lggn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="117" parent="2" name="lq3lggn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="118" parent="2" name="lquplggn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="119" parent="2" name="lavglggt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="120" parent="2" name="lmidlggt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="121" parent="2" name="lqdownlggt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="122" parent="2" name="lq1lggt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="123" parent="2" name="lq3lggt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="124" parent="2" name="lquplggt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="125" parent="2" name="lavgluadn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="126" parent="2" name="lmidluadn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="127" parent="2" name="lqdownluadn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="128" parent="2" name="lq1luadn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="129" parent="2" name="lq3luadn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="130" parent="2" name="lqupluadn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="131" parent="2" name="lavgluadt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="132" parent="2" name="lmidluadt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="133" parent="2" name="lqdownluadt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="134" parent="2" name="lq1luadt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="135" parent="2" name="lq3luadt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="136" parent="2" name="lqupluadt">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="137" parent="2" name="lavgluscn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="138" parent="2" name="lmidluscn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="139" parent="2" name="lqdownluscn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="140" parent="2" name="lq1luscn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="141" parent="2" name="lq3luscn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="142" parent="2" name="lqupluscn">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="143" parent="2" name="lavglusct">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="144" parent="2" name="lmidlusct">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="145" parent="2" name="lqdownlusct">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="146" parent="2" name="lq1lusct">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="147" parent="2" name="lq3lusct">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="148" parent="2" name="lquplusct">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <index id="149" parent="2" name="index">
+      <columns>geneName</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="150" parent="2" name="PRIMARY">
+      <columns>geneID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="151" parent="3" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="152" parent="3" name="Q1">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <key id="153" parent="3" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="154" parent="4" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="155" parent="4" name="q1">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <key id="156" parent="4" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="157" parent="5" name="propertyID">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="158" parent="5" name="x">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="159" parent="5" name="y">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="160" parent="5" name="yLog">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="161" parent="5" name="sampleID">
+      <data-type>varchar(15)|0</data-type>
+    </column>
+    <column id="162" parent="5" name="value">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="163" parent="5" name="valueLog">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <key id="164" parent="5" name="PRIMARY">
+      <columns>propertyID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="165" parent="6" name="propertyID">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="166" parent="6" name="x">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="167" parent="6" name="y">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="168" parent="6" name="yLog">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="169" parent="6" name="sampleID">
+      <data-type>varchar(15)|0</data-type>
+    </column>
+    <column id="170" parent="6" name="value">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="171" parent="6" name="valueLog">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <key id="172" parent="6" name="PRIMARY">
+      <columns>propertyID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="173" parent="7" name="propertyID">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="174" parent="7" name="x">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="175" parent="7" name="y">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="176" parent="7" name="yLog">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="177" parent="7" name="sampleID">
+      <data-type>varchar(15)|0</data-type>
+    </column>
+    <column id="178" parent="7" name="value">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="179" parent="7" name="valueLog">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <key id="180" parent="7" name="PRIMARY">
+      <columns>propertyID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="181" parent="8" name="propertyID">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="182" parent="8" name="x">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="183" parent="8" name="y">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="184" parent="8" name="yLog">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="185" parent="8" name="sampleID">
+      <data-type>varchar(15)|0</data-type>
+    </column>
+    <column id="186" parent="8" name="value">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="187" parent="8" name="valueLog">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <key id="188" parent="8" name="PRIMARY">
+      <columns>propertyID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="189" parent="9" name="propertyID">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="190" parent="9" name="x">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="191" parent="9" name="y">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="192" parent="9" name="yLog">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="193" parent="9" name="sampleID">
+      <data-type>varchar(15)|0</data-type>
+    </column>
+    <column id="194" parent="9" name="value">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="195" parent="9" name="valueLog">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <key id="196" parent="9" name="PRIMARY">
+      <columns>propertyID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="197" parent="10" name="propertyID">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="198" parent="10" name="x">
+      <data-type>float(9,6)|0</data-type>
+    </column>
+    <column id="199" parent="10" name="y">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="200" parent="10" name="yLog">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="201" parent="10" name="sampleID">
+      <data-type>varchar(15)|0</data-type>
+    </column>
+    <column id="202" parent="10" name="value">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="203" parent="10" name="valueLog">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <key id="204" parent="10" name="PRIMARY">
+      <columns>propertyID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="205" parent="11" name="propertyID">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="206" parent="11" name="x">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="207" parent="11" name="y">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="208" parent="11" name="yLog">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="209" parent="11" name="sampleID">
+      <data-type>varchar(15)|0</data-type>
+    </column>
+    <column id="210" parent="11" name="value">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="211" parent="11" name="valueLog">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <key id="212" parent="11" name="PRIMARY">
+      <columns>propertyID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="213" parent="12" name="propertyID">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="214" parent="12" name="x">
+      <data-type>float(9,6)|0</data-type>
+    </column>
+    <column id="215" parent="12" name="y">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="216" parent="12" name="yLog">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="217" parent="12" name="sampleID">
+      <data-type>varchar(15)|0</data-type>
+    </column>
+    <column id="218" parent="12" name="value">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="219" parent="12" name="valueLog">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <key id="220" parent="12" name="PRIMARY">
+      <columns>propertyID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="221" parent="13" name="propertyID">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="222" parent="13" name="x">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="223" parent="13" name="y">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="224" parent="13" name="yLog">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="225" parent="13" name="sampleID">
+      <data-type>varchar(15)|0</data-type>
+    </column>
+    <column id="226" parent="13" name="value">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <column id="227" parent="13" name="valueLog">
+      <data-type>float(9,4)|0</data-type>
+    </column>
+    <key id="228" parent="13" name="PRIMARY">
+      <columns>propertyID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="229" parent="14" name="propertyID">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="230" parent="14" name="gbmnID">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="231" parent="14" name="gbmtID">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="232" parent="14" name="lggnID">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="233" parent="14" name="lggtID">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="234" parent="14" name="luadnID">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="235" parent="14" name="luadtID">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="236" parent="14" name="luscnID">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="237" parent="14" name="lusctID">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <index id="238" parent="14" name="index1">
+      <columns>luadnID</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="239" parent="14" name="index2">
+      <columns>gbmnID</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="240" parent="14" name="index3">
+      <columns>gbmtID</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="241" parent="14" name="index4">
+      <columns>lggnID</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="242" parent="14" name="index5">
+      <columns>lggtID</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="243" parent="14" name="index6">
+      <columns>luadtID</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="244" parent="14" name="index7">
+      <columns>luscnID</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="245" parent="14" name="index8">
+      <columns>lusctID</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="246" parent="14" name="PRIMARY">
+      <columns>propertyID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="247" parent="15" name="name">
+      <data-type>varchar(15)|0</data-type>
+    </column>
+    <column id="248" parent="15" name="num">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <argument id="249" parent="16" name="chromosome">
+      <direction>IN</direction>
+      <data-type>char(2)|0</data-type>
+    </argument>
+    <argument id="250" parent="24" name="tname">
+      <direction>IN</direction>
+      <data-type>char(15)|0</data-type>
+    </argument>
+    <argument id="251" parent="27" name="g1name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="252" parent="27" name="g2name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="253" parent="27" name="alpha">
+      <direction>IN</direction>
+      <data-type>float(10,4)|0</data-type>
+    </argument>
+    <argument id="254" parent="28" name="g1name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="255" parent="28" name="g2name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="256" parent="28" name="alpha">
+      <direction>IN</direction>
+      <data-type>float(10,4)|0</data-type>
+    </argument>
+    <argument id="257" parent="29" name="g1name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="258" parent="29" name="g2name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="259" parent="29" name="alpha">
+      <direction>IN</direction>
+      <data-type>float(10,4)|0</data-type>
+    </argument>
+    <argument id="260" parent="30" name="g1name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="261" parent="30" name="g2name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="262" parent="30" name="alpha">
+      <direction>IN</direction>
+      <data-type>float(10,4)|0</data-type>
+    </argument>
+    <argument id="263" parent="31" name="g1name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="264" parent="31" name="g2name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="265" parent="31" name="alpha">
+      <direction>IN</direction>
+      <data-type>float(10,4)|0</data-type>
+    </argument>
+    <argument id="266" parent="32" name="g1name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="267" parent="32" name="g2name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="268" parent="32" name="alpha">
+      <direction>IN</direction>
+      <data-type>float(10,4)|0</data-type>
+    </argument>
+    <argument id="269" parent="33" name="g1name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="270" parent="33" name="g2name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="271" parent="33" name="alpha">
+      <direction>IN</direction>
+      <data-type>float(10,4)|0</data-type>
+    </argument>
+    <argument id="272" parent="34" name="g1name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="273" parent="34" name="g2name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="274" parent="34" name="alpha">
+      <direction>IN</direction>
+      <data-type>float(10,4)|0</data-type>
+    </argument>
+    <argument id="275" parent="35" name="g1name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="276" parent="35" name="g2name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="277" parent="35" name="alpha">
+      <direction>IN</direction>
+      <data-type>float(10,4)|0</data-type>
+    </argument>
+    <argument id="278" parent="36" name="g1name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="279" parent="36" name="g2name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="280" parent="36" name="alpha">
+      <direction>IN</direction>
+      <data-type>float(10,4)|0</data-type>
+    </argument>
+    <argument id="281" parent="37" name="g1name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="282" parent="37" name="g2name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="283" parent="37" name="alpha">
+      <direction>IN</direction>
+      <data-type>float(10,4)|0</data-type>
+    </argument>
+    <argument id="284" parent="38" name="g1name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="285" parent="38" name="g2name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="286" parent="38" name="alpha">
+      <direction>IN</direction>
+      <data-type>float(10,4)|0</data-type>
+    </argument>
+    <argument id="287" parent="39" name="g1name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="288" parent="39" name="g2name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="289" parent="39" name="alpha">
+      <direction>IN</direction>
+      <data-type>float(10,4)|0</data-type>
+    </argument>
+    <argument id="290" parent="40" name="g1name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="291" parent="40" name="g2name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="292" parent="40" name="alpha">
+      <direction>IN</direction>
+      <data-type>float(10,4)|0</data-type>
+    </argument>
+    <argument id="293" parent="41" name="g1name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="294" parent="41" name="g2name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="295" parent="41" name="alpha">
+      <direction>IN</direction>
+      <data-type>float(10,4)|0</data-type>
+    </argument>
+    <argument id="296" parent="42" name="g1name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="297" parent="42" name="g2name">
+      <direction>IN</direction>
+      <data-type>char(20)|0</data-type>
+    </argument>
+    <argument id="298" parent="42" name="alpha">
+      <direction>IN</direction>
+      <data-type>float(10,4)|0</data-type>
+    </argument>
+  </database-model>
+</dataSource>

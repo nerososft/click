@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.nero.click.dao.NewsDao">
+
+
+    <!--int addNew(@Param("title") String title,-->
+    <!--@Param("content") String content);-->
+    <insert id="addNew">
+        insert into news (title,content)
+        values (#{title},#{content});
+    </insert>
+
+    <!--int delNew(long id);-->
+    <update id="delNew">
+        update news set isdel = 1 where id = #{id};
+    </update>
+
+    <!--int modiftNew(@Param("id") long id,-->
+    <!--@Param("title") String title,-->
+    <!--@Param("content") String content);-->
+    <update id="modifyNew">
+        UPDATE news set title = #{title},content = #{content}
+        where id = #{id} and isdel= 0;
+    </update>
+
+    <!--News getNewById(long id);-->
+    <select id="getNewById" resultType="News">
+        SELECT * from news where isdel = 0 and id = #{id};
+    </select>
+
+
+    <!--List<News> getNews(@Param("limit") long limit,-->
+    <!--@Param("offset") long offset);-->
+    <select id="getNews" resultType="News">
+        SELECT  * from news where isdel = 0 limit #{limit},#{offset};
+    </select>
+
+</mapper>
