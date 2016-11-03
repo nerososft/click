@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.nero.click.sso.dao.UserDao">
+    <!--int add(String username, String password, String email, String phone, String token);-->
+    <insert id="add" >
+        INSERT  INTO user (username,password,email,phone,token)
+        VALUES (#{username},#{password},#{email},#{phone},#{token})
+    </insert>
+
+    <!--int update(long id, String username, String password, String email, String phone, String token, Date time);-->
+
+
+    <update id="update">
+        UPDATE user SET
+        username = #{username},
+        password = #{password},
+        email = #{email},
+        phone = #{phone},
+        token = #{token},
+        ctime = #{time}
+        WHERE id = #{id}
+    </update>
+
+
+    <!--int active(long id);-->
+
+    <update id="active">
+        UPDATE user set isactive = 1 WHERE id=#{id}
+    </update>
+    
+    
+    <!--User query(long id);-->
+    <select id="query" resultType="org.nero.click.sso.entity.User">
+        SELECT * from user where id = #{id}
+    </select>
+    
+    
+    <!--User queryByToken(String token);-->
+<select id="queryByToken" resultType="org.nero.click.sso.entity.User">
+    select * from user WHERE token = #{token};
+</select>
+    <!--User queryByEmail(String email);-->
+    <select id="queryByEmail" resultType="org.nero.click.sso.entity.User">
+        select * from user where email = #{email};
+    </select>
+</mapper>
