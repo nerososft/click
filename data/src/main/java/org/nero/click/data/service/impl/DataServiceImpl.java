@@ -1,11 +1,11 @@
-package org.nero.click.admin.service.impl;
+package org.nero.click.data.service.impl;
 
-import org.nero.click.admin.dao.BeesDao;
-import org.nero.click.admin.dao.MoutainDao;
-import org.nero.click.admin.dto.Point;
-import org.nero.click.admin.cache.impl.CacheServiceImpl;
-import org.nero.click.admin.dto.MoutainPoint;
-import org.nero.click.admin.service.IDataService;
+import org.nero.click.data.dao.BeesDao;
+import org.nero.click.data.dao.MoutainDao;
+import org.nero.click.data.dto.Point;
+import org.nero.click.data.cache.impl.CacheServiceImpl;
+import org.nero.click.data.dto.MoutainPoint;
+import org.nero.click.data.service.IDataService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;

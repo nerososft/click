@@ -1,4 +1,5 @@
-package org.nero.click.data.filter;
+package org.nero.click.common.filter;
+
 
 import org.springframework.stereotype.Component;
 

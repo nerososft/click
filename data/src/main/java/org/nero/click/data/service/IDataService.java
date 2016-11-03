@@ -1,7 +1,7 @@
-package org.nero.click.admin.service;
+package org.nero.click.data.service;
 
-import org.nero.click.admin.dto.Point;
-import org.nero.click.admin.dto.MoutainPoint;
+import org.nero.click.data.dto.Point;
+import org.nero.click.data.dto.MoutainPoint;
 
 import java.util.List;
 

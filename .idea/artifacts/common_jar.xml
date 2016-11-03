@@ -4,6 +4,8 @@
     <root id="archive" name="common.jar">
       <element id="module-output" name="common" />
       <element id="library" level="project" name="Java EE 6-Java EE 6 (2)" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/javax/mail/mail/1.5.0-b01/mail-1.5.0-b01.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

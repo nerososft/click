@@ -1,4 +1,4 @@
-package org.nero.click.admin.cache;
+package org.nero.click.data.cache;
 
 /**
  * Author nero

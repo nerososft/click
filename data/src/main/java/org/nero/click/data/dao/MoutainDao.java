@@ -1,7 +1,7 @@
-package org.nero.click.admin.dao;
+package org.nero.click.data.dao;
 
 import org.apache.ibatis.annotations.Param;
-import org.nero.click.admin.dto.MoutainPoint;
+import org.nero.click.data.dto.MoutainPoint;
 import java.util.List;
 
 /**

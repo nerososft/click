@@ -1,8 +1,8 @@
-package org.nero.click.admin.service;
+package org.nero.click.data.service;
 
-import org.nero.click.admin.exception.news.NewsNotFoundException;
-import org.nero.click.admin.dto.Operate;
-import org.nero.click.admin.entity.News;
+import org.nero.click.data.exception.news.NewsNotFoundException;
+import org.nero.click.data.dto.Operate;
+import org.nero.click.data.entity.News;
 
 import java.util.List;
 

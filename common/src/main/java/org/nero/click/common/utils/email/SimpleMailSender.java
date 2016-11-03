@@ -1,7 +1,4 @@
-package org.nero.click.data.utils.email;
-
-import java.util.List;
-import java.util.Properties;
+package org.nero.click.common.utils.email;
 
 import javax.mail.MessagingException;
 import javax.mail.Session;
@@ -10,6 +7,8 @@ import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMessage.RecipientType;
+import java.util.List;
+import java.util.Properties;
 
 /**
  * author： nero

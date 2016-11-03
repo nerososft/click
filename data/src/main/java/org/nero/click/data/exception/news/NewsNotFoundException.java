@@ -1,4 +1,4 @@
-package org.nero.click.admin.exception.news;
+package org.nero.click.data.exception.news;
 
 /**
  * Created by nero on 2016/10/14 0014.

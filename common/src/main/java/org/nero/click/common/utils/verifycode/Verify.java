@@ -1,4 +1,6 @@
-package org.nero.click.data.admin.utils.verifycode;
+package org.nero.click.common.utils.verifycode;
+
+import org.nero.click.common.utils.verifycode.exception.VerifyFailedException;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -108,7 +110,7 @@ public class Verify {
      * @param code 验证码
      * @return boolean
      */
-    public boolean checkVerify(String code){
+    public boolean checkVerify(String code) throws VerifyFailedException{
         HttpSession session = this.request.getSession();
         Object verifyCode = session.getAttribute(this.sessionName);
         if(verifyCode!=null && code!=null){
@@ -116,8 +118,12 @@ public class Verify {
                 session.setAttribute(this.sessionName,null);
                 return true;
             }
-            return false;
+            throw new VerifyFailedException("验证码错误");
         }
-        return false;
+        throw new VerifyFailedException("验证码错误");
+    }
+
+    public String getVerifyCode(){
+        return this.request.getSession().getAttribute(this.sessionName).toString();
     }
 }

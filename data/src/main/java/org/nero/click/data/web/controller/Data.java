@@ -1,11 +1,11 @@
-package org.nero.click.admin.web.controller;
+package org.nero.click.data.web.controller;
 
-import org.nero.click.admin.cache.CacheThread;
-import org.nero.click.admin.dto.MoutainPoint;
-import org.nero.click.admin.dto.Point;
-import org.nero.click.admin.service.IDataService;
-import org.nero.click.admin.cache.ICacheService;
-import org.nero.click.admin.dto.Operate;
+import org.nero.click.data.cache.CacheThread;
+import org.nero.click.data.dto.MoutainPoint;
+import org.nero.click.data.dto.Point;
+import org.nero.click.data.service.IDataService;
+import org.nero.click.data.cache.ICacheService;
+import org.nero.click.data.dto.Operate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;

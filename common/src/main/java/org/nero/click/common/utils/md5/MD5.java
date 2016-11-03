@@ -1,4 +1,4 @@
-package org.nero.click.data.utils.md5;
+package org.nero.click.common.utils.md5;
 
 import sun.misc.BASE64Encoder;
 

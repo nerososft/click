@@ -1,4 +1,4 @@
-package org.nero.click.data.utils.email;
+package org.nero.click.common.utils.email;
 
 
 import javax.mail.Authenticator;

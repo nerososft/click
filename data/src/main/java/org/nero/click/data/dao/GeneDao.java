@@ -1,6 +1,6 @@
-package org.nero.click.admin.dao;
+package org.nero.click.data.dao;
 
-import org.nero.click.admin.entity.Gene;
+import org.nero.click.data.entity.Gene;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
-package org.nero.click.admin.service;
+package org.nero.click.data.service;
 
 
-import org.nero.click.admin.dto.Operate;
+import org.nero.click.data.dto.Operate;
 
 /**
  * author： nero

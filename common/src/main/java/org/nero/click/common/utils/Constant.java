@@ -1,4 +1,4 @@
-package org.nero.click.data.utils;
+package org.nero.click.common.utils;
 
 /**
  * author： nero

@@ -1,12 +1,12 @@
-package org.nero.click.admin.service.impl;
+package org.nero.click.data.service.impl;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.nero.click.admin.cache.CacheThread;
-import org.nero.click.admin.dto.MoutainPoint;
-import org.nero.click.admin.dto.Point;
-import org.nero.click.admin.service.IDataService;
-import org.nero.click.admin.cache.ICacheService;
+import org.nero.click.data.cache.CacheThread;
+import org.nero.click.data.dto.MoutainPoint;
+import org.nero.click.data.dto.Point;
+import org.nero.click.data.service.IDataService;
+import org.nero.click.data.cache.ICacheService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;

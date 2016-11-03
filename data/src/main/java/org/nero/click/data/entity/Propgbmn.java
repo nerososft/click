@@ -1,4 +1,4 @@
-package org.nero.click.admin.entity;
+package org.nero.click.data.entity;
 
 /**
  * author： nero

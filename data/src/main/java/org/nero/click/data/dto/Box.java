@@ -1,4 +1,4 @@
-package org.nero.click.admin.dto;
+package org.nero.click.data.dto;
 
 /**
  * Created by nero on 2016/10/25 0025.

@@ -1,4 +1,4 @@
-package org.nero.click.admin.entity.beeswarm;
+package org.nero.click.data.entity.beeswarm;
 
 /**
  * Author nero

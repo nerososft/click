@@ -1,6 +1,6 @@
-package org.nero.click.admin.cache.impl;
+package org.nero.click.data.cache.impl;
 
-import org.nero.click.admin.cache.ICacheService;
+import org.nero.click.data.cache.ICacheService;
 import org.springframework.stereotype.Service;
 
 import java.io.BufferedWriter;

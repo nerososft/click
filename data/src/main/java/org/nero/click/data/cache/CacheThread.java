@@ -1,6 +1,6 @@
-package org.nero.click.admin.cache;
+package org.nero.click.data.cache;
 
-import org.nero.click.admin.cache.impl.CacheServiceImpl;
+import org.nero.click.data.cache.impl.CacheServiceImpl;
 
 /**
  * Author nero

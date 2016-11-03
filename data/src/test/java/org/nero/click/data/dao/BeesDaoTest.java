@@ -1,8 +1,8 @@
-package org.nero.click.admin.dao;
+package org.nero.click.data.dao;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.nero.click.admin.dto.Point;
+import org.nero.click.data.dto.Point;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 

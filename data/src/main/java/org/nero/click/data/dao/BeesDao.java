@@ -1,4 +1,4 @@
-package org.nero.click.admin.dao;
+package org.nero.click.data.dao;
 
 /**
  * Author nero
@@ -8,8 +8,8 @@ package org.nero.click.admin.dao;
  */
 
 import org.apache.ibatis.annotations.Param;
-import org.nero.click.admin.dto.Box;
-import org.nero.click.admin.dto.Point;
+import org.nero.click.data.dto.Box;
+import org.nero.click.data.dto.Point;
 
 import java.util.List;
 

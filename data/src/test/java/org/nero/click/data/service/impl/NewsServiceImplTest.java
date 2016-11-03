@@ -1,8 +1,6 @@
-package org.nero.click.admin.service.impl;
+package org.nero.click.data.service.impl;
 
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by nero on 2016/10/14 0014.

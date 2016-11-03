@@ -1,4 +1,4 @@
-package org.nero.click.admin.dao;
+package org.nero.click.data.dao;
 
 /**
  * author： nero

@@ -1,10 +1,10 @@
-package org.nero.click.admin.service.impl;
+package org.nero.click.data.service.impl;
 
-import org.nero.click.admin.dao.NewsDao;
-import org.nero.click.admin.dto.Operate;
-import org.nero.click.admin.entity.News;
-import org.nero.click.admin.exception.news.NewsNotFoundException;
-import org.nero.click.admin.service.INewsService;
+import org.nero.click.data.dao.NewsDao;
+import org.nero.click.data.dto.Operate;
+import org.nero.click.data.entity.News;
+import org.nero.click.data.exception.news.NewsNotFoundException;
+import org.nero.click.data.service.INewsService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

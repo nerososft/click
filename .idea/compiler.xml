@@ -22,12 +22,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="click" />
+        <module name="admin" />
+        <module name="common" />
+        <module name="data" />
+        <module name="sso" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="admin" target="1.5" />
       <module name="click" target="1.5" />
+      <module name="common" target="1.5" />
+      <module name="common (1)" target="1.5" />
+      <module name="data" target="1.5" />
       <module name="data_analysis" target="1.5" />
+      <module name="sso" target="1.5" />
+      <module name="sso (1)" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

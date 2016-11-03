@@ -1,4 +1,4 @@
-package org.nero.click.data.utils.rendom;
+package org.nero.click.common.utils.rendom;
 
 import java.util.Random;
 

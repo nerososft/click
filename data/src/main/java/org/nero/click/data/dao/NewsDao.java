@@ -1,7 +1,7 @@
-package org.nero.click.admin.dao;
+package org.nero.click.data.dao;
 
 import org.apache.ibatis.annotations.Param;
-import org.nero.click.admin.entity.News;
+import org.nero.click.data.entity.News;
 
 import java.util.List;
 

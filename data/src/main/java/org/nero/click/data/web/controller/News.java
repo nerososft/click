@@ -1,8 +1,8 @@
-package org.nero.click.admin.web.controller;
+package org.nero.click.data.web.controller;
 
-import org.nero.click.admin.dto.Operate;
-import org.nero.click.admin.exception.news.NewsNotFoundException;
-import org.nero.click.admin.service.INewsService;
+import org.nero.click.data.dto.Operate;
+import org.nero.click.data.exception.news.NewsNotFoundException;
+import org.nero.click.data.service.INewsService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,15 +31,15 @@ public class News {
             method = RequestMethod.POST,
             produces = {"application/json;charset=UTF-8"})
     @ResponseBody
-    public Operate<org.nero.click.admin.entity.News> getNew(@PathVariable("id") long id){
+    public Operate<org.nero.click.data.entity.News> getNew(@PathVariable("id") long id){
 
-        Operate<org.nero.click.admin.entity.News> operate;
-        org.nero.click.admin.entity.News news;
+        Operate<org.nero.click.data.entity.News> operate;
+        org.nero.click.data.entity.News news;
         try {
             news = newsService.getNewsById(id);
-            operate = new Operate<org.nero.click.admin.entity.News>(true,"",news);
+            operate = new Operate<org.nero.click.data.entity.News>(true,"",news);
         }catch(NewsNotFoundException e){
-            operate = new Operate<org.nero.click.admin.entity.News>(true,"没有找到",null);
+            operate = new Operate<org.nero.click.data.entity.News>(true,"没有找到",null);
         }
         return operate;
     }
@@ -49,10 +49,10 @@ public class News {
             method = RequestMethod.POST,
             produces = {"application/json;charset=UTF-8"})
     @ResponseBody
-    public Operate<org.nero.click.admin.entity.News> getNews(@PathVariable("limit") long limit,
-                                                             @PathVariable("offset") long offset){
-        List<org.nero.click.admin.entity.News> news = newsService.getNews(limit,offset);
-        return new Operate<org.nero.click.admin.entity.News>(true,"", (org.nero.click.admin.entity.News) news);
+    public Operate<org.nero.click.data.entity.News> getNews(@PathVariable("limit") long limit,
+                                                            @PathVariable("offset") long offset){
+        List<org.nero.click.data.entity.News> news = newsService.getNews(limit,offset);
+        return new Operate<org.nero.click.data.entity.News>(true,"", (org.nero.click.data.entity.News) news);
     }
 
     @RequestMapping(value = "/test",method = RequestMethod.GET)

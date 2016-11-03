@@ -1,7 +1,7 @@
-package org.nero.click.admin.dao;
+package org.nero.click.data.dao;
 
 import org.junit.Test;
-import org.nero.click.admin.utils.rendom.RandomString;
+import org.nero.click.common.utils.rendom.RandomString;
 
 import java.io.BufferedWriter;
 import java.io.File;

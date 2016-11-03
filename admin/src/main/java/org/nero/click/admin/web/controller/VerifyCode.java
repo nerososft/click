@@ -1,4 +1,4 @@
-package org.nero.click.data.admin.web.controller;
+package org.nero.click.admin.web.controller;
 
 import org.nero.click.common.utils.verifycode.Verify;
 import org.springframework.stereotype.Controller;
