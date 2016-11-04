@@ -57,11 +57,11 @@ public class News {
 
     @RequestMapping(value = "/test",method = RequestMethod.GET)
     public String test(){
-        String url = "jdbc:mysql://localhost:3306/click?"
+        String url = "jdbc:org.nero.click.cache.mysql://localhost:3306/click?"
                 + "user=root&password=&useUnicode=true&characterEncoding=UTF8";
         Connection conn = null;
         try {
-            Class.forName("com.mysql.jdbc.Driver");// 动态加载mysql驱动
+            Class.forName("com.org.nero.click.cache.mysql.jdbc.Driver");// 动态加载mysql驱动
             conn = DriverManager.getConnection(url);
             Statement stmt = conn.createStatement();
             String sql = "select count(*) from gene;";

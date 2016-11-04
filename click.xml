@@ -160,8 +160,8 @@
     <pathelement location="${path.variable.maven_repository}/junit/junit/4.11/junit-4.11.jar"/>
   </path>
   
-  <path id="library.maven:_mysql:mysql-connector-java:5.1.35.classpath">
-    <pathelement location="${path.variable.maven_repository}/mysql/mysql-connector-java/5.1.35/mysql-connector-java-5.1.35.jar"/>
+  <path id="library.maven:_mysql:org.nero.click.cache.mysql-connector-java:5.1.35.classpath">
+    <pathelement location="${path.variable.maven_repository}/org.nero.click.cache.mysql/org.nero.click.cache.mysql-connector-java/5.1.35/org.nero.click.cache.mysql-connector-java-5.1.35.jar"/>
   </path>
   
   <path id="library.maven:_org.apache.commons:commons-email:1.4.classpath">
@@ -328,7 +328,7 @@
     <copy file="${path.variable.maven_repository}/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar" tofile="${artifact.output.admin:war_exploded}/WEB-INF/lib/slf4j-api-1.7.12.jar"/>
     <copy file="${path.variable.maven_repository}/ch/qos/logback/logback-core/1.1.1/logback-core-1.1.1.jar" tofile="${artifact.output.admin:war_exploded}/WEB-INF/lib/logback-core-1.1.1.jar"/>
     <copy file="${path.variable.maven_repository}/ch/qos/logback/logback-classic/1.1.1/logback-classic-1.1.1.jar" tofile="${artifact.output.admin:war_exploded}/WEB-INF/lib/logback-classic-1.1.1.jar"/>
-    <copy file="${path.variable.maven_repository}/mysql/mysql-connector-java/5.1.35/mysql-connector-java-5.1.35.jar" tofile="${artifact.output.admin:war_exploded}/WEB-INF/lib/mysql-connector-java-5.1.35.jar"/>
+    <copy file="${path.variable.maven_repository}/org.nero.click.cache.mysql/org.nero.click.cache.mysql-connector-java/5.1.35/org.nero.click.cache.mysql-connector-java-5.1.35.jar" tofile="${artifact.output.admin:war_exploded}/WEB-INF/lib/org.nero.click.cache.mysql-connector-java-5.1.35.jar"/>
     <copy file="${path.variable.maven_repository}/c3p0/c3p0/0.9.1.2/c3p0-0.9.1.2.jar" tofile="${artifact.output.admin:war_exploded}/WEB-INF/lib/c3p0-0.9.1.2.jar"/>
     <copy file="${path.variable.maven_repository}/org/mybatis/mybatis/3.3.0/mybatis-3.3.0.jar" tofile="${artifact.output.admin:war_exploded}/WEB-INF/lib/mybatis-3.3.0.jar"/>
     <copy file="${path.variable.maven_repository}/org/mybatis/mybatis-spring/1.2.3/mybatis-spring-1.2.3.jar" tofile="${artifact.output.admin:war_exploded}/WEB-INF/lib/mybatis-spring-1.2.3.jar"/>
@@ -386,7 +386,7 @@
     <copy file="${path.variable.maven_repository}/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar" tofile="${artifact.output.click:war_exploded}/WEB-INF/lib/slf4j-api-1.7.12.jar"/>
     <copy file="${path.variable.maven_repository}/ch/qos/logback/logback-core/1.1.1/logback-core-1.1.1.jar" tofile="${artifact.output.click:war_exploded}/WEB-INF/lib/logback-core-1.1.1.jar"/>
     <copy file="${path.variable.maven_repository}/ch/qos/logback/logback-classic/1.1.1/logback-classic-1.1.1.jar" tofile="${artifact.output.click:war_exploded}/WEB-INF/lib/logback-classic-1.1.1.jar"/>
-    <copy file="${path.variable.maven_repository}/mysql/mysql-connector-java/5.1.35/mysql-connector-java-5.1.35.jar" tofile="${artifact.output.click:war_exploded}/WEB-INF/lib/mysql-connector-java-5.1.35.jar"/>
+    <copy file="${path.variable.maven_repository}/org.nero.click.cache.mysql/org.nero.click.cache.mysql-connector-java/5.1.35/org.nero.click.cache.mysql-connector-java-5.1.35.jar" tofile="${artifact.output.click:war_exploded}/WEB-INF/lib/org.nero.click.cache.mysql-connector-java-5.1.35.jar"/>
     <copy file="${path.variable.maven_repository}/c3p0/c3p0/0.9.1.2/c3p0-0.9.1.2.jar" tofile="${artifact.output.click:war_exploded}/WEB-INF/lib/c3p0-0.9.1.2.jar"/>
     <copy file="${path.variable.maven_repository}/org/mybatis/mybatis/3.3.0/mybatis-3.3.0.jar" tofile="${artifact.output.click:war_exploded}/WEB-INF/lib/mybatis-3.3.0.jar"/>
     <copy file="${path.variable.maven_repository}/org/mybatis/mybatis-spring/1.2.3/mybatis-spring-1.2.3.jar" tofile="${artifact.output.click:war_exploded}/WEB-INF/lib/mybatis-spring-1.2.3.jar"/>
@@ -444,7 +444,7 @@
     <copy file="${path.variable.maven_repository}/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar" tofile="${artifact.output.data:war_exploded}/WEB-INF/lib/slf4j-api-1.7.12.jar"/>
     <copy file="${path.variable.maven_repository}/ch/qos/logback/logback-core/1.1.1/logback-core-1.1.1.jar" tofile="${artifact.output.data:war_exploded}/WEB-INF/lib/logback-core-1.1.1.jar"/>
     <copy file="${path.variable.maven_repository}/ch/qos/logback/logback-classic/1.1.1/logback-classic-1.1.1.jar" tofile="${artifact.output.data:war_exploded}/WEB-INF/lib/logback-classic-1.1.1.jar"/>
-    <copy file="${path.variable.maven_repository}/mysql/mysql-connector-java/5.1.35/mysql-connector-java-5.1.35.jar" tofile="${artifact.output.data:war_exploded}/WEB-INF/lib/mysql-connector-java-5.1.35.jar"/>
+    <copy file="${path.variable.maven_repository}/org.nero.click.cache.mysql/org.nero.click.cache.mysql-connector-java/5.1.35/org.nero.click.cache.mysql-connector-java-5.1.35.jar" tofile="${artifact.output.data:war_exploded}/WEB-INF/lib/org.nero.click.cache.mysql-connector-java-5.1.35.jar"/>
     <copy file="${path.variable.maven_repository}/c3p0/c3p0/0.9.1.2/c3p0-0.9.1.2.jar" tofile="${artifact.output.data:war_exploded}/WEB-INF/lib/c3p0-0.9.1.2.jar"/>
     <copy file="${path.variable.maven_repository}/org/mybatis/mybatis/3.3.0/mybatis-3.3.0.jar" tofile="${artifact.output.data:war_exploded}/WEB-INF/lib/mybatis-3.3.0.jar"/>
     <copy file="${path.variable.maven_repository}/org/mybatis/mybatis-spring/1.2.3/mybatis-spring-1.2.3.jar" tofile="${artifact.output.data:war_exploded}/WEB-INF/lib/mybatis-spring-1.2.3.jar"/>
@@ -502,7 +502,7 @@
     <copy file="${path.variable.maven_repository}/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar" tofile="${artifact.output.sso_(1):war_exploded}/WEB-INF/lib/slf4j-api-1.7.12.jar"/>
     <copy file="${path.variable.maven_repository}/ch/qos/logback/logback-core/1.1.1/logback-core-1.1.1.jar" tofile="${artifact.output.sso_(1):war_exploded}/WEB-INF/lib/logback-core-1.1.1.jar"/>
     <copy file="${path.variable.maven_repository}/ch/qos/logback/logback-classic/1.1.1/logback-classic-1.1.1.jar" tofile="${artifact.output.sso_(1):war_exploded}/WEB-INF/lib/logback-classic-1.1.1.jar"/>
-    <copy file="${path.variable.maven_repository}/mysql/mysql-connector-java/5.1.35/mysql-connector-java-5.1.35.jar" tofile="${artifact.output.sso_(1):war_exploded}/WEB-INF/lib/mysql-connector-java-5.1.35.jar"/>
+    <copy file="${path.variable.maven_repository}/org.nero.click.cache.mysql/org.nero.click.cache.mysql-connector-java/5.1.35/org.nero.click.cache.mysql-connector-java-5.1.35.jar" tofile="${artifact.output.sso_(1):war_exploded}/WEB-INF/lib/org.nero.click.cache.mysql-connector-java-5.1.35.jar"/>
     <copy file="${path.variable.maven_repository}/c3p0/c3p0/0.9.1.2/c3p0-0.9.1.2.jar" tofile="${artifact.output.sso_(1):war_exploded}/WEB-INF/lib/c3p0-0.9.1.2.jar"/>
     <copy file="${path.variable.maven_repository}/org/mybatis/mybatis/3.3.0/mybatis-3.3.0.jar" tofile="${artifact.output.sso_(1):war_exploded}/WEB-INF/lib/mybatis-3.3.0.jar"/>
     <copy file="${path.variable.maven_repository}/org/mybatis/mybatis-spring/1.2.3/mybatis-spring-1.2.3.jar" tofile="${artifact.output.sso_(1):war_exploded}/WEB-INF/lib/mybatis-spring-1.2.3.jar"/>
@@ -555,7 +555,7 @@
     <copy file="${path.variable.maven_repository}/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar" tofile="${artifact.output.sso:war_exploded}/WEB-INF/lib/slf4j-api-1.7.12.jar"/>
     <copy file="${path.variable.maven_repository}/ch/qos/logback/logback-core/1.1.1/logback-core-1.1.1.jar" tofile="${artifact.output.sso:war_exploded}/WEB-INF/lib/logback-core-1.1.1.jar"/>
     <copy file="${path.variable.maven_repository}/ch/qos/logback/logback-classic/1.1.1/logback-classic-1.1.1.jar" tofile="${artifact.output.sso:war_exploded}/WEB-INF/lib/logback-classic-1.1.1.jar"/>
-    <copy file="${path.variable.maven_repository}/mysql/mysql-connector-java/5.1.35/mysql-connector-java-5.1.35.jar" tofile="${artifact.output.sso:war_exploded}/WEB-INF/lib/mysql-connector-java-5.1.35.jar"/>
+    <copy file="${path.variable.maven_repository}/org.nero.click.cache.mysql/org.nero.click.cache.mysql-connector-java/5.1.35/org.nero.click.cache.mysql-connector-java-5.1.35.jar" tofile="${artifact.output.sso:war_exploded}/WEB-INF/lib/org.nero.click.cache.mysql-connector-java-5.1.35.jar"/>
     <copy file="${path.variable.maven_repository}/c3p0/c3p0/0.9.1.2/c3p0-0.9.1.2.jar" tofile="${artifact.output.sso:war_exploded}/WEB-INF/lib/c3p0-0.9.1.2.jar"/>
     <copy file="${path.variable.maven_repository}/org/mybatis/mybatis/3.3.0/mybatis-3.3.0.jar" tofile="${artifact.output.sso:war_exploded}/WEB-INF/lib/mybatis-3.3.0.jar"/>
     <copy file="${path.variable.maven_repository}/org/mybatis/mybatis-spring/1.2.3/mybatis-spring-1.2.3.jar" tofile="${artifact.output.sso:war_exploded}/WEB-INF/lib/mybatis-spring-1.2.3.jar"/>

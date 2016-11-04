@@ -13,8 +13,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.security.NoSuchAlgorithmException;
 
@@ -34,11 +37,32 @@ public class Auth {
 
 
 
-    @RequestMapping(value = "/{code}/auth",
+    /**
+     * 获取验证码
+     */
+    @RequestMapping(value = "/{random}/create",
             method = RequestMethod.GET)
-    public String authCode(
-            @PathVariable("code") String code,
-            HttpServletRequest request, HttpServletResponse response){
+    public void getVerify(@PathVariable("random") String random,
+                          HttpServletRequest request,
+                          HttpServletResponse response) throws IOException {
+        response.setHeader("Pragma","No-cache");
+        response.setHeader("Cache-Control","no-cache");
+        response.setDateHeader("Expires", 0);
+        //表明生成的响应是图片
+        response.setContentType("image/png");
+
+        Verify verify = new Verify(request);
+
+
+        BufferedImage image = verify.createImage(60,200,80,true);
+
+
+        ImageIO.write(image, "png", response.getOutputStream());
+    }
+
+    public boolean authCode(String code,
+            HttpServletRequest request,
+                           HttpServletResponse response) throws VerifyFailedException{
         response.setHeader("Pragma","No-cache");
         response.setHeader("Cache-Control","no-cache");
         response.setDateHeader("Expires", 0);
@@ -46,15 +70,15 @@ public class Auth {
         Verify verify = new Verify(request);
         try{
             verify.checkVerify(code);
-            return "ok";
+            return true;
         }catch (VerifyFailedException e){
-            return "error";
+            throw e;
         }
     }
 
 
     @RequestMapping(value = "/{email}/{password}/{code}/auth",
-                    method = RequestMethod.POST,
+                    method = RequestMethod.GET,
                     produces = {"application/json;charset=UTF-8"})
     @ResponseBody
     public Operate<User> login(@PathVariable("email") String email,
@@ -62,18 +86,15 @@ public class Auth {
                                @PathVariable("code") String code,
                                HttpServletRequest request,
                                HttpServletResponse response){
-        response.setHeader("Pragma","No-cache");
-        response.setHeader("Cache-Control","no-cache");
-        response.setDateHeader("Expires", 0);
 
-        Verify verify = new Verify(request);
+
+
         Operate<User> userOperate;
         try {
-            System.out.println("code------:"+code+"-----"+verify.getVerifyCode());
-            verify.checkVerify(code);
+            authCode(code,request,response);
             userOperate = userService.Login(new Authpair(email,password));
-        }catch (VerifyFailedException e){
-            userOperate = new Operate<User>(false,e.getMessage(),null);
+        }catch (VerifyFailedException e) {
+            userOperate = new Operate<User>(false, e.getMessage(), null);
         } catch(LoginException e){
             userOperate = new Operate<User>(false,e.getMessage(),null);
         }catch (NoSuchAlgorithmException e) {
@@ -116,7 +137,6 @@ public class Auth {
         Operate<User> userOperate;
         try {
             userOperate = userService.RegisterAuth(token);
-
         }catch(NoSuchUserException e) {
             userOperate = new Operate<User>(false,null);
         }catch(RegisterException e){

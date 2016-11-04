@@ -2,127 +2,27 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
+      <artifact name="admin:war" />
+      <artifact name="admin:war exploded" />
+      <artifact name="common:jar" />
+      <artifact name="data:war" />
+      <artifact name="data:war exploded" />
       <artifact name="sso:war" />
+      <artifact name="sso:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8024c39b-073a-4770-87b0-31ac06e9e2c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/admin_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/common_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/data_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/data_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/sso_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/sso_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6__2_.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/admin.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/src/main/java/org/nero/click/admin/dao/AdminDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/src/main/java/org/nero/click/admin/web/controller/VerifyCode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/src/main/resources/mapper/admin.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/src/main/resources/spring/spring-dao.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/src/main/resources/spring/spring-service.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/src/main/resources/spring/spring-web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/common.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/nero/click/common/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/nero/click/common/filter/CORSFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/Constant.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/email/MailAuthenticator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/email/MailSenderFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/email/MailSenderType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/email/SimpleMailSender.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/md5/MD5.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/rendom/RandomString.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/verifycode/Verify.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/verifycode/exception/VerifyFailedException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/resources/jdbc.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/resources/logback.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/resources/mybatis-config.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/data.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/cache/CacheThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/cache/ICacheService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/cache/impl/CacheServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/dao/BeesDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/dao/DomianDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/dao/GeneDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/dao/ManhattanDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/dao/MoutainDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/dao/NewsDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/dao/PropgbmnDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/dto/Box.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/dto/MoutainPoint.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/dto/Operate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/dto/Point.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/entity/Domian.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/entity/Gene.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/entity/News.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/entity/Propgbmn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/entity/beeswarm/Genep.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/exception/news/NewsNotFoundException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/service/IDataService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/service/IHttpService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/service/INewsService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/service/impl/DataServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/service/impl/HttpServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/service/impl/NewsServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/web/controller/Data.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/web/controller/News.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/resources/mapper/beesMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/resources/mapper/domianMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/resources/mapper/geneMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/resources/mapper/manhattanMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/resources/mapper/moutainMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/resources/mapper/newsMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/resources/mysql/schema.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/resources/spring/spring-dao.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/resources/spring/spring-service.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/resources/spring/spring-web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/webapp/WEB-INF/jsp/test.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/webapp/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/webapp/index.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/sql/schema.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/test/java/org/nero/click/data/dao/BeesDaoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/test/java/org/nero/click/data/dao/GeneDaoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/test/java/org/nero/click/data/dao/ManhattanDaoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/test/java/org/nero/click/data/dao/MoutainDaoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/test/java/org/nero/click/data/dao/PointText.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/test/java/org/nero/click/data/service/impl/DataServiceImplTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/test/java/org/nero/click/data/service/impl/NewsServiceImplTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/test/resources/jdbc.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/test/resources/logback.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/test/resources/mapper/beesMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/test/resources/mapper/domianMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/test/resources/mapper/geneMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/test/resources/mapper/manhattanMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/test/resources/mapper/moutainMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/test/resources/mapper/newsMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/test/resources/mapper/userMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/test/resources/mybatis-config.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/test/resources/mysql/schema.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/test/resources/spring/spring-dao.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/test/resources/spring/spring-service.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/test/resources/spring/spring-web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso/common.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/dto/Operate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso/src/main/resources/mapper/userMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso/src/main/resources/spring/spring-dao.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso/src/main/resources/spring/spring-service.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso/src/main/resources/spring/spring-web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso/src/main/webapp/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso/sso.iml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/click_war.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/src/main/java/org/nero/click/admin/web/controller/VerifyCode.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/src/main/resources/jdbc.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/src/main/resources/logback.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/src/main/resources/mybatis-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/target/classes/org/nero/click/admin/web/controller/VerifyCode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/target/click/WEB-INF/classes/org/nero/click/admin/web/controller/VerifyCode.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/cache/beesworm/PRAMEF5,DDX11L1,NOC2L,ID3,GPN2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/javax.annotation.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/javax.ejb.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/javax.jms.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/javax.persistence.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/javax.resource.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/javax.servlet.jsp.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/javax.transaction.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/target/classes/mysql/schema.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/target/click/WEB-INF/classes/mysql/schema.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/target/test-classes/mysql/schema.sql" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/cache/CacheThread.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/cache/ICacheService.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/cache/impl/CacheServiceImpl.java" afterPath="" />
@@ -141,16 +41,13 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/entity/Gene.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/entity/News.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/entity/Propgbmn.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/entity/Session.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/entity/beeswarm/Genep.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/exception/news/NewsNotFoundException.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/filter/CORSFilter.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/service/IDataService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/service/IDomianService.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/service/IHttpService.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/service/INewsService.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/service/impl/DataServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/service/impl/DomianServiceImpl.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/service/impl/HttpServiceImpl.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/service/impl/NewsServiceImpl.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/utils/Constant.java" afterPath="" />
@@ -187,8 +84,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/org/nero/click/dao/PointText.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/org/nero/click/service/impl/DataServiceImplTest.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/org/nero/click/service/impl/NewsServiceImplTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/org/nero/click/service/impl/UserServiceImplTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/org/nero/click/service/observer/RegisterObserverTest.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/resources/jdbc.properties" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/resources/logback.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/resources/mapper/beesMapper.xml" afterPath="" />
@@ -395,27 +290,39 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/spring/spring-dao.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/spring/spring-service.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/spring/spring-web.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/target/click/WEB-INF/lib/common-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/admin/target/click/WEB-INF/lib/common-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/target/classes/org/nero/click/data/web/controller/News.class" afterPath="$PROJECT_DIR$/data/target/classes/org/nero/click/data/web/controller/News.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/target/click/WEB-INF/classes/org/nero/click/data/web/controller/News.class" afterPath="$PROJECT_DIR$/data/target/click/WEB-INF/classes/org/nero/click/data/web/controller/News.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/target/click/WEB-INF/lib/common-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/data/target/click/WEB-INF/lib/common-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/admin_war/click.war" afterPath="$PROJECT_DIR$/out/artifacts/admin_war/click.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/common_jar/common.jar" afterPath="$PROJECT_DIR$/out/artifacts/common_jar/common.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/data_war/click.war" afterPath="$PROJECT_DIR$/out/artifacts/data_war/click.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/sso_war/click.war" afterPath="$PROJECT_DIR$/out/artifacts/sso_war/click.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso/target/classes/org/nero/click/sso/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/sso/target/classes/org/nero/click/sso/service/impl/UserServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso/target/classes/org/nero/click/sso/web/controller/Auth.class" afterPath="$PROJECT_DIR$/sso/target/classes/org/nero/click/sso/web/controller/Auth.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso/target/click/WEB-INF/classes/org/nero/click/sso/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/sso/target/click/WEB-INF/classes/org/nero/click/sso/service/impl/UserServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso/target/click/WEB-INF/classes/org/nero/click/sso/web/controller/Auth.class" afterPath="$PROJECT_DIR$/sso/target/click/WEB-INF/classes/org/nero/click/sso/web/controller/Auth.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso/target/click/WEB-INF/lib/common-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/sso/target/click/WEB-INF/lib/common-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/module_admin.xml" afterPath="$PROJECT_DIR$/admin/module_admin.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/click.iml" afterPath="$PROJECT_DIR$/click.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/click.xml" afterPath="$PROJECT_DIR$/click.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/common.iml" afterPath="$PROJECT_DIR$/common/common.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/pom.xml" afterPath="$PROJECT_DIR$/common/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/module_data.xml" afterPath="$PROJECT_DIR$/data/module_data.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/web/controller/News.java" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/web/controller/News.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module_click.xml" afterPath="$PROJECT_DIR$/module_click.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/artifacts/click_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/admin_war_exploded.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/dao/UserDao.java" afterPath="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/dao/UserDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/entity/Authpair.java" afterPath="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/entity/Authpair.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/entity/User.java" afterPath="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/entity/User.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/exception/UserException.java" afterPath="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/exceptions/UserException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/exception/user/ActiveException.java" afterPath="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/exceptions/user/ActiveException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/exception/user/LoginException.java" afterPath="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/exceptions/user/LoginException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/exception/user/NoSuchUserException.java" afterPath="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/exceptions/user/NoSuchUserException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/exception/user/RegisterException.java" afterPath="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/exceptions/user/RegisterException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/exception/user/TimeOutException.java" afterPath="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/exceptions/user/TimeOutException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/service/IUserService.java" afterPath="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/service/IUserService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/service/impl/UserServiceImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/service/observer/RegisterObserver.java" afterPath="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/service/observer/RegisterObserver.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/nero/click/web/controller/Auth.java" afterPath="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/web/controller/Auth.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso/module_sso.xml" afterPath="$PROJECT_DIR$/sso/module_sso.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/web/controller/Auth.java" afterPath="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/web/controller/Auth.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso/src/main/resources/spring/spring-dao.xml" afterPath="$PROJECT_DIR$/sso/src/main/resources/spring/spring-dao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso/sso.iml" afterPath="$PROJECT_DIR$/sso/sso.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso/target/classes/spring/spring-dao.xml" afterPath="$PROJECT_DIR$/sso/target/classes/spring/spring-dao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso/target/click/WEB-INF/classes/spring/spring-dao.xml" afterPath="$PROJECT_DIR$/sso/target/click/WEB-INF/classes/spring/spring-dao.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data/src/main/resources/mysql/schema.sql" afterPath="$PROJECT_DIR$/data/src/test/resources/org/nero/click/cache/mysql/schema.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data/src/sql/schema.sql" afterPath="$PROJECT_DIR$/common/src/sql/schema.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/data/src/test/resources/mysql/schema.sql" afterPath="$PROJECT_DIR$/common/src/main/resources/schema.sql" />
     </list>
     <ignored path="click.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -455,101 +362,89 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/service/impl/UserServiceImpl.java">
+      <file leaf-file-name="spring-dao.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sso/src/main/resources/spring/spring-dao.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-209">
-              <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+            <state relative-caret-position="140">
+              <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#782#793#0" expanded="true" />
+                <element signature="e#835#843#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sso/src/main/resources/mapper/userMapper.xml">
+      <file leaf-file-name="jdbc.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/src/main/resources/jdbc.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-361">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="95">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/service/impl/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="spring-dao.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sso/src/main/resources/spring/spring-dao.xml">
+        <entry file="file://$PROJECT_DIR$/data/src/main/resources/spring/spring-dao.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spring-web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sso/src/main/resources/spring/spring-web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Verify.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/verifycode/Verify.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="122" column="28" selection-start-line="122" selection-start-column="28" selection-end-line="122" selection-end-column="28" />
+            <state relative-caret-position="190">
+              <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
               <folding>
-                <element signature="e#3852#3853#0" expanded="true" />
-                <element signature="e#3942#3943#0" expanded="true" />
+                <element signature="e#835#843#0" expanded="true" />
+                <element signature="e#882#900#0" expanded="true" />
+                <element signature="e#943#961#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VerifyCode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/src/main/java/org/nero/click/admin/web/controller/VerifyCode.java">
+      <file leaf-file-name="spring-service.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/src/main/resources/spring/spring-service.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="48" column="0" selection-start-line="26" selection-start-column="4" selection-end-line="48" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Auth.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/web/controller/Auth.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Operate.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/dto/Operate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VerifyFailedException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/verifycode/exception/VerifyFailedException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-              <folding>
-                <element signature="e#266#267#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -557,8 +452,18 @@
       <file leaf-file-name="spring-service.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sso/src/main/resources/spring/spring-service.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+            <state relative-caret-position="95">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schema.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/src/sql/schema.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -589,10 +494,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/utils/email/SimpleMailSender.java" />
-        <option value="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/service/IUserService.java" />
-        <option value="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/exceptions/user/LoginException.java" />
-        <option value="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/exceptions/user/ActiveException.java" />
         <option value="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/service/user/LoginException.java" />
         <option value="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/service/user/TimeOutException.java" />
         <option value="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/exceptions/user/TimeOutException.java" />
@@ -601,7 +502,6 @@
         <option value="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/service/user/RegisterException.java" />
         <option value="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/service/user/NoSuchUserException.java" />
         <option value="$PROJECT_DIR$/sso/src/main/resources/spring/spring-web.xml" />
-        <option value="$PROJECT_DIR$/sso/src/main/resources/spring/spring-dao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/nero/click/web/controller/News.java" />
         <option value="$PROJECT_DIR$/data/src/test/java/org/nero/click/service/impl/DataServiceImplTest.java" />
         <option value="$PROJECT_DIR$/data/src/test/java/org/nero/click/dao/ManhattanDaoTest.java" />
@@ -617,9 +517,7 @@
         <option value="$PROJECT_DIR$/data/src/main/resources/mapper/manhattanMapper.xml" />
         <option value="$PROJECT_DIR$/data/src/main/resources/mapper/geneMapper.xml" />
         <option value="$PROJECT_DIR$/data/src/main/resources/mapper/domianMapper.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/email/SimpleMailSender.java" />
-        <option value="$PROJECT_DIR$/common/pom.xml" />
         <option value="$PROJECT_DIR$/common/src/main/java/org/nero/click/common/Main.java" />
         <option value="$PROJECT_DIR$/admin/pom.xml" />
         <option value="$PROJECT_DIR$/admin/src/main/java/org/nero/click/data/admin/web/controller/VerifyCode.java" />
@@ -639,7 +537,14 @@
         <option value="$PROJECT_DIR$/sso/src/main/resources/spring/spring-service.xml" />
         <option value="$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/verifycode/exception/VerifyFailedException.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/verifycode/Verify.java" />
+        <option value="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/web/controller/Verify.java" />
+        <option value="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/web/controller/VerifyCode.java" />
         <option value="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/web/controller/Auth.java" />
+        <option value="$PROJECT_DIR$/sso/src/main/resources/spring/spring-dao.xml" />
+        <option value="$PROJECT_DIR$/common/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/common/pom.xml" />
+        <option value="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/service/impl/UserServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -825,8 +730,38 @@
               <option name="myItemId" value="sso" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
+              <option name="myItemId" value="click" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="click" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sso" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sso" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -859,18 +794,12 @@
               <option name="myItemId" value="sso" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="click" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="click" />
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="impl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -884,33 +813,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="out" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="click" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="click" />
+              <option name="myItemId" value="artifacts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="sso_war" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -924,27 +835,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="out" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="artifacts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
+              <option name="myItemId" value="data_war" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -958,32 +857,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="out" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="artifacts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="click" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="click" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="out" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="artifacts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="admin_war" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane">
         <subPane />
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1013,25 +922,26 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\project\code\click\common\src\main\resources" />
-      <recent name="F:\project\code\click\common" />
-      <recent name="F:\project\code\click\src\main\resources\mapper" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.nero.click.cache" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.nero.click.common.utils.verifycode" />
-      <recent name="org.nero.click.sso.web.controller" />
-      <recent name="org.nero.click.sso.dto" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\project\code\click\common\src\main\resources" />
       <recent name="F:\project\code\click\common\src\main\java\org\nero\click\common\utils" />
       <recent name="F:\project\code\click\common\src\test" />
       <recent name="F:\project\code\click\data" />
       <recent name="F:\project\code\click\sso\src\main\java\org\nero\click\sso" />
-      <recent name="F:\project\code\click\sso\src\main\java\org\nero\click\sso\service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.nero.click.sso.web.controller" />
+      <recent name="org.nero.click.common.utils.verifycode" />
+      <recent name="org.nero.click.sso.dto" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\project\code\click\common\src" />
+      <recent name="F:\project\code\click\common\src\main\resources" />
+      <recent name="F:\project\code\click\common" />
+      <recent name="F:\project\code\click\src\main\resources\mapper" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -1651,7 +1561,9 @@
       <workItem from="1477835142629" duration="626000" />
       <workItem from="1477960656419" duration="138000" />
       <workItem from="1478059011954" duration="28526000" />
-      <workItem from="1478183748722" duration="10993000" />
+      <workItem from="1478183748722" duration="16525000" />
+      <workItem from="1478238448007" duration="207000" />
+      <workItem from="1478238792121" duration="2831000" />
     </task>
     <servers />
   </component>
@@ -1688,7 +1600,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="304570000" />
+    <option name="totallyTimeSpent" value="313140000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1705,11 +1617,11 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30806452" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30806452" sideWeight="0.4969743" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30806452" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7745572" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1720,7 +1632,6 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27912253" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.4877651" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32419354" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1736,6 +1647,7 @@
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.81892335" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32626426" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32419354" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven-2 Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1803,55 +1715,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/src/main/resources/spring/spring-web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/src/main/resources/spring/spring-service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/src/main/resources/spring/spring-dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-284">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/resources/logback.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/src/main/resources/mapper/moutainMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/src/main/resources/mapper/newsMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-190">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/src/main/resources/mapper/manhattanMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="28" column="63" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/src/main/resources/mapper/geneMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -1878,17 +1741,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#639#640#0" expanded="false" />
-            <element signature="e#670#671#0" expanded="false" />
-            <element signature="e#849#850#0" expanded="false" />
-            <element signature="e#880#881#0" expanded="false" />
-            <element signature="e#928#929#0" expanded="false" />
-            <element signature="e#968#969#0" expanded="false" />
-            <element signature="e#1016#1017#0" expanded="false" />
-            <element signature="e#1056#1057#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1896,7 +1748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1904,7 +1755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1912,12 +1762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#225#226#0" expanded="false" />
-            <element signature="e#254#255#0" expanded="false" />
-            <element signature="e#279#280#0" expanded="false" />
-            <element signature="e#306#307#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1925,9 +1769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1935,7 +1776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1943,15 +1783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1959,15 +1790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1975,10 +1797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#161#162#0" expanded="true" />
-            <element signature="e#205#206#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1986,19 +1804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-          <folding>
-            <marker date="1478185902593" expanded="true" signature="143:1554" ph="..." />
-            <marker date="1478185902593" expanded="true" signature="261:391" ph="..." />
-            <marker date="1478185902593" expanded="true" signature="534:1352" ph="..." />
-            <marker date="1478185902593" expanded="true" signature="552:1339" ph="..." />
-            <marker date="1478185902593" expanded="true" signature="573:1320" ph="..." />
-            <marker date="1478185902593" expanded="true" signature="759:1298" ph="..." />
-            <marker date="1478185902593" expanded="true" signature="792:1068" ph="..." />
-            <marker date="1478185902593" expanded="true" signature="890:1034" ph="..." />
-            <marker date="1478185902593" expanded="true" signature="1112:1216" ph="..." />
-            <marker date="1478185902593" expanded="true" signature="1372:1542" ph="..." />
-            <marker date="1478185902593" expanded="true" signature="1383:1522" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2006,7 +1811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2014,7 +1818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2022,7 +1825,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2030,15 +1832,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
           <caret line="30" column="61" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2046,33 +1839,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/resources/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2080,7 +1846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2088,7 +1853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="27" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2096,17 +1860,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/nero/click/common/filter/CORSFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2114,9 +1867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
           <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2124,15 +1874,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/service/IUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2140,7 +1881,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2148,49 +1888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-209">
-          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso/src/main/resources/mapper/userMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-361">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso/src/main/resources/spring/spring-dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso/src/main/resources/spring/spring-web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso/src/main/resources/spring/spring-service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2198,46 +1895,196 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-          <folding>
-            <element signature="e#266#267#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/dto/Operate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
+        <state relative-caret-position="418">
           <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-          <folding />
+          <folding>
+            <element signature="e#737#738#0" expanded="false" />
+            <element signature="e#765#766#0" expanded="false" />
+            <element signature="e#808#809#0" expanded="false" />
+            <element signature="e#842#843#0" expanded="false" />
+            <element signature="e#872#873#0" expanded="false" />
+            <element signature="e#898#899#0" expanded="false" />
+            <element signature="e#936#937#0" expanded="false" />
+            <element signature="e#966#967#0" expanded="false" />
+            <element signature="e#992#993#0" expanded="false" />
+            <element signature="e#1019#1020#0" expanded="false" />
+            <element signature="e#1054#1055#0" expanded="false" />
+            <element signature="e#1086#1087#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/verifycode/Verify.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
+        <state relative-caret-position="2166">
           <caret line="122" column="28" selection-start-line="122" selection-start-column="28" selection-end-line="122" selection-end-column="28" />
           <folding>
-            <element signature="e#3852#3853#0" expanded="true" />
-            <element signature="e#3942#3943#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#595#596#0" expanded="false" />
+            <element signature="e#633#634#0" expanded="false" />
+            <element signature="e#3852#3853#0" expanded="false" />
+            <element signature="e#3942#3943#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/java/org/nero/click/admin/web/controller/VerifyCode.java">
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/org/nero/click/admin/web/controller/VerifyCode.java" />
+    <entry file="file://$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/web/controller/VerifyCode.java" />
+    <entry file="file://$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/web/controller/VerifyCode.java" />
+    <entry file="file://$PROJECT_DIR$/data/src/main/resources/org/nero/click/cache/mysql/schema.sql" />
+    <entry file="file://$PROJECT_DIR$/common/src/main/resources/schema.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso/src/main/resources/spring/spring-web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso/src/main/resources/mapper/userMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/service/IUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/nero/click/common/filter/CORSFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
-          <caret line="48" column="0" selection-start-line="26" selection-start-column="4" selection-end-line="48" selection-end-column="0" />
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/web/controller/Auth.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+        <state relative-caret-position="168">
+          <caret line="129" column="5" selection-start-line="129" selection-start-column="5" selection-end-line="129" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso/src/main/resources/spring/spring-service.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/sql/schema.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/src/main/resources/spring/spring-service.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso/src/main/resources/spring/spring-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#782#793#0" expanded="true" />
+            <element signature="e#835#843#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/src/main/resources/spring/spring-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+          <folding>
+            <element signature="e#835#843#0" expanded="true" />
+            <element signature="e#882#900#0" expanded="true" />
+            <element signature="e#943#961#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2301,7 +2148,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -2321,7 +2167,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Java EE 6-Java EE 6 (2)</last-edited>
+          <last-edited>Java EE 6-Java EE 6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
