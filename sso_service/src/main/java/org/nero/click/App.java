@@ -1,4 +1,4 @@
-package org.click;
+package org.nero.click;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

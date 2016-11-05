@@ -23,6 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="admin" />
+        <module name="admin_parent" />
         <module name="admin_service" />
         <module name="common" />
         <module name="data" />
@@ -35,6 +36,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="admin" target="1.5" />
+      <module name="admin_parent" target="1.5" />
       <module name="admin_service" target="1.5" />
       <module name="click" target="1.5" />
       <module name="common" target="1.5" />

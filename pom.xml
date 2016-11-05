@@ -17,6 +17,7 @@
     <module>sso_service</module>
     <module>data_parent</module>
     <module>sso_parent</module>
+    <module>admin_parent</module>
   </modules>
   <name>click Maven Webapp</name>
   <url>http://maven.apache.org</url>

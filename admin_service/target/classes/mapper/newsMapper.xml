@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="org.nero.click.data.dao.NewsDao">
+<mapper namespace="org.nero.click.admin.dao.NewsDao">
 
 
     <!--int addNew(@Param("title") String title,-->
@@ -26,14 +26,14 @@
     </update>
 
     <!--News getNewById(long id);-->
-    <select id="getNewById" resultType="News">
+    <select id="getNewById" resultType="org.click.admin.entity.News">
         SELECT * from news where isdel = 0 and id = #{id};
     </select>
 
 
     <!--List<News> getNews(@Param("limit") long limit,-->
     <!--@Param("offset") long offset);-->
-    <select id="getNews" resultType="News">
+    <select id="getNews" resultType="org.click.admin.entity.News">
         SELECT  * from news where isdel = 0 limit #{limit},#{offset};
     </select>
 
