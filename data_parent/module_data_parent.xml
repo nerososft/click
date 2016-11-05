@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_data_parent" default="compile.module.data_parent">
+  <dirname property="module.data_parent.basedir" file="${ant.file.module_data_parent}"/>
+  
+  <property name="module.jdk.home.data_parent" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.data_parent" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.data_parent" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.data_parent" value="-encoding UTF-8 -source 1.5 -target 1.5 ${compiler.args}"/>
+  
+  <property name="data_parent.output.dir" value="${module.data_parent.basedir}/target/classes"/>
+  <property name="data_parent.testoutput.dir" value="${module.data_parent.basedir}/target/test-classes"/>
+  
+  <path id="data_parent.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="data_parent.module.production.classpath">
+    <path refid="${module.jdk.classpath.data_parent}"/>
+  </path>
+  
+  <path id="data_parent.runtime.production.module.classpath">
+    <pathelement location="${data_parent.output.dir}"/>
+  </path>
+  
+  <path id="data_parent.module.classpath">
+    <path refid="${module.jdk.classpath.data_parent}"/>
+    <pathelement location="${data_parent.output.dir}"/>
+    <path refid="library.maven:_junit:junit:3.8.1.classpath"/>
+  </path>
+  
+  <path id="data_parent.runtime.module.classpath">
+    <pathelement location="${data_parent.testoutput.dir}"/>
+    <pathelement location="${data_parent.output.dir}"/>
+    <path refid="library.maven:_junit:junit:3.8.1.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.data_parent">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.data_parent">
+    <patternset refid="excluded.from.module.data_parent"/>
+  </patternset>
+  
+  <path id="data_parent.module.sourcepath">
+    <dirset dir="${module.data_parent.basedir}">
+      <include name="src/main/java"/>
+    </dirset>
+  </path>
+  
+  <path id="data_parent.module.test.sourcepath">
+    <dirset dir="${module.data_parent.basedir}">
+      <include name="src/test/java"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.data_parent" depends="compile.module.data_parent.production,compile.module.data_parent.tests" description="Compile module data_parent"/>
+  
+  <target name="compile.module.data_parent.production" depends="register.custom.compilers" description="Compile module data_parent; production classes">
+    <mkdir dir="${data_parent.output.dir}"/>
+    <javac2 destdir="${data_parent.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.data_parent}/javac">
+      <compilerarg line="${compiler.args.data_parent}"/>
+      <bootclasspath refid="data_parent.module.bootclasspath"/>
+      <classpath refid="data_parent.module.production.classpath"/>
+      <src refid="data_parent.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.data_parent"/>
+    </javac2>
+    
+    <copy todir="${data_parent.output.dir}">
+      <fileset dir="${module.data_parent.basedir}/src/main/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.data_parent.tests" depends="register.custom.compilers,compile.module.data_parent.production" description="compile module data_parent; test classes" unless="skip.tests">
+    <mkdir dir="${data_parent.testoutput.dir}"/>
+    <javac2 destdir="${data_parent.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.data_parent}/javac">
+      <compilerarg line="${compiler.args.data_parent}"/>
+      <bootclasspath refid="data_parent.module.bootclasspath"/>
+      <classpath refid="data_parent.module.classpath"/>
+      <src refid="data_parent.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.data_parent"/>
+    </javac2>
+    
+    <copy todir="${data_parent.testoutput.dir}">
+      <fileset dir="${module.data_parent.basedir}/src/test/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.data_parent" description="cleanup module">
+    <delete dir="${data_parent.output.dir}"/>
+    <delete dir="${data_parent.testoutput.dir}"/>
+  </target>
+</project>

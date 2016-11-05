@@ -1,13 +1,14 @@
 package org.nero.click.sso.web.controller;
 
+import org.nero.click.common.utils.verifycode.exception.VerifyFailedException;
+import org.nero.click.Consumer;
+import org.nero.click.sso.entity.User;
+import org.nero.click.sso.exceptions.user.*;
 import org.nero.click.common.utils.md5.MD5;
 import org.nero.click.common.utils.rendom.RandomString;
 import org.nero.click.common.utils.verifycode.Verify;
-import org.nero.click.common.utils.verifycode.exception.VerifyFailedException;
 import org.nero.click.sso.dto.Operate;
 import org.nero.click.sso.entity.Authpair;
-import org.nero.click.sso.entity.User;
-import org.nero.click.sso.exceptions.user.*;
 import org.nero.click.sso.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -62,7 +63,7 @@ public class Auth {
 
     public boolean authCode(String code,
             HttpServletRequest request,
-                           HttpServletResponse response) throws VerifyFailedException{
+                           HttpServletResponse response) throws VerifyFailedException {
         response.setHeader("Pragma","No-cache");
         response.setHeader("Cache-Control","no-cache");
         response.setDateHeader("Expires", 0);
@@ -87,7 +88,7 @@ public class Auth {
                                HttpServletRequest request,
                                HttpServletResponse response){
 
-
+        userService =(IUserService) Consumer.singleton().getBean("IUserService");
 
         Operate<User> userOperate;
         try {
@@ -113,6 +114,7 @@ public class Auth {
     public Operate<User> register(@PathVariable("password") String password,
                                   @PathVariable("email")String email,
                                   @PathVariable("username")String username){
+        userService =(IUserService) Consumer.singleton().getBean("IUserService");
 
         Operate userOperate;
         try {
@@ -133,6 +135,8 @@ public class Auth {
             produces = {"application/json;charset=UTF-8"})
     @ResponseBody
     public Operate<User> registerAuth(@PathVariable("token") String token){
+
+        userService =(IUserService) Consumer.singleton().getBean("IUserService");
 
         Operate<User> userOperate;
         try {

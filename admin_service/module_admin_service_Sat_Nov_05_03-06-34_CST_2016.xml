@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_admin_service" default="compile.module.admin_service">
+  <dirname property="module.admin_service.basedir" file="${ant.file.module_admin_service}"/>
+  
+  <property name="module.jdk.home.admin_service" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.admin_service" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.admin_service" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.admin_service" value="-encoding UTF-8 -source 1.5 -target 1.5 ${compiler.args}"/>
+  
+  <property name="admin_service.output.dir" value="${module.admin_service.basedir}/target/classes"/>
+  <property name="admin_service.testoutput.dir" value="${module.admin_service.basedir}/target/test-classes"/>
+  
+  <path id="admin_service.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="admin_service.module.production.classpath">
+    <path refid="${module.jdk.classpath.admin_service}"/>
+  </path>
+  
+  <path id="admin_service.runtime.production.module.classpath">
+    <pathelement location="${admin_service.output.dir}"/>
+  </path>
+  
+  <path id="admin_service.module.classpath">
+    <path refid="${module.jdk.classpath.admin_service}"/>
+    <pathelement location="${admin_service.output.dir}"/>
+    <path refid="library.maven:_junit:junit:3.8.1.classpath"/>
+  </path>
+  
+  <path id="admin_service.runtime.module.classpath">
+    <pathelement location="${admin_service.testoutput.dir}"/>
+    <pathelement location="${admin_service.output.dir}"/>
+    <path refid="library.maven:_junit:junit:3.8.1.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.admin_service">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.admin_service">
+    <patternset refid="excluded.from.module.admin_service"/>
+  </patternset>
+  
+  <path id="admin_service.module.sourcepath">
+    <dirset dir="${module.admin_service.basedir}">
+      <include name="src/main/java"/>
+      <include name="src/main/resources"/>
+    </dirset>
+  </path>
+  
+  <path id="admin_service.module.test.sourcepath">
+    <dirset dir="${module.admin_service.basedir}">
+      <include name="src/test/java"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.admin_service" depends="compile.module.admin_service.production,compile.module.admin_service.tests" description="Compile module admin_service"/>
+  
+  <target name="compile.module.admin_service.production" depends="register.custom.compilers" description="Compile module admin_service; production classes">
+    <mkdir dir="${admin_service.output.dir}"/>
+    <javac2 destdir="${admin_service.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.admin_service}/javac">
+      <compilerarg line="${compiler.args.admin_service}"/>
+      <bootclasspath refid="admin_service.module.bootclasspath"/>
+      <classpath refid="admin_service.module.production.classpath"/>
+      <src refid="admin_service.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.admin_service"/>
+    </javac2>
+    
+    <copy todir="${admin_service.output.dir}">
+      <fileset dir="${module.admin_service.basedir}/src/main/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.admin_service.basedir}/src/main/resources">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.admin_service.tests" depends="register.custom.compilers,compile.module.admin_service.production" description="compile module admin_service; test classes" unless="skip.tests">
+    <mkdir dir="${admin_service.testoutput.dir}"/>
+    <javac2 destdir="${admin_service.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.admin_service}/javac">
+      <compilerarg line="${compiler.args.admin_service}"/>
+      <bootclasspath refid="admin_service.module.bootclasspath"/>
+      <classpath refid="admin_service.module.classpath"/>
+      <src refid="admin_service.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.admin_service"/>
+    </javac2>
+    
+    <copy todir="${admin_service.testoutput.dir}">
+      <fileset dir="${module.admin_service.basedir}/src/test/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.admin_service" description="cleanup module">
+    <delete dir="${admin_service.output.dir}"/>
+    <delete dir="${admin_service.testoutput.dir}"/>
+  </target>
+</project>

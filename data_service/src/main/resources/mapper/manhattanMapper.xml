@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.nero.click.data.dao.ManhattanDao">
+
+    <!--/**-->
+    <!--* 根据染色体获取基因id-->
+    <!--* @param ucChrom-->
+    <!--* @return-->
+    <!--*/-->
+    <!--List<Integer> getGeneId(Integer ucChrom);-->
+
+    <!--/**-->
+    <!--* 根据基因获取propertyId-->
+    <!--* @param gengId-->
+    <!--* @return-->
+    <!--*/-->
+    <!--List<Integer> getPropertyId(Integer gengId);-->
+
+
+    <!--/**-->
+    <!--* 获取麦哈顿图数据-->
+    <!--* @param ptopertyId-->
+    <!--* @param cancerTable-->
+    <!--* @return-->
+    <!--*/-->
+    <!--List<Point> manhattan(Integer ptopertyId,String cancerTable);-->
+    <select id="manhattan" resultType="org.nero.click.data.dto.MoutainPoint">
+--         SELECT geneName,${type} from gene where ucChrom = ${chromosomes} ;
+    </select>
+
+</mapper>

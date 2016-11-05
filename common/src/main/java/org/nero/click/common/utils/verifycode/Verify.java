@@ -110,7 +110,7 @@ public class Verify {
      * @param code 验证码
      * @return boolean
      */
-    public boolean checkVerify(String code) throws VerifyFailedException{
+    public boolean checkVerify(String code) throws VerifyFailedException {
         HttpSession session = this.request.getSession();
         Object verifyCode = session.getAttribute(this.sessionName);
         if(verifyCode!=null && code!=null){

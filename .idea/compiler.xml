@@ -23,20 +23,30 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="admin" />
+        <module name="admin_service" />
         <module name="common" />
         <module name="data" />
+        <module name="data_parent" />
+        <module name="data_service" />
         <module name="sso" />
+        <module name="sso_parent" />
+        <module name="sso_service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="admin" target="1.5" />
+      <module name="admin_service" target="1.5" />
       <module name="click" target="1.5" />
       <module name="common" target="1.5" />
       <module name="common (1)" target="1.5" />
       <module name="data" target="1.5" />
       <module name="data_analysis" target="1.5" />
+      <module name="data_parent" target="1.5" />
+      <module name="data_service" target="1.5" />
       <module name="sso" target="1.5" />
       <module name="sso (1)" target="1.5" />
+      <module name="sso_parent" target="1.5" />
+      <module name="sso_service" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

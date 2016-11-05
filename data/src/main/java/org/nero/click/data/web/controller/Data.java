@@ -1,16 +1,13 @@
 package org.nero.click.data.web.controller;
 
-import org.nero.click.data.cache.CacheThread;
+import org.nero.click.Consumer;
 import org.nero.click.data.dto.MoutainPoint;
+import org.nero.click.data.dto.Operate;
 import org.nero.click.data.dto.Point;
 import org.nero.click.data.service.IDataService;
-import org.nero.click.data.cache.ICacheService;
-import org.nero.click.data.dto.Operate;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.File;
 import java.util.*;
 
 /**
@@ -24,11 +21,8 @@ import java.util.*;
 @RequestMapping("/data")
 public class Data {
 
-    @Autowired
     private IDataService iDataService;
 
-    @Autowired
-    private ICacheService iCacheService;
 
     @RequestMapping(value = "/{genename}/{cancertype}/beeswarmnew",
             method = RequestMethod.GET,
@@ -36,14 +30,16 @@ public class Data {
     @ResponseBody
     public Operate<List<List<List<Point>>>> beeswormnew(@PathVariable("genename") String genes,
                                                         @PathVariable("cancertype") String cancertype) {
+
+
+        iDataService =(IDataService) Consumer.singleton().getBean("IDataService");
+
+        if(iDataService==null){
+            return new Operate<List<List<List<Point>>>>(false,"服务异常！",null);
+        }
+
+
         String[] strings1 = genes.split(",");
-        if (iCacheService.isDiskCached(genes, System.getProperty("user.dir") + File.separator + "cache/beesworm/")) {
-            //有缓存
-            return new Operate<List<List<List<Point>>>>(false,
-                    System.getProperty("user.dir") + File.separator + "cache/beeswormnew/" + genes,
-                    null);
-        } else {
-            //无缓存
 
             List<List<List<Point>>> allgens = new ArrayList<List<List<Point>>>();
             double x = 0.0;
@@ -74,15 +70,7 @@ public class Data {
                 allgens.add(genesteam);
             }
 
-            //初始化缓存线程
-            CacheThread cacheThread = new CacheThread(iCacheService,
-                    System.getProperty("user.dir") + File.separator + "cache/beesworm/",
-                    genes,
-                    allgens.toString());
-            //调用异步磁盘缓存
-            cacheThread.start();
             return new Operate<List<List<List<Point>>>>(true,allgens);
-        }
     }
 
 
@@ -92,6 +80,9 @@ public class Data {
     @ResponseBody
     public Operate<List<MoutainPoint>> moutain(@PathVariable("chrom") String chrom,
                                                @PathVariable("type") String type) {
+
+        iDataService =(IDataService)  Consumer.singleton().getBean("IDataService");
+
         List<MoutainPoint> moutainPoints = iDataService.moutain(chrom,type);
         float x = 0;
         for(MoutainPoint m:moutainPoints){

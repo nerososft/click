@@ -18,9 +18,15 @@
     <url-pattern>/</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>Consumer</servlet-name>
+    <servlet-class>org.nero.click.Main</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
  <filter>
      <filter-name>cors</filter-name>
-     <filter-class>org.nero.click.common.filter.CORSFilter</filter-class>
+     <filter-class>org.nero.click.common.filter.</filter-class>
    </filter>
    <filter-mapping>
      <filter-name>cors</filter-name>
