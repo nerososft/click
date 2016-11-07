@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.nero.click.admin.dao.BannerDao">
+
+    <!--/**-->
+    <!--* 添加轮播图-->
+    <!--* @param description-->
+    <!--* @param imgUrl-->
+    <!--* @param hrefUrl-->
+    <!--* @return-->
+    <!--*/-->
+    <!--int addBanner(String description, String imgUrl, String hrefUrl);-->
+    <insert id="addBanner">
+        insert into banner (description,img_url,href_url) VALUES (${description},${imgUrl},${hrefUrl})
+    </insert>
+    <!--/**-->
+    <!--* 删除轮播图-->
+    <!--* @param id-->
+    <!--* @return-->
+    <!--*/-->
+    <!--int delBanner(Long id);-->
+    <delete id="delBanner">
+        delete from banner where id = ${id}
+    </delete>
+    <!--/**-->
+    <!--* 获取轮播图-->
+    <!--* @return-->
+    <!--*/-->
+    <!--List<Banner> getBanners();-->
+
+    <select id="getBanners" resultType="org.click.admin.entity.Banner">
+        select * from banner
+    </select>
+</mapper>

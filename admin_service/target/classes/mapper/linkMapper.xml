@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.nero.click.admin.dao.LinkDao">
+
+
+    <!--/**-->
+    <!--* 添加友情链接-->
+    <!--* @param name-->
+    <!--* @param hrefUrl-->
+    <!--* @return-->
+    <!--*/-->
+    <!--int addLink(String name, String hrefUrl);-->
+    <insert id="addLink">
+        INSERT  into link (name,href_url) VALUES (${name},${hrefUrl})
+    </insert>
+
+    <!--/**-->
+    <!--* 删除友情链接-->
+    <!--* @param id-->
+    <!--* @return-->
+    <!--*/-->
+    <!--int delLink(Long id);-->
+    <delete id="delLink">
+        DELETE from link where id = ${id}
+    </delete>
+
+    <!--/**-->
+    <!--* 获取友情链接-->
+    <!--* @return-->
+    <!--*/-->
+    <!--List<Link> getLinks();-->
+    <select id="getLink" resultType="org.click.admin.entity.Link">
+        SELECT * from link
+    </select>
+
+
+</mapper>

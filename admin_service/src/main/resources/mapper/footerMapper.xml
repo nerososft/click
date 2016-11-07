@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.nero.click.admin.dao.FooterDao">
+
+
+    <!--/**-->
+    <!--* 获取页脚-->
+    <!--* @return-->
+    <!--*/-->
+    <!--Footer getFooter();-->
+    <select id="getFooter" resultType="org.click.admin.entity.Footer">
+        SELECT * from footer;
+    </select>
+
+    <!--/**-->
+    <!--* 设置页脚-->
+    <!--* @param label-->
+    <!--* @return-->
+    <!--*/-->
+    <!--int setFooter(String label);-->
+    <update id="setFooter">
+        update footer set label = ${label}
+    </update>
+</mapper>

@@ -52,6 +52,9 @@
           <element id="library" level="project" name="Maven: jline:jline:0.9.94" />
           <element id="library" level="project" name="Maven: com.github.sgroschupf:zkclient:0.1" />
           <element id="library" level="project" name="Maven: org.apache.zookeeper:zookeeper:3.3.3" />
+          <element id="archive" name="admin_parent-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="admin_parent" />
+          </element>
           <element id="archive" name="sso_parent-1.0-SNAPSHOT.jar">
             <element id="module-output" name="sso_parent" />
           </element>

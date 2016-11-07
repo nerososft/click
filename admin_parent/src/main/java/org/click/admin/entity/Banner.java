@@ -17,6 +17,12 @@ public class Banner implements Serializable {
     public Banner() {
     }
 
+    public Banner(String descrip, String imgUrl, String hrefUrl) {
+        this.descrip = descrip;
+        this.imgUrl = imgUrl;
+        this.hrefUrl = hrefUrl;
+    }
+
     public Long getId() {
         return id;
     }

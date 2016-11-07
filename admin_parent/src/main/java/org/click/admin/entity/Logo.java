@@ -6,7 +6,7 @@ import java.io.Serializable;
  * Created by root on 16-11-5.
  */
 public class Logo implements Serializable {
-    private Long id;
+    private Long   id;
     private String descript;
 
     private String hrefUrl;
@@ -14,6 +14,13 @@ public class Logo implements Serializable {
     private String imgUrl;
 
     public Logo() {
+    }
+
+
+    public Logo(String descript, String hrefUrl, String imgUrl) {
+        this.descript = descript;
+        this.hrefUrl = hrefUrl;
+        this.imgUrl = imgUrl;
     }
 
     public Long getId() {

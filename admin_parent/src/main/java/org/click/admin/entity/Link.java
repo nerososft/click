@@ -13,6 +13,11 @@ public class Link implements Serializable{
     public Link() {
     }
 
+    public Link(String name, String hrefUrl) {
+        this.name = name;
+        this.hrefUrl = hrefUrl;
+    }
+
     public Long getId() {
         return id;
     }

@@ -1,6 +1,5 @@
 package org.nero.click.admin.service;
 
-import org.apache.zookeeper.KeeperException;
 import org.click.admin.entity.*;
 import org.nero.click.sso.dto.Operate;
 

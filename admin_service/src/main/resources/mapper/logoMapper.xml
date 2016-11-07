@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.nero.click.admin.dao.LogoDao">
+    <!--/**-->
+    <!--* 添加友情logo-->
+    <!--* @param description-->
+    <!--* @param hrefUrl-->
+    <!--* @param imgUrl-->
+    <!--* @return-->
+    <!--*/-->
+    <!--int addLogo(String description, String hrefUrl, String imgUrl);-->
+
+    <insert id="addLogo">
+        INSERT  into logo (descrption,href_url,img_url) VALUES (${description},${hrefUrl},${imgUrl})
+    </insert>
+
+    <!--/**-->
+    <!--* 删除友情logo-->
+    <!--* @param id-->
+    <!--* @return-->
+    <!--*/-->
+    <!--int delLogo(Long id);-->
+
+    <delete id="delLogo">
+        DELETE from logo where id = ${id}
+    </delete>
+
+    <!--/**-->
+    <!--* 获取友情logo-->
+    <!--* @return-->
+    <!--*/-->
+    <!--List<Logo> getLogos();-->
+    <select id="getLogos" resultType="org.click.admin.entity.Logo">
+        SELECT * from logo
+    </select>
+</mapper>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.nero.click.admin.dao.HeaderDao">
+
+
+    <!--/**-->
+    <!--* 获取网页头-->
+    <!--* @return-->
+    <!--*/-->
+    <!--Header getHeader();-->
+    <select id="getHeader" resultType="org.click.admin.entity.Header">
+        SELECT * FROM header
+    </select>
+
+    <!--/**-->
+    <!--* 设置网页头-->
+    <!--* @param title-->
+    <!--* @param label-->
+    <!--* @return-->
+    <!--*/-->
+    <!--int modifyHeader(String title, String label);-->
+
+    <update id="modifyHeader">
+        UPDATE header set title = ${title},label = ${label}
+    </update>
+    <!--/**-->
+    <!--* 添加-->
+    <!--* @param title-->
+    <!--* @param label-->
+    <!--* @return-->
+    <!--*/-->
+    <!--int addHeader(String title, String label);-->
+    <!---->
+    <insert id="addHeader">
+        INSERT header (title,label) VALUES (${title},${label})
+    </insert>
+</mapper>

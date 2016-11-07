@@ -13,6 +13,11 @@ public class Header implements Serializable {
     public Header() {
     }
 
+    public Header(String title, String label) {
+        this.title = title;
+        this.label = label;
+    }
+
     public String getTitle() {
         return title;
     }

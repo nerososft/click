@@ -11,6 +11,10 @@ public class Footer implements Serializable {
     public Footer() {
     }
 
+    public Footer(String label) {
+        this.label = label;
+    }
+
     public String getLabel() {
         return label;
     }
