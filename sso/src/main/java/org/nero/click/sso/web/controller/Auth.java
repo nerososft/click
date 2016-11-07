@@ -30,7 +30,7 @@ import java.security.NoSuchAlgorithmException;
  */
 @Controller
 @RestController
-@RequestMapping("sso")
+@RequestMapping("/sso")
 public class Auth {
 
     @Autowired

@@ -17,11 +17,13 @@
     <servlet-name>click-admin-dispatcher</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
+
   <servlet>
     <servlet-name>Consumer</servlet-name>
     <servlet-class>org.nero.click.admin.Main</servlet-class>
     <load-on-startup>1</load-on-startup>
   </servlet>
+
   <filter>
     <filter-name>cors</filter-name>
     <filter-class>org.nero.click.common.filter.CORSFilter</filter-class>

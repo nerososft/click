@@ -14,7 +14,9 @@ public enum CONSTANT {
     PAGE_SET_SUCCESS("设置成功"),
     PAGE_DEL_SUCCESS("删除成功"),
     PAGE_ADD_SUCCESS("添加成功"),
-    PAGE_ADD_FAILED("添加失败");
+    PAGE_ADD_FAILED("添加失败"),
+
+    ADMIN_AUTH_FAILED("管理员认证失败");
 
     public String DESC;
     CONSTANT(String desc){

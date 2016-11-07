@@ -1,5 +1,6 @@
 package org.nero.click.admin.dao;
 
+import org.apache.ibatis.annotations.Param;
 import org.click.admin.entity.Link;
 
 import java.util.List;
@@ -18,7 +19,8 @@ public interface LinkDao {
      * @param hrefUrl
      * @return
      */
-    int addLink(String name, String hrefUrl);
+    int addLink(@Param("name") String name,
+                @Param("hrefUrl") String hrefUrl);
 
     /**
      * 删除友情链接

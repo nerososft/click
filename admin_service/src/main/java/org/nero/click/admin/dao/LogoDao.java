@@ -1,5 +1,6 @@
 package org.nero.click.admin.dao;
 
+import org.apache.ibatis.annotations.Param;
 import org.click.admin.entity.Logo;
 
 import java.util.List;
@@ -19,7 +20,9 @@ public interface LogoDao {
      * @param imgUrl
      * @return
      */
-    int addLogo(String description, String hrefUrl, String imgUrl);
+    int addLogo(@Param("description") String description,
+                @Param("hrefUrl") String hrefUrl,
+                @Param("imgUrl") String imgUrl);
 
     /**
      * 删除友情logo

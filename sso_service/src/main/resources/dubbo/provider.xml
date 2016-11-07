@@ -14,9 +14,14 @@
     <dubbo:protocol name="dubbo" port="20881" />
     <!-- which service interface do we expose? -->
     <dubbo:service interface="org.nero.click.sso.service.IUserService" ref="IUserService" />
+    <dubbo:service interface="org.nero.click.sso.service.IAuthService" ref="IAuthService" />
     <!-- bean配置 -->
     <bean id="IUserService"
           class="org.nero.click.sso.service.impl.UserServiceImpl">
+    </bean>
+    <bean id="IAuthService"
+          class="org.nero.click.sso.service.impl.AuthServiceImpl">
+
     </bean>
 
 

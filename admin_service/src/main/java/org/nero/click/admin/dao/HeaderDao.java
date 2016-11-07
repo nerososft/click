@@ -1,5 +1,6 @@
 package org.nero.click.admin.dao;
 
+import org.apache.ibatis.annotations.Param;
 import org.click.admin.entity.Header;
 
 /**
@@ -21,7 +22,8 @@ public interface HeaderDao {
      * @param label
      * @return
      */
-    int modifyHeader(String title, String label);
+    int modifyHeader(@Param("title") String title,
+                     @Param("label") String label);
 
     /**
      * 添加
@@ -29,5 +31,6 @@ public interface HeaderDao {
      * @param label
      * @return
      */
-    int addHeader(String title, String label);
+    int addHeader(@Param("title") String title,
+                  @Param("label") String label);
 }

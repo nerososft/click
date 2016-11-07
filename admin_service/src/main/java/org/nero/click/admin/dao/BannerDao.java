@@ -1,5 +1,6 @@
 package org.nero.click.admin.dao;
 
+import org.apache.ibatis.annotations.Param;
 import org.click.admin.entity.Banner;
 import org.nero.click.sso.dto.Operate;
 
@@ -20,7 +21,9 @@ public interface BannerDao {
      * @param hrefUrl
      * @return
      */
-    int addBanner(String description, String imgUrl, String hrefUrl);
+    int addBanner(@Param("description") String description,
+                  @Param("imgUrl") String imgUrl,
+                  @Param("hrefUrl") String hrefUrl);
 
     /**
      * 删除轮播图
