@@ -33,9 +33,7 @@ import java.security.NoSuchAlgorithmException;
 @RequestMapping("/sso")
 public class Auth {
 
-    @Autowired
     private IUserService userService;
-
 
 
     /**

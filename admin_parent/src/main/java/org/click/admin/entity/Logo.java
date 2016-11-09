@@ -7,7 +7,7 @@ import java.io.Serializable;
  */
 public class Logo implements Serializable {
     private Long   id;
-    private String descript;
+    private String descrip;
 
     private String hrefUrl;
 
@@ -17,8 +17,8 @@ public class Logo implements Serializable {
     }
 
 
-    public Logo(String descript, String hrefUrl, String imgUrl) {
-        this.descript = descript;
+    public Logo(String descrip, String hrefUrl, String imgUrl) {
+        this.descrip = descrip;
         this.hrefUrl = hrefUrl;
         this.imgUrl = imgUrl;
     }
@@ -31,12 +31,12 @@ public class Logo implements Serializable {
         this.id = id;
     }
 
-    public String getDescript() {
-        return descript;
+    public String getdescrip() {
+        return descrip;
     }
 
-    public void setDescript(String descript) {
-        this.descript = descript;
+    public void setdescrip(String descrip) {
+        this.descrip = descrip;
     }
 
     public String getHrefUrl() {
@@ -59,7 +59,7 @@ public class Logo implements Serializable {
     public String toString() {
         return "Logo{" +
                 "id=" + id +
-                ", descript='" + descript + '\'' +
+                ", descrip='" + descrip + '\'' +
                 ", hrefUrl='" + hrefUrl + '\'' +
                 ", imgUrl='" + imgUrl + '\'' +
                 '}';

@@ -13,7 +13,7 @@
     <!--*/-->
     <!--int addLink(String name, String hrefUrl);-->
     <insert id="addLink">
-        INSERT  into link (name,href_url) VALUES (${name},${hrefUrl})
+        INSERT  into link (name,href_url) VALUES ('${name}','${hrefUrl}')
     </insert>
 
     <!--/**-->

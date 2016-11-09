@@ -10,6 +10,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.click.admin.CONSTANT.CONSTANT.ADMIN_AUTH_FAILED;
 
 /**
@@ -20,29 +23,40 @@ import static org.click.admin.CONSTANT.CONSTANT.ADMIN_AUTH_FAILED;
  */
 @Controller
 @RestController
-@RequestMapping("/page/")
+@RequestMapping("/page")
 public class Page {
 
     private IPageService iPageService;
+
     private IAuthService iAuthService;
 
-    @RequestMapping(value = "{random}/page",
+
+
+    @RequestMapping(value = "/{random}/get",
             method = RequestMethod.GET,
             produces = {"application/json;charset=UTF-8"})
     @ResponseBody
     public Operate<Layout> getPage(){
         iPageService = (IPageService) Consumer.singleton().getBean("IPageService");
 
-        return new Operate<Layout>(true,new Layout(
-                iPageService.getHeader().getData(),
-                iPageService.getFooter().getData(),
-                iPageService.getLinks().getData(),
-                iPageService.getLogos().getData(),
-                iPageService.getBanners().getData()
-        ));
+        try {
+            return new Operate<Layout>(true, new Layout(
+                    iPageService.getHeader().getData(),
+                    iPageService.getFooter().getData(),
+                    iPageService.getLinks().getData(),
+                    iPageService.getLogos().getData(),
+                    iPageService.getBanners().getData()
+            ));
+        }catch (NullPointerException e){
+            return new Operate<Layout>(false,new Layout(
+                    new Header("标题","标签"),
+                    new Footer("页脚"),
+                    null,null,null
+            ));
+        }
     }
 
-    @RequestMapping(value = "{uid}/{token}/auth/{title}/{label}/setheader",
+    @RequestMapping(value = "/header/{uid}/{token}/auth/{title}/{label}/set",
             method = RequestMethod.GET,
             produces = {"application/json;charset=UTF-8"})
     @ResponseBody
@@ -59,7 +73,7 @@ public class Page {
     }
 
 
-    @RequestMapping(value = "{uid}/{token}/auth//{label}/setfooter",
+    @RequestMapping(value = "/footer/{uid}/{token}/auth/{label}/set",
             method = RequestMethod.GET,
             produces = {"application/json;charset=UTF-8"})
     @ResponseBody
@@ -75,7 +89,7 @@ public class Page {
 
     }
 
-    @RequestMapping(value = "{uid}/{token}/auth/{name}/{hrefUrl}/addlink",
+    @RequestMapping(value = "/link/{uid}/{token}/auth/{name}/{hrefUrl}/add",
             method = RequestMethod.GET,
             produces = {"application/json;charset=UTF-8"})
     @ResponseBody
@@ -91,7 +105,7 @@ public class Page {
         }
     }
 
-    @RequestMapping(value = "{uid}/{token}/auth/{id}/dellink",
+    @RequestMapping(value = "/link/{uid}/{token}/auth/{id}/delete",
             method = RequestMethod.GET,
             produces = {"application/json;charset=UTF-8"})
     @ResponseBody
@@ -107,7 +121,7 @@ public class Page {
     }
 
 
-    @RequestMapping(value = "{uid}/{token}/auth/{description}/{hrefUrl}/{imgUrl}/addlogo",
+    @RequestMapping(value = "/logo/{uid}/{token}/auth/{description}/{hrefUrl}/{imgUrl}/add",
             method = RequestMethod.GET,
             produces = {"application/json;charset=UTF-8"})
     @ResponseBody
@@ -125,7 +139,7 @@ public class Page {
     }
 
 
-    @RequestMapping(value = "{uid}/{token}/auth/{id}/dellogo",
+    @RequestMapping(value = "/logo/{uid}/{token}/auth/{id}/delete",
             method = RequestMethod.GET,
             produces = {"application/json;charset=UTF-8"})
     @ResponseBody
@@ -140,7 +154,7 @@ public class Page {
         }
     }
 
-    @RequestMapping(value = "{uid}/{token}/auth/{description}/{hrefUrl}/{imgUrl}/addbanner",
+    @RequestMapping(value = "/banner/{uid}/{token}/auth/{description}/{hrefUrl}/{imgUrl}/add",
             method = RequestMethod.GET,
             produces = {"application/json;charset=UTF-8"})
     @ResponseBody
@@ -157,7 +171,7 @@ public class Page {
         }
     }
 
-    @RequestMapping(value = "{uid}/{token}/auth/{id}/delbanner",
+    @RequestMapping(value = "/banner/{uid}/{token}/auth/{id}/delete",
             method = RequestMethod.GET,
             produces = {"application/json;charset=UTF-8"})
     @ResponseBody

@@ -29,7 +29,7 @@ public interface LogoDao {
      * @param id
      * @return
      */
-    int delLogo(Long id);
+    int delLogo(@Param("id") long id);
 
     /**
      * 获取友情logo

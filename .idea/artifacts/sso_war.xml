@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact type="war" name="sso:war">
-    <output-path>$PROJECT_DIR$/out/artifacts/sso_war</output-path>
+  <artifact type="war" build-on-make="true" name="sso:war">
+    <output-path>$PROJECT_DIR$/build/web/sso_war</output-path>
     <root id="archive" name="click.war">
       <element id="artifact" artifact-name="sso:war exploded" />
     </root>

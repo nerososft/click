@@ -21,6 +21,6 @@
     <!--*/-->
     <!--int setFooter(String label);-->
     <update id="setFooter">
-        update footer set label = ${label}
+        update footer set label = '${label}'
     </update>
 </mapper>

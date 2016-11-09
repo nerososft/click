@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="data_service:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/data_service_jar</output-path>
+    <output-path>$PROJECT_DIR$/build/lib/data_service_jar</output-path>
     <root id="archive" name="data_service.jar">
       <element id="module-output" name="data_service" />
       <element id="module-output" name="common" />

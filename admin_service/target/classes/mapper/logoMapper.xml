@@ -13,7 +13,7 @@
     <!--int addLogo(String description, String hrefUrl, String imgUrl);-->
 
     <insert id="addLogo">
-        INSERT  into logo (descrption,href_url,img_url) VALUES (${description},${hrefUrl},${imgUrl})
+        INSERT  into logo (descrip,href_url,img_url) VALUES ('${description}','${hrefUrl}','${imgUrl}')
     </insert>
 
     <!--/**-->

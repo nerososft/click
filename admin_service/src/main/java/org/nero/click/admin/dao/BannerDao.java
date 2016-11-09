@@ -30,7 +30,7 @@ public interface BannerDao {
      * @param id
      * @return
      */
-    int delBanner(Long id);
+    int delBanner(@Param("id") long id);
 
     /**
      * 获取轮播图

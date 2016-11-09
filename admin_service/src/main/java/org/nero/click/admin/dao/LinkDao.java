@@ -27,7 +27,7 @@ public interface LinkDao {
      * @param id
      * @return
      */
-    int delLink(Long id);
+    int delLink(@Param("id") long id);
 
     /**
      * 获取友情链接

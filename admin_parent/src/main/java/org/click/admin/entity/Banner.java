@@ -6,7 +6,7 @@ import java.io.Serializable;
  * Created by root on 16-11-5.
  */
 public class Banner implements Serializable {
-    private Long id;
+    private long id;
 
     private String descrip;
 
@@ -23,11 +23,11 @@ public class Banner implements Serializable {
         this.hrefUrl = hrefUrl;
     }
 
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 

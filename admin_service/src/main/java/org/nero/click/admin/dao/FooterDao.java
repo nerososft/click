@@ -1,5 +1,6 @@
 package org.nero.click.admin.dao;
 
+import org.apache.ibatis.annotations.Param;
 import org.click.admin.entity.Footer;
 
 /**
@@ -21,5 +22,5 @@ public interface FooterDao {
      * @param label
      * @return
      */
-    int setFooter(String label);
+    int setFooter(@Param("label") String label);
 }

@@ -13,7 +13,7 @@
     <!--*/-->
     <!--int addBanner(String description, String imgUrl, String hrefUrl);-->
     <insert id="addBanner">
-        insert into banner (description,img_url,href_url) VALUES (${description},${imgUrl},${hrefUrl})
+        insert into banner (descrip,img_url,href_url) VALUES ('${description}','${imgUrl}','${hrefUrl}')
     </insert>
     <!--/**-->
     <!--* 删除轮播图-->
@@ -21,7 +21,7 @@
     <!--* @return-->
     <!--*/-->
     <!--int delBanner(Long id);-->
-    <delete id="delBanner">
+    <delete id="delBanner" parameterType="Long">
         delete from banner where id = ${id}
     </delete>
     <!--/**-->
