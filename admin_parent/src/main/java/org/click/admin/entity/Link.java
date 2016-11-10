@@ -6,7 +6,7 @@ import java.io.Serializable;
  * Created by root on 16-11-5.
  */
 public class Link implements Serializable{
-    private Long id;
+    private long id;
     private String name;
     private String hrefUrl;
 
@@ -18,11 +18,11 @@ public class Link implements Serializable{
         this.hrefUrl = hrefUrl;
     }
 
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 

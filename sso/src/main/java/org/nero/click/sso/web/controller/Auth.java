@@ -10,7 +10,6 @@ import org.nero.click.common.utils.verifycode.Verify;
 import org.nero.click.sso.dto.Operate;
 import org.nero.click.sso.entity.Authpair;
 import org.nero.click.sso.service.IUserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -90,11 +89,11 @@ public class Auth {
 
         Operate<User> userOperate;
         try {
-            authCode(code,request,response);
+            //authCode(code,request,response);
             userOperate = userService.Login(new Authpair(email,password));
         }catch (VerifyFailedException e) {
             userOperate = new Operate<User>(false, e.getMessage(), null);
-        } catch(LoginException e){
+        }catch(LoginException e){
             userOperate = new Operate<User>(false,e.getMessage(),null);
         }catch (NoSuchAlgorithmException e) {
             userOperate = new Operate<User>(false,e.getMessage(),null);

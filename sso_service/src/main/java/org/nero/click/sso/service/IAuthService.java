@@ -14,5 +14,5 @@ public interface IAuthService {
      * @param token
      * @return
      */
-    boolean auth(Long id,String token);
+    boolean auth(long id,String token);
 }

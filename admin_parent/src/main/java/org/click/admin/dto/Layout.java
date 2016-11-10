@@ -18,6 +18,8 @@ public class Layout implements Serializable {
     private List<Logo> logos;
     private List<Banner> banners;
 
+    public Layout() {
+    }
 
     public Layout(Header header, Footer footer, List<Link> links, List<Logo> logos, List<Banner> banners) {
         this.header = header;

@@ -26,11 +26,11 @@ public interface UserDao {
                @Param("token") String token,
                @Param("time") java.sql.Timestamp time);
 
-    int active(long id);
+    int active(@Param("id") long id);
 
-    User query(long id);
+    User query(@Param("id") long id);
 
-    User queryByToken(String token);
+    User queryByToken(@Param("token") String token);
 
-    User queryByEmail(String email);
+    User queryByEmail(@Param("email") String email);
 }

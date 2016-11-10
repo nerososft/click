@@ -3,15 +3,13 @@ package org.nero.click.admin.web.controller;
 import org.click.admin.dto.Layout;
 import org.click.admin.entity.*;
 import org.nero.click.admin.Consumer;
-import org.nero.click.admin.service.IAuthService;
+import org.nero.click.sso.service.IAuthService;
 import org.nero.click.admin.service.IPageService;
 import org.nero.click.sso.dto.Operate;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import java.util.ArrayList;
-import java.util.List;
 
 import static org.click.admin.CONSTANT.CONSTANT.ADMIN_AUTH_FAILED;
 
@@ -31,28 +29,59 @@ public class Page {
     private IAuthService iAuthService;
 
 
-
     @RequestMapping(value = "/{random}/get",
             method = RequestMethod.GET,
             produces = {"application/json;charset=UTF-8"})
     @ResponseBody
-    public Operate<Layout> getPage(){
-        iPageService = (IPageService) Consumer.singleton().getBean("IPageService");
-
+    public Operate<Layout> page() {
         try {
-            return new Operate<Layout>(true, new Layout(
-                    iPageService.getHeader().getData(),
-                    iPageService.getFooter().getData(),
-                    iPageService.getLinks().getData(),
-                    iPageService.getLogos().getData(),
-                    iPageService.getBanners().getData()
-            ));
-        }catch (NullPointerException e){
-            return new Operate<Layout>(false,new Layout(
-                    new Header("标题","标签"),
-                    new Footer("页脚"),
-                    null,null,null
-            ));
+            iPageService = (IPageService) Consumer.singleton().getBean("IPageService");
+            try {
+                return new Operate<Layout>(true, new Layout(
+                        iPageService.getHeader().getData(),
+                        iPageService.getFooter().getData(),
+                        iPageService.getLinks().getData(),
+                        iPageService.getLogos().getData(),
+                        iPageService.getBanners().getData()
+                ));
+            } catch (NullPointerException e) {
+                return new Operate<Layout>(false, "connection failed!", new Layout(
+                        null, null,
+                        null, null, null
+                ));
+            }
+        } catch (IllegalStateException e) {
+            return new Operate<Layout>(false, "service doesn't work,no provider", null);
+        }
+    }
+    @RequestMapping(value = "{uid}/{token}/auth/{random}/get",
+            method = RequestMethod.GET,
+            produces = {"application/json;charset=UTF-8"})
+    @ResponseBody
+    public Operate<Layout> getPage(@PathVariable("uid") long id,
+                                   @PathVariable("token") String token) {
+        try {
+            iPageService = (IPageService) Consumer.singleton().getBean("IPageService");
+            iAuthService = (IAuthService) Consumer.singleton().getBean("IAuthService");
+            if (!iAuthService.auth(id, token)) {
+                return new Operate<Layout>(false, ADMIN_AUTH_FAILED.DESC, null);
+            }
+            try {
+                return new Operate<Layout>(true, new Layout(
+                        iPageService.getHeader().getData(),
+                        iPageService.getFooter().getData(),
+                        iPageService.getLinks().getData(),
+                        iPageService.getLogos().getData(),
+                        iPageService.getBanners().getData()
+                ));
+            } catch (NullPointerException e) {
+                return new Operate<Layout>(false, "connection failed!", new Layout(
+                        null, null,
+                        null, null, null
+                ));
+            }
+        } catch (IllegalStateException e) {
+            return new Operate<Layout>(false, "service doesn't work,no provider", null);
         }
     }
 
@@ -60,15 +89,21 @@ public class Page {
             method = RequestMethod.GET,
             produces = {"application/json;charset=UTF-8"})
     @ResponseBody
-    public  Operate<Header> setHeader(@PathVariable("uid") Long id,
-                                      @PathVariable("token") String token,
-                                      @PathVariable("title") String title,
-                                      @PathVariable("label") String label){
-        iAuthService = (IAuthService) Consumer.singleton().getBean("IAuthService");
-        if(!iAuthService.auth(id,token)){
-            return new Operate<Header>(false,ADMIN_AUTH_FAILED.DESC,null);
-        }else{
-            return iPageService.setHeader(title,label);
+    public Operate<Header> setHeader(@PathVariable("uid") long id,
+                                     @PathVariable("token") String token,
+                                     @PathVariable("title") String title,
+                                     @PathVariable("label") String label) {
+        try {
+            iPageService = (IPageService) Consumer.singleton().getBean("IPageService");
+
+            iAuthService = (IAuthService) Consumer.singleton().getBean("IAuthService");
+            if (!iAuthService.auth(id, token)) {
+                return new Operate<Header>(false, ADMIN_AUTH_FAILED.DESC, null);
+            } else {
+                return iPageService.setHeader(title,label);
+            }
+        } catch (IllegalStateException e) {
+            return new Operate<Header>(false, "service doesn't work,no provider", null);
         }
     }
 
@@ -77,14 +112,20 @@ public class Page {
             method = RequestMethod.GET,
             produces = {"application/json;charset=UTF-8"})
     @ResponseBody
-    public  Operate<Footer> setFooter(@PathVariable("uid") Long id,
-                                      @PathVariable("token") String token,
-                                      @PathVariable("label") String label){
-        iAuthService = (IAuthService) Consumer.singleton().getBean("IAuthService");
-        if(!iAuthService.auth(id,token)){
-            return new Operate<Footer>(false,ADMIN_AUTH_FAILED.DESC,null);
-        }else{
-            return iPageService.setFooter(label);
+    public Operate<Footer> setFooter(@PathVariable("uid") Long id,
+                                     @PathVariable("token") String token,
+                                     @PathVariable("label") String label) {
+        try {
+            iPageService = (IPageService) Consumer.singleton().getBean("IPageService");
+
+            iAuthService = (IAuthService) Consumer.singleton().getBean("IAuthService");
+            if (!iAuthService.auth(id, token)) {
+                return new Operate<Footer>(false, ADMIN_AUTH_FAILED.DESC, null);
+            } else {
+                return iPageService.setFooter(label);
+            }
+        } catch (IllegalStateException e) {
+            return new Operate<Footer>(false, "service doesn't work,no provider", null);
         }
 
     }
@@ -93,15 +134,21 @@ public class Page {
             method = RequestMethod.GET,
             produces = {"application/json;charset=UTF-8"})
     @ResponseBody
-    public  Operate<Link> addLink(@PathVariable("uid") Long id,
-                                  @PathVariable("token") String token,
-                                  @PathVariable("name") String name,
-                                  @PathVariable("hrefUrl") String hrefUrl){
-        iAuthService = (IAuthService) Consumer.singleton().getBean("IAuthService");
-        if(!iAuthService.auth(id,token)){
-            return new Operate<Link>(false,ADMIN_AUTH_FAILED.DESC,null);
-        }else{
-            return iPageService.addLink(name,hrefUrl);
+    public Operate<Link> addLink(@PathVariable("uid") Long id,
+                                 @PathVariable("token") String token,
+                                 @PathVariable("name") String name,
+                                 @PathVariable("hrefUrl") String hrefUrl) {
+        try {
+            iPageService = (IPageService) Consumer.singleton().getBean("IPageService");
+
+            iAuthService = (IAuthService) Consumer.singleton().getBean("IAuthService");
+            if (!iAuthService.auth(id, token)) {
+                return new Operate<Link>(false, ADMIN_AUTH_FAILED.DESC, null);
+            } else {
+                return iPageService.addLink(name, hrefUrl);
+            }
+        } catch  (IllegalStateException e) {
+            return new Operate<Link>(false, "service doesn't work,no provider", null);
         }
     }
 
@@ -111,12 +158,18 @@ public class Page {
     @ResponseBody
     public Operate<Link> delLink(@PathVariable("uid") Long uid,
                                  @PathVariable("token") String token,
-                                 @PathVariable("id") Long id){
-        iAuthService = (IAuthService) Consumer.singleton().getBean("IAuthService");
-        if(!iAuthService.auth(uid,token)){
-            return new Operate<Link>(false,ADMIN_AUTH_FAILED.DESC,null);
-        }else{
-            return iPageService.delLink(id);
+                                 @PathVariable("id") Long id) {
+        try {
+            iPageService = (IPageService) Consumer.singleton().getBean("IPageService");
+
+            iAuthService = (IAuthService) Consumer.singleton().getBean("IAuthService");
+            if (!iAuthService.auth(uid, token)) {
+                return new Operate<Link>(false, ADMIN_AUTH_FAILED.DESC, null);
+            } else {
+                return iPageService.delLink(id);
+            }
+        } catch (IllegalStateException e) {
+            return new Operate<Link>(false, "service doesn't work,no provider", null);
         }
     }
 
@@ -125,16 +178,22 @@ public class Page {
             method = RequestMethod.GET,
             produces = {"application/json;charset=UTF-8"})
     @ResponseBody
-    public  Operate<Logo> addLogo(@PathVariable("uid") Long uid,
-                                  @PathVariable("token") String token,
-                                  @PathVariable("description") String description,
-                                  @PathVariable("hrefUrl") String hrefUrl,
-                                  @PathVariable("imgUrl") String imgUrl){
-        iAuthService = (IAuthService) Consumer.singleton().getBean("IAuthService");
-        if(!iAuthService.auth(uid,token)){
-            return new Operate<Logo>(false,ADMIN_AUTH_FAILED.DESC,null);
-        }else{
-            return iPageService.addLogo(description,hrefUrl,imgUrl);
+    public Operate<Logo> addLogo(@PathVariable("uid") Long uid,
+                                 @PathVariable("token") String token,
+                                 @PathVariable("description") String description,
+                                 @PathVariable("hrefUrl") String hrefUrl,
+                                 @PathVariable("imgUrl") String imgUrl) {
+        try {
+            iPageService = (IPageService) Consumer.singleton().getBean("IPageService");
+
+            iAuthService = (IAuthService) Consumer.singleton().getBean("IAuthService");
+            if (!iAuthService.auth(uid, token)) {
+                return new Operate<Logo>(false, ADMIN_AUTH_FAILED.DESC, null);
+            } else {
+                return iPageService.addLogo(description, hrefUrl, imgUrl);
+            }
+        } catch (IllegalStateException e) {
+            return new Operate<Logo>(false, "service doesn't work,no provider", null);
         }
     }
 
@@ -143,14 +202,20 @@ public class Page {
             method = RequestMethod.GET,
             produces = {"application/json;charset=UTF-8"})
     @ResponseBody
-    public  Operate<Logo> delLogo(@PathVariable("uid") Long uid,
-                                  @PathVariable("token") String token,
-                                  @PathVariable("id") Long id){
-        iAuthService = (IAuthService) Consumer.singleton().getBean("IAuthService");
-        if(!iAuthService.auth(uid,token)){
-            return new Operate<Logo>(false,ADMIN_AUTH_FAILED.DESC,null);
-        }else{
-            return iPageService.delLogo(id);
+    public Operate<Logo> delLogo(@PathVariable("uid") Long uid,
+                                 @PathVariable("token") String token,
+                                 @PathVariable("id") Long id) {
+        try {
+            iPageService = (IPageService) Consumer.singleton().getBean("IPageService");
+
+            iAuthService = (IAuthService) Consumer.singleton().getBean("IAuthService");
+            if (!iAuthService.auth(uid, token)) {
+                return new Operate<Logo>(false, ADMIN_AUTH_FAILED.DESC, null);
+            } else {
+                return iPageService.delLogo(id);
+            }
+        } catch (IllegalStateException e) {
+            return new Operate<Logo>(false, "service doesn't work,no provider", null);
         }
     }
 
@@ -162,12 +227,18 @@ public class Page {
                                      @PathVariable("token") String token,
                                      @PathVariable("description") String description,
                                      @PathVariable("hrefUrl") String hrefUrl,
-                                     @PathVariable("imgUrl") String imgUrl){
-        iAuthService = (IAuthService) Consumer.singleton().getBean("IAuthService");
-        if(!iAuthService.auth(uid,token)){
-            return new Operate<Banner>(false,ADMIN_AUTH_FAILED.DESC,null);
-        }else{
-            return iPageService.addBanner(description,imgUrl,hrefUrl);
+                                     @PathVariable("imgUrl") String imgUrl) {
+        try {
+            iPageService = (IPageService) Consumer.singleton().getBean("IPageService");
+
+            iAuthService = (IAuthService) Consumer.singleton().getBean("IAuthService");
+            if (!iAuthService.auth(uid, token)) {
+                return new Operate<Banner>(false, ADMIN_AUTH_FAILED.DESC, null);
+            } else {
+                return iPageService.addBanner(description, imgUrl, hrefUrl);
+            }
+        } catch (IllegalStateException e) {
+            return new Operate<Banner>(false, "service doesn't work,no provider", null);
         }
     }
 
@@ -177,12 +248,18 @@ public class Page {
     @ResponseBody
     public Operate<Banner> delBanner(@PathVariable("uid") Long uid,
                                      @PathVariable("token") String token,
-                                     @PathVariable("id") Long id){
-        iAuthService = (IAuthService) Consumer.singleton().getBean("IAuthService");
-        if(!iAuthService.auth(uid,token)){
-            return new Operate<Banner>(false,ADMIN_AUTH_FAILED.DESC,null);
-        }else{
-            return iPageService.delBanner(id);
+                                     @PathVariable("id") Long id) {
+        try {
+            iPageService = (IPageService) Consumer.singleton().getBean("IPageService");
+
+            iAuthService = (IAuthService) Consumer.singleton().getBean("IAuthService");
+            if (!iAuthService.auth(uid, token)) {
+                return new Operate<Banner>(false, ADMIN_AUTH_FAILED.DESC, null);
+            } else {
+                return iPageService.delBanner(id);
+            }
+        } catch (IllegalStateException e) {
+            return new Operate<Banner>(false, "service doesn't work,no provider", null);
         }
     }
 

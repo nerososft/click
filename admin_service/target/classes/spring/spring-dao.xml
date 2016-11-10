@@ -20,7 +20,7 @@
         <property name="maxPoolSize" value="30"/>
         <property name="minPoolSize" value="10"/>
         <property name="autoCommitOnClose" value="false"/>
-        <property name="checkoutTimeout" value="1000"/>
+        <property name="checkoutTimeout" value="100000"/>
         <property name="acquireRetryAttempts" value="2"/>
 
     </bean>

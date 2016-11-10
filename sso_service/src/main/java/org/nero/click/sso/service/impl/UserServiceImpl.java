@@ -44,7 +44,7 @@ public class UserServiceImpl implements IUserService {
                     user.getPassword(),
                     user.getEmail(),
                     user.getPhone(),
-                    new MD5().EncoderByMd5(new RandomString().getRandomString(128)),
+                    new MD5().EncoderByMd5(new RandomString().getRandomString(128)).replaceAll("/","_"),
                     user.getCtime()) < 1) {
                 throw new LoginException("登陆失败");
             }else{

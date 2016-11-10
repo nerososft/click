@@ -17,7 +17,7 @@ public class AuthServiceImpl implements IAuthService {
 
     @Autowired private UserDao userDao;
 
-    public boolean auth(Long id, String token) {
+    public boolean auth(long id, String token) {
 
         User user  = userDao.queryByToken(token);
         if(user!=null){

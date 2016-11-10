@@ -21,7 +21,6 @@
     </bean>
     <bean id="IAuthService"
           class="org.nero.click.sso.service.impl.AuthServiceImpl">
-
     </bean>
 
 
