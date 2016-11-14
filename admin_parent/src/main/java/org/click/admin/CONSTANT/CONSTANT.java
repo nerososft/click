@@ -16,7 +16,12 @@ public enum CONSTANT {
     PAGE_ADD_SUCCESS("添加成功"),
     PAGE_ADD_FAILED("添加失败"),
 
-    ADMIN_AUTH_FAILED("管理员认证失败");
+    ADMIN_AUTH_FAILED("管理员认证失败"),
+
+    FILE_NULL("文件为空"),
+    FILE_FORMAT_UNSUPPORED("文件格式不允许上传"),
+    FILE_ERROR("未知的文件错误"),
+    FILE_UPLOAD_SUCCESS("文件上传成功");
 
     public String DESC;
     CONSTANT(String desc){

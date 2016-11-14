@@ -25,20 +25,28 @@ create table if not exists news(
 )Engine=InnoDB;
 
 
+
+
 create table if not exists  header(
   title varchar(64) not null primary key,
   label VARCHAR(64)
 )Engine=InnoDB;
 
+
+
 create table if not exists footer(
   label VARCHAR(128) PRIMARY KEY
 )Engine=InnoDB;
+
+
 
 create table if not exists  link(
   id INT(32) NOT NULL PRIMARY  KEY auto_increment,
   name VARCHAR (64) not NULL,
   href_url VARCHAR(128) NOT NULL
 )Engine=InnoDB;
+
+
 
 create table if not exists logo(
   id INT(32) NOT  NULL PRIMARY KEY auto_increment,
@@ -47,6 +55,8 @@ create table if not exists logo(
   img_url VARCHAR(128) NOT NULL
 )Engine=InnoDB;
 
+
+
 create table if not exists banner(
   id INT(32) not NULL PRIMARY  KEY auto_increment,
   descrip VARCHAR(64),
@@ -54,3 +64,12 @@ create table if not exists banner(
   img_url VARCHAR(128) NOT NULL
 )Engine=InnoDB;
 
+
+#可拔插数据分析模块/组件
+create table if not exists module(
+  module_id int(32) not null PRIMARY KEY AUTO_INCREMENT,
+  module_name VARCHAR(64) not null,
+  module_desc VARCHAR(64) ,
+  module_url VARCHAR(128) not null,
+  module_img_url VARCHAR(128) not null
+)Engine=InnoDB;

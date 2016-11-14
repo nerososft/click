@@ -5,7 +5,6 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-
 /**
  * Author :  root
  * Email  :  nerosoft@outlook.com
@@ -18,7 +17,7 @@ public class BannerDaoTest {
 
     @Autowired
     private BannerDao bannerDao;
-
+    
     @org.junit.Test
     public void addBanner() throws Exception {
         int add = bannerDao.addBanner("描述2","img","href");
@@ -43,6 +42,7 @@ public class BannerDaoTest {
     @org.junit.Test
     public void getBanners() throws Exception {
         System.out.println(bannerDao.getBanners());
+
     }
 
 }

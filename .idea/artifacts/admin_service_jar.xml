@@ -1,54 +1,56 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="admin_service:jar">
-    <output-path>$PROJECT_DIR$/build/lib/adminservice_jar</output-path>
-    <root id="archive" name="admin_service.jar">
-      <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/admin_service/src/META-INF/MANIFEST.MF" />
+  <artifact name="admin_service:jar">
+    <output-path>$PROJECT_DIR$/build/lib/admin_service_jar</output-path>
+    <root id="root">
+      <element id="archive" name="admin_service.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/admin_service/src/main/resources/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="admin_service" />
+        <element id="module-output" name="common" />
+        <element id="module-output" name="admin_parent" />
+        <element id="module-output" name="sso_parent" />
       </element>
-      <element id="module-output" name="admin_service" />
-      <element id="module-output" name="common" />
-      <element id="module-output" name="admin_parent" />
-      <element id="module-output" name="sso_parent" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/springframework/spring-test/4.1.7.RELEASE/spring-test-4.1.7.RELEASE.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/log4j/log4j/1.2.15/log4j-1.2.15.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.3.0/mybatis-3.3.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/ow2/util/bundles/zookeeper-3.3.1/1.0.0/zookeeper-3.3.1-1.0.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.1.7.RELEASE/spring-tx-4.1.7.RELEASE.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/github/sgroschupf/zkclient/0.1/zkclient-0.1.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.35/mysql-connector-java-5.1.35.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.5.4/jackson-annotations-2.5.4.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/aopalliance/aopalliance/1.0/aopalliance-1.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/springframework/spring-core/4.1.7.RELEASE/spring-core-4.1.7.RELEASE.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jboss/netty/netty/3.2.5.Final/netty-3.2.5.Final.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/commons/commons-email/1.4/commons-email-1.4.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.1.7.RELEASE/spring-jdbc-4.1.7.RELEASE.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.1.7.RELEASE/spring-aop-4.1.7.RELEASE.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/javax/activation/activation/1.1/activation-1.1.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.5.4/jackson-core-2.5.4.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.1.7.RELEASE/spring-beans-4.1.7.RELEASE.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/javassist/javassist/3.15.0-GA/javassist-3.15.0-GA.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/jline/jline/0.9.94/jline-0.9.94.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/sun/mail/javax.mail/1.5.2/javax.mail-1.5.2.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/eclipse/paho/org.eclipse.paho.client.mqttv3/1.1.0/org.eclipse.paho.client.mqttv3-1.1.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.2/commons-logging-1.2.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/1.1.1/logback-classic-1.1.1.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.1.7.RELEASE/spring-webmvc-4.1.7.RELEASE.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.3.3/zookeeper-3.3.3.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/jstl/jstl/1.2/jstl-1.2.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/c3p0/c3p0/0.9.1.2/c3p0-0.9.1.2.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/io/netty/netty-all/5.0.0.Alpha2/netty-all-5.0.0.Alpha2.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/ch/qos/logback/logback-core/1.1.1/logback-core-1.1.1.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.5.4/jackson-databind-2.5.4.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.2.3/mybatis-spring-1.2.3.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.7.RELEASE/spring-web-4.1.7.RELEASE.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/taglibs/standard/1.1.2/standard-1.1.2.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.5.3/dubbo-2.5.3.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/javax/mail/mail/1.5.0-b01/mail-1.5.0-b01.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/springframework/spring-context/4.1.7.RELEASE/spring-context-4.1.7.RELEASE.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/springframework/spring-expression/4.1.7.RELEASE/spring-expression-4.1.7.RELEASE.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/hadoop/zookeeper/3.3.1/zookeeper-3.3.1.jar" path-in-jar="/" />
+      <element id="library" level="project" name="Maven: com.sun.mail:javax.mail:1.5.2" />
+      <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
+      <element id="library" level="project" name="Maven: log4j:log4j:1.2.15" />
+      <element id="library" level="project" name="Maven: c3p0:c3p0:0.9.1.2" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-context:4.1.7.RELEASE" />
+      <element id="library" level="project" name="Maven: org.jboss.netty:netty:3.2.5.Final" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.1.7.RELEASE" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.1.7.RELEASE" />
+      <element id="library" level="project" name="Maven: com.alibaba:dubbo:2.5.3" />
+      <element id="library" level="project" name="Maven: org.apache.hadoop:zookeeper:3.3.1" />
+      <element id="library" level="project" name="Maven: com.github.sgroschupf:zkclient:0.1" />
+      <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
+      <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.5.4" />
+      <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.3.0" />
+      <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.1.7.RELEASE" />
+      <element id="library" level="project" name="Maven: io.netty:netty-all:5.0.0.Alpha2" />
+      <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.35" />
+      <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-web:4.1.7.RELEASE" />
+      <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
+      <element id="library" level="project" name="Maven: org.ow2.util.bundles:zookeeper-3.3.1:1.0.0" />
+      <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.1.7.RELEASE" />
+      <element id="library" level="project" name="Maven: org.apache.commons:commons-email:1.4" />
+      <element id="library" level="project" name="Maven: jline:jline:0.9.94" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-test:4.1.7.RELEASE" />
+      <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.1.1" />
+      <element id="library" level="project" name="Maven: org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.1.0" />
+      <element id="library" level="project" name="Maven: org.mybatis:mybatis-spring:1.2.3" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.1.7.RELEASE" />
+      <element id="library" level="project" name="Maven: org.javassist:javassist:3.15.0-GA" />
+      <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.12" />
+      <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.1.1" />
+      <element id="library" level="project" name="Maven: org.apache.zookeeper:zookeeper:3.3.3" />
+      <element id="library" level="project" name="Maven: javax.mail:mail:1.5.0-b01" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-core:4.1.7.RELEASE" />
+      <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.5.4" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.1.7.RELEASE" />
+      <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.5.4" />
     </root>
   </artifact>
 </component>
