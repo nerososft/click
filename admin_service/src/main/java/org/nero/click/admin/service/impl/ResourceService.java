@@ -15,6 +15,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import static org.click.admin.CONSTANT.CONSTANT.*;
@@ -80,12 +81,14 @@ public class ResourceService implements IResourceService {
                             bufferedOutputStream.close();
                             fileOutputStream.close();
                         }
-                    }else{//MD5校验码一致，不必储存，修改数据库即可。
+                    }else{//MD5校验码一致，不必磁盘储存，添加数据库记录即可。
                         realResourcePath =resource.getFilepath();
                         md5Code = resource.getHashCode();
                     }
-                    //此处需要更新数据库
-
+                    //添加数据库记录
+                    if(resourceDao.addResource(realFileName,realResourcePath,md5Code,null,fileType,uploaderId)<1){
+                        return new Operate<Resource>(false, FILE_UPLOAD_FAILED.DESC,null);
+                    }
                     return new Operate<Resource>(true, FILE_UPLOAD_SUCCESS.DESC,new Resource(
                             realFileName,                   //文件名
                             realResourcePath,               //文件地址
@@ -106,6 +109,10 @@ public class ResourceService implements IResourceService {
     }
 
     public Operate<Resource> getResource(long resourceId) {
-        return null;
+        return new Operate<Resource>(true,resourceDao.getResource(resourceId));
+    }
+
+    public Operate<List<Resource>> getResource() {
+        return new Operate<List<Resource>>(true,resourceDao.getResource());
     }
 }

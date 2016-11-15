@@ -4,6 +4,8 @@ import org.click.admin.entity.Resource;
 import org.nero.click.sso.dto.Operate;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.List;
+
 /**
  * Author :  root
  * Email  :  nerosoft@outlook.com
@@ -30,7 +32,11 @@ public interface IResourceService {
      */
     Operate<Resource> getResource(long resourceId);
 
-
+    /**
+     * 获取所有资源
+     * @return
+     */
+    Operate<List<Resource>> getResource();
 
 
 }

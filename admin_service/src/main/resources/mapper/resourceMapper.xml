@@ -55,4 +55,37 @@
         DELETE FROM resource where id = ${md5Code}
     </delete>
 
+    <!--/**-->
+    <!--* 获取资源-->
+    <!--* @param resourceId 资源id-->
+    <!--* @return 资源 or null-->
+    <!--*/-->
+    <!--Resource getResource(long resourceId);-->
+    <select id="getResource" resultType="org.click.admin.entity.Resource">
+        SELECT * FROM resource where id = ${resourceId}
+    </select>
+    <!--/**-->
+    <!--* 通过校验码获取资源-->
+    <!--* @param hashCode 校验码-->
+    <!--* @return 资源列表 or null-->
+    <!--*/-->
+    <!--List<Resource> getResourceByHash(String hashCode);-->
+
+
+    <!--/**-->
+    <!--* 通过资源格式获取资源-->
+    <!--* @param type 资源格式-->
+    <!--* @return 资源列比 or null-->
+    <!--*/-->
+    <!--List<Resource> getResourceByType(String type);-->
+
+    <!--/**-->
+    <!--* 获取所有资源-->
+    <!--* @return 资源列表 or null-->
+    <!--*/-->
+    <!--List<Resource> getResource();-->
+    <select id="getResource" resultType="org.click.admin.entity.Resource">
+        SELECT * from resource;
+    </select>
+
 </mapper>

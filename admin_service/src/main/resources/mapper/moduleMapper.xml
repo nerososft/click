@@ -5,4 +5,65 @@
 <mapper namespace="org.nero.click.admin.dao.ModuleDao">
 
 
+    <!--/**-->
+    <!--* 添加模块数据-->
+    <!--* @param moduleName-->
+    <!--* @param moduleDesc-->
+    <!--* @param moduleUrl-->
+    <!--* @param moduleImgUrl-->
+    <!--* @return-->
+    <!--*/-->
+    <!--int addModule(@Param("name") String moduleName,-->
+    <!--@Param("desc") String moduleDesc,-->
+    <!--@Param("url")  String moduleUrl,-->
+    <!--@Param("img")  String moduleImgUrl);-->
+    <insert id="addModule">
+        insert into module
+        (module_name,module_desc,module_url,module_img_url)
+        VALUES
+        ('${name}','${desc}','${url}','$img')
+    </insert>
+
+    <!--/**-->
+    <!--* 删除模块数据-->
+    <!--* @param id-->
+    <!--* @return-->
+    <!--*/-->
+    <!--int delModule(@Param("id") long id);-->
+    <delete id="delModule">
+        DELETE  from module where id = ${id}
+    </delete>
+    <!--/**-->
+    <!--* 修改模块数据-->
+    <!--* @param id-->
+    <!--* @param moduleName-->
+    <!--* @param moduleDesc-->
+    <!--* @param moduleUrl-->
+    <!--* @param moduleImgUrl-->
+    <!--* @return-->
+    <!--*/-->
+    <!--int updateModule(@Param("id")   long id,-->
+    <!--@Param("name") String moduleName,-->
+    <!--@Param("desc") String moduleDesc,-->
+    <!--@Param("url")  String moduleUrl,-->
+    <!--@Param("img")  String moduleImgUrl);-->
+    <update id="updateModule">
+        UPDATE module set
+        module_name='${name}',
+        module_desc='${desc}',
+        module_url='${url}',
+        module_img_url='${img}'
+        where
+         module_id = ${id}
+    </update>
+
+    <!--/**-->
+    <!--* 获取模块数据-->
+    <!--* @return-->
+    <!--*/-->
+    <!--List<Module> getModules();-->
+    <select id="getModules" resultType="org.click.admin.entity.Module">
+        SELECT * from module
+    </select>
+
 </mapper>

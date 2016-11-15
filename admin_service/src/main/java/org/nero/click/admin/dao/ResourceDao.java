@@ -3,6 +3,8 @@ package org.nero.click.admin.dao;
 import org.apache.ibatis.annotations.Param;
 import org.click.admin.entity.Resource;
 
+import java.util.List;
+
 /**
  * Author :  root
  * Email  :  nerosoft@outlook.com
@@ -44,4 +46,34 @@ public interface ResourceDao {
      * @return 0 or resourceId
      */
     int deleteResourceByMd5(String md5Code);
+
+
+    /**
+     * 获取资源
+     * @param resourceId 资源id
+     * @return 资源 or null
+     */
+    Resource getResource(long resourceId);
+
+    /**
+     * 通过校验码获取资源
+     * @param hashCode 校验码
+     * @return 资源列表 or null
+     */
+    List<Resource> getResourceByHash(String hashCode);
+
+
+    /**
+     * 通过资源格式获取资源
+     * @param type 资源格式
+     * @return 资源列比 or null
+     */
+    List<Resource> getResourceByType(String type);
+
+    /**
+     * 获取所有资源
+     * @return 资源列表 or null
+     */
+    List<Resource> getResource();
+
 }
