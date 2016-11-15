@@ -21,7 +21,11 @@ public enum CONSTANT {
     FILE_NULL("文件为空"),
     FILE_FORMAT_UNSUPPORED("文件格式不允许上传"),
     FILE_ERROR("未知的文件错误"),
-    FILE_UPLOAD_SUCCESS("文件上传成功");
+    FILE_UPLOAD_SUCCESS("文件上传成功"),
+
+    MODULE_ADD_ERROE("模块添加失败"),
+    MODULE_UPDATE_ERROR("模块更新失败"),
+    MODULE_DELETE_ERROR("模块删除失败");
 
     public String DESC;
     CONSTANT(String desc){

@@ -73,3 +73,15 @@ create table if not exists module(
   module_url VARCHAR(128) not null,
   module_img_url VARCHAR(128) not null
 )Engine=InnoDB;
+
+#资源
+create table if not exists resource(
+  resource_id int(32) not null PRIMARY KEY AUTO_INCREMENT,
+  filename varchar(64) not null,
+  filepath VARCHAR(64) not null,
+  hash_code VARCHAR(64) not null,
+  file_size bigint,
+  uploader_id BIGINT not null,
+  upload_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+  index(hash_code)
+)ENGINE = InnoDB;

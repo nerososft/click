@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.nero.click.admin.dao.ResourceDao">
+
+
+    <!--/**-->
+    <!--* 根据哈希码查找资源-->
+    <!--* @param md5Code 哈希校验码-->
+    <!--* @return 资源-->
+    <!--*/-->
+    <!--Resource findByMd5(@Param("hash") String md5Code);-->
+    <select id="findByMd5" resultType="org.click.admin.entity.Resource">
+        select from resource where hash_code = '${hash}' limit 1
+    </select>
+
+
+    <!--/**-->
+    <!--* 添加资源-->
+    <!--* @param fileName 资源名称-->
+    <!--* @param filePath 资源路劲-->
+    <!--* @param hashCode 哈希检验码-->
+    <!--* @param fileSize 资源大小-->
+    <!--* @param fileFormat 资源格式-->
+    <!--* @param uploaderId 上穿者ID-->
+    <!--* @return 0 or resourceId-->
+    <!--*/-->
+    <!--int addResource(String fileName,String filePath,String hashCode,String fileSize,String fileFormat,long uploaderId);-->
+    <insert id="addResource">
+        INSERT into resource
+        (filename,filepath,hash_code,file_size,uploader_id,upload_time)
+        VALUES
+        ('${fileName}','${filePath}','${hashCode}','${fileSize}','${fileFormat}','${uploaderId}')
+    </insert>
+
+    <!--/**-->
+    <!--* 删除（屏蔽）资源通过资源ID-->
+    <!--* @param resourceId 资源id-->
+    <!--* @return 0 or resourceId-->
+    <!--*/-->
+    <!--int deleteResourceById(long resourceId);-->
+
+    <delete id="deleteResourceById">
+        DELETE  from resource where id = ${resourceId}
+    </delete>
+
+    <!--/**-->
+    <!--* 删除（屏蔽）资源通过哈希校验码-->
+    <!--* @param md5Code 哈希校验码-->
+    <!--* @return 0 or resourceId-->
+    <!--*/-->
+    <!--int deleteResourceByMd5(String md5Code);-->
+    <delete id="deleteResourceByMd5">
+        DELETE FROM resource where id = ${md5Code}
+    </delete>
+
+</mapper>
