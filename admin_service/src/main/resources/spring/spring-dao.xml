@@ -17,11 +17,11 @@
         <property name="password" value="${jdbc.password}"/>
 
         <!--private property of c3p0 connection pool-->
-        <property name="maxPoolSize" value="30"/>
-        <property name="minPoolSize" value="10"/>
-        <property name="autoCommitOnClose" value="false"/>
-        <property name="checkoutTimeout" value="100000"/>
-        <property name="acquireRetryAttempts" value="2"/>
+        <property name="maxPoolSize" value="${c3p0.maxPoolSize}"/>
+        <property name="minPoolSize" value="${c3p0.minPoolSize}"/>
+        <property name="autoCommitOnClose" value="${c3p0.autoCommitOnClose}"/>
+        <property name="checkoutTimeout" value="${c3p0.checkoutTimeout}"/>
+        <property name="acquireRetryAttempts" value="${c3p0.acquireRetryAttempts}"/>
 
     </bean>
 

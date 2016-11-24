@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" build-on-make="true" name="admin:war">
-    <output-path>$PROJECT_DIR$/build/web/admin_war</output-path>
-    <root id="archive" name="click.war">
-      <element id="artifact" artifact-name="admin:war exploded" />
-    </root>
-  </artifact>
-</component>

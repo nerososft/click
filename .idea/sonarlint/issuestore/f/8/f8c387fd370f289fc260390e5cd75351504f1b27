@@ -1,0 +1,6 @@
+
+hsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(î¯Ë¡
+osquid:S1192"UDefine a constant instead of duplicating this literal "d0cf11e0a1b11ae10000" 3 times.(°Š§ùûÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¿„ˆÔ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(­šïÄýÿÿÿÿ
+asquid:UselessImportCheck":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ

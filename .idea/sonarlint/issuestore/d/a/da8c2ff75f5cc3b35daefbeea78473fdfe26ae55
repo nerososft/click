@@ -1,0 +1,5 @@
+
+tsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(²ı˜8òä÷¾†+
+Dsquid:S3066"#Lower the visibility of this field.(Äç°µøÿÿÿÿ8òä÷¾†+
+qsquid:S00116"ORename this field "DESC" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Äç°µøÿÿÿÿ8òä÷¾†+
+ˆ"squid:ClassVariableVisibilityCheck"PMake DESC a static final constant or non-public and provide accessors if needed.(Äç°µøÿÿÿÿ8òä÷¾†+

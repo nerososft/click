@@ -1,0 +1,6 @@
+
+Jsquid:S1905")Remove this unnecessary cast to "String".(…”†˜øÿÿÿÿ8È­à‡+
+Lsquid:S1481"+Remove this unused "origin" local variable.(…”†˜øÿÿÿÿ8È­à‡+
+squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‚“¶î8È­à‡+
+¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ü›ºÆıÿÿÿÿ8È­à‡+
+[squid:S1854":Remove this useless assignment to local variable "origin".(…”†˜øÿÿÿÿ8È­à‡+

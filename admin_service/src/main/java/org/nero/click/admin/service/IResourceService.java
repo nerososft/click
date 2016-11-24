@@ -30,7 +30,7 @@ public interface IResourceService {
      * @param resourceId
      * @return
      */
-    Operate<Resource> getResource(long resourceId);
+    Operate<Resource> getResourceById(long resourceId);
 
     /**
      * 获取所有资源

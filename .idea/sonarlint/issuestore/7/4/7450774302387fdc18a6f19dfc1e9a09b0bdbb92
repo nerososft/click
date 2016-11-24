@@ -1,0 +1,14 @@
+
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¸ ´À†+
+–squid:S1160"zRefactor this method to throw at most one checked exception instead of: java.io.IOException, java.io.FileNotFoundException(ş†­È8ÆÀÆÀ†+
+Vsquid:S1854":Remove this useless assignment to local variable "isSame".(Èöà—8¸ ´À†+
+®%squid:RedundantThrowsDeclarationCheck"xRemove the declaration of thrown exception 'java.io.FileNotFoundException' which is a subclass of 'java.io.IOException'.(ş†­È8ïÕÆÀ†+
+Vsquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8è©ÂÀ†+
+Asquid:S1166"%Either log or rethrow this exception.(”ı¾8¸ ´À†+
+esquid:S2674"JCheck the return value of the "read" call to see how many bytes were read.(’ü½28¢µÀ†+
+^squid:S2259"=NullPointerException might be thrown as 'in' is nullable here(€¶º‡ıÿÿÿÿ8ÑáÂÀ†+
+Ssquid:S1197"8Move the array designator from the variable to the type.(ÓöñL8¸ ´À†+
+Psquid:S1143"4Remove this throw statement from this finally block.(ö™û8åÕÃÀ†+
+Ysquid:S1197"8Move the array designator from the variable to the type.(È”ôûÿÿÿÿ8¸ ´À†+
+[squid:S1118":Add a private constructor to hide the implicit public one.(´ü²úÿÿÿÿ8¸ ´À†+
+Ysquid:S1163"=Refactor this code to not throw exceptions in finally blocks.(ö™û8åÕÃÀ†+

@@ -60,7 +60,7 @@ public interface ResourceDao {
      * @param resourceId 资源id
      * @return 资源 or null
      */
-    Resource getResource(long resourceId);
+    Resource getResourceById(long resourceId);
 
     /**
      * 通过校验码获取资源

@@ -1,0 +1,4 @@
+
+Qsquid:S1191"<Replace this usage of Sun classes by ones from the Java API.(ëŞï®
+isquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ış·€şÿÿÿÿ
+¯squid:S1160"”Refactor this method to throw at most one checked exception instead of: java.security.NoSuchAlgorithmException, java.io.UnsupportedEncodingException(ış·€şÿÿÿÿ

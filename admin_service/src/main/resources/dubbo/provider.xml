@@ -13,15 +13,15 @@
     <!-- expose this service through dubbo protocol, through port 20880 -->
     <dubbo:protocol name="dubbo" port="20883" />
     <!-- which service interface do we expose? 暴露的服务 -->
-    <dubbo:service interface="org.nero.click.admin.service.INewsService" ref="INewsService" />
-    <dubbo:service interface="org.nero.click.admin.service.IPageService" ref="IPageService"/>
-    <dubbo:service interface="org.nero.click.admin.service.IResourceService" ref="IResourceService"/>
+    <dubbo:service interface="org.nero.click.admin.service.INewsService" ref="INewsService" timeout="1200000" />
+    <dubbo:service interface="org.nero.click.admin.service.IPageService" ref="IPageService" timeout="1200000"/>
+    <dubbo:service interface="org.nero.click.admin.service.IResourceService" ref="IResourceService" timeout="1200000"/>
     <!-- bean配置 -->
     <bean id="INewsService" class="org.nero.click.admin.service.impl.NewsServiceImpl">
     </bean>
     <bean id="IPageService" class="org.nero.click.admin.service.impl.PageServiceImpl">
     </bean>
-    <bean id="IResourceService" class="org.nero.click.admin.service.impl.ResourceService">
+    <bean id="IResourceService" class="org.nero.click.admin.service.impl.ResourceServiceImpl">
     </bean>
 
 </beans>
