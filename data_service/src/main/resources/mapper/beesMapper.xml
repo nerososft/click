@@ -23,4 +23,28 @@
         </foreach>
     </select>
 
+
+    <!--新的mapper-->
+
+    <select id="getTables" resultType="String">
+        show tables
+    </select>
+    <select id="getColumns" resultType="String">
+        desc ${cancerType}_${normal}_${dataType}_${value}_${index}_${page};
+    </select>
+
+    <select id="getGenesId" resultType="Integer">
+        SELECT ID from ${dataType}_gene where genename in
+        <foreach collection="list" index="index" item="item" open="(" separator="," close=")">
+            '${item}'
+        </foreach>
+    </select>
+    <select id="getData" resultType="Float">
+        SELECT * from  ${cancerType}_${normal}_${dataType}_${value}_${index}_${page} where id IN
+        <foreach collection="list" index="index" item="item" open="(" separator="," close=")">
+            ${item}
+        </foreach>
+    </select>
+
+
 </mapper>

@@ -1,10 +1,10 @@
 
-psquid:S2259"ONullPointerException might be thrown as 'bufferedOutputStream' is nullable here(åÔÎùÿÿÿÿ8ÃÆ­à‡+
-Vsquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ÃÆ­à‡+
-n
-squid:S134"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(é½Ÿõşÿÿÿÿ8ÃÆ­à‡+
-— squid:MethodCyclomaticComplexity"aThe Cyclomatic Complexity of this method "addResource" is 12 which is greater than 10 authorized.(Æ©Š•ıÿÿÿÿ8ÃÆ­à‡+
-Asquid:S1166"%Either log or rethrow this exception.(ï­£Ä8ÃÆ­à‡+
 i
-squid:S134"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(ãáÒ®8ÃÆ­à‡+
-Asquid:S1166"%Either log or rethrow this exception.(ï­£Ä8ÃÆ­à‡+
+squid:S134"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(ãáÒ®8†Êœ‰+
+n
+squid:S134"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(é½Ÿõşÿÿÿÿ8†Êœ‰+
+Vsquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8†Êœ‰+
+Asquid:S1166"%Either log or rethrow this exception.(ï­£Ä8†Êœ‰+
+psquid:S2259"ONullPointerException might be thrown as 'bufferedOutputStream' is nullable here(åÔÎùÿÿÿÿ8†Êœ‰+
+— squid:MethodCyclomaticComplexity"aThe Cyclomatic Complexity of this method "addResource" is 12 which is greater than 10 authorized.(Æ©Š•ıÿÿÿÿ8†Êœ‰+
+Asquid:S1166"%Either log or rethrow this exception.(ï­£Ä8†Êœ‰+

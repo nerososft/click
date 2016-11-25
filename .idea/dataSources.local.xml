@@ -9,5 +9,9 @@
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
     </data-source>
+    <data-source name="MySQL - click@47.88.77.83" uuid="e46bf795-6e21-49cc-b9e4-317b9cfbd5a4">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+    </data-source>
   </component>
 </project>

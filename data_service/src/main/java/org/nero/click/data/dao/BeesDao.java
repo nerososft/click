@@ -44,13 +44,25 @@ public interface BeesDao {
                               @Param("table") String table);
 
 
-    /**
-     * 获取箱型图数据
-     * @param cancerType
-     * @param genename
-     * @return
-     */
-    List<Box> getBox(@Param("cancertype") List<String> cancerType,
-                     @Param("genename") List<String> genename);
+    //以下是新的数据库查找设计
+    List<Integer> getGenesId(@Param("list") List<String> geneName,
+                             @Param("dataType") String dataType);
+
+    List<String> getTables();
+
+    List<String> getColumns(@Param("cancerType") String cancerType,
+                            @Param("normal") String normal,
+                            @Param("dataType") String dataType,
+                            @Param("value") String value,
+                            @Param("index") String index,
+                            @Param("page") String page);
+
+    List<Point> getData(@Param("list") List<Integer> genesid,
+                          @Param("cancerType") String cancerType,
+                          @Param("normal") String normal,
+                          @Param("dataType") String dataType,
+                          @Param("value") String value,
+                          @Param("index") String index,
+                          @Param("page") String page);
 
 }
