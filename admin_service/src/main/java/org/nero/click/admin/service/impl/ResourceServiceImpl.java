@@ -47,47 +47,41 @@ public class ResourceServiceImpl implements IResourceService {
         return false;
     }
 
-    public Operate<Resource> addResource(MultipartFile file, long uploaderId, String realFileName) {
-        if(!file.isEmpty()){
-            try {
-                byte[] fileByte = file.getBytes();
+    public Operate<Resource> addResource(byte[] file, long uploaderId, String realFileName) {
 
-                String fileType = FileType.getFileType(fileByte);//文件真实格式
+
+            try{
+                String fileType = FileType.getFileTypeByStream(file);//文件真实格式
+                System.out.println("format:"+fileType);
+
                 if(isTypeAllow(fileType)){
 
-                    String md5Code = FileDiffUtil.getMD5(fileByte);//获取文件MD5
+                    String md5Code = FileDiffUtil.getMD5(file);//获取文件MD5
                     Resource resource = resourceDao.findByMd5(md5Code);
-                    String filePath = "";                   //读取commom.properties获得
+                    String filePath = "/home/click_data";                   //读取commom.properties获得
                     String fileName;
                     String realResourcePath;                //文件系统资源地址
 
-                    if(resource==null){
-
-                        RandomString randomString = new RandomString();
-                        String dbFilePath = randomString.getRandomString(64)+String.valueOf(System.currentTimeMillis());
-                        fileName = FileDiffUtil.getMD5(dbFilePath.getBytes());//数据库资源名称
-
-                        realResourcePath = filePath+File.separator+fileName;
-
-                        FileOutputStream fileOutputStream = null;
-                        BufferedOutputStream bufferedOutputStream = null;
-                        try {
-                            fileOutputStream = new FileOutputStream(realResourcePath);
-                            bufferedOutputStream = new BufferedOutputStream(fileOutputStream);
-                            bufferedOutputStream.write(fileByte);
-                            bufferedOutputStream.flush();
-                        }catch (IOException e){
-                            return new Operate<Resource>(false,FILE_ERROR.DESC,null);
-                        }finally {
-                            bufferedOutputStream.close();
-                            fileOutputStream.close();
-                        }
-                    }else{//MD5校验码一致，不必磁盘储存，添加数据库记录即可。
+                    if(resource!=null){//MD5校验码一致，不必磁盘储存，添加数据库记录即可。
                         realResourcePath =resource.getFilepath();
                         md5Code = resource.getHashCode();
+
+                    }else{
+                        RandomString randomString = new RandomString();
+
+                        //产生随机文件名称
+                        String dbFilePath = randomString.getRandomString(64)+String.valueOf(System.currentTimeMillis());
+                        //文件名称MD5
+                        fileName = FileDiffUtil.getMD5(dbFilePath.getBytes());//数据库资源名称
+
+                        realResourcePath = filePath+File.separator+fileName+"."+fileType;
+
+                        System.out.println(realResourcePath);
+                        //储存文件
+                        FileType.getFile(file,filePath,fileName+"."+fileType);
                     }
                     //添加数据库记录
-                    if(resourceDao.addResource(realFileName,realResourcePath,md5Code,null,fileType,uploaderId)<1){
+                    if(resourceDao.addResource(realFileName,realResourcePath,md5Code,String.valueOf(file.length),fileType,uploaderId)<1){
                         return new Operate<Resource>(false, FILE_UPLOAD_FAILED.DESC,null);
                     }
                     return new Operate<Resource>(true, FILE_UPLOAD_SUCCESS.DESC,new Resource(
@@ -103,10 +97,11 @@ public class ResourceServiceImpl implements IResourceService {
                 }
                 return new Operate<Resource>(false,FILE_FORMAT_UNSUPPORED.DESC,null);//格式不让上传
             } catch (IOException e) {
-                return new Operate<Resource>(false,FILE_ERROR.DESC,null);
+                return new Operate<Resource>(false,FILE_ERROR.DESC, null);
+            } catch (Exception e) {
+                e.printStackTrace();
+                return new Operate<Resource>(false, FILE_STORE_FAILED.DESC,null);
             }
-        }
-        return new Operate<Resource>(false,FILE_NULL.DESC,null);
     }
 
 

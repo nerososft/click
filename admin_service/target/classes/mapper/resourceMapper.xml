@@ -12,7 +12,7 @@
     <!--*/-->
     <!--Resource findByMd5(@Param("hash") String md5Code);-->
     <select id="findByMd5" resultType="org.click.admin.entity.Resource">
-        select from resource where hash_code = '${hash}' limit 1
+        select * from resource where hash_code = '${hash}' limit 1
     </select>
 
 
@@ -29,9 +29,9 @@
     <!--int addResource(String fileName,String filePath,String hashCode,String fileSize,String fileFormat,long uploaderId);-->
     <insert id="addResource">
         INSERT into resource
-        (filename,filepath,hash_code,file_size,uploader_id,upload_time)
+        (filename,filepath,hash_code,file_size,uploader_id)
         VALUES
-        ('${fileName}','${filePath}','${hashCode}','${fileSize}','${fileFormat}','${uploaderId}')
+        ('${fileName}','${filePath}','${hashCode}','${fileSize}','${uploaderId}')
     </insert>
 
     <!--/**-->

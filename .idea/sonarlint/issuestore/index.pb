@@ -85,3 +85,17 @@ m
 =sso/src/main/java/org/nero/click/sso/web/controller/Auth.java,b/5/b521b2e39de218b29ade0fc4333c93e5b0fdb058
 s
 Cadmin_service/src/main/java/org/nero/click/admin/dao/HeaderDao.java,7/2/72e6ae4558af6454bfe1f2dc46856c4fbb551984
+„
+Tdata_service/src/test/java/org/nero/click/data/service/impl/DataServiceImplTest.java,8/c/8cca3a859af0cf65a8fae1cd6c8203a39571a6d6
+o
+?data_service/src/main/java/org/nero/click/data/dao/GeneDao.java,2/a/2ab7d53b9c918bab0cf63e6b2dba4cac693bd6d0
+q
+Adata_service/src/main/java/org/nero/click/data/dao/DomianDao.java,8/f/8f497b5b1c1cab4442af440fed0741eff32c3b89
+D
+data_service/pom.xml,9/f/9f421edee36ab771d348c883f4e3568bc025ca00
+€
+Pdata_service/src/main/java/org/nero/click/data/service/impl/DataServiceImpl.java,1/6/16d1a50ba2d8ab32d4b941873911914532e905c6
+o
+?data_service/src/main/java/org/nero/click/data/dao/BeesDao.java,1/9/19d5d50105bd23708f56345746b82c23865fc6e1
+s
+Cdata_service/src/test/java/org/nero/click/data/dao/BeesDaoTest.java,c/1/c1a0711c46fc1e77c0dfb6cb40156bdf393bd263

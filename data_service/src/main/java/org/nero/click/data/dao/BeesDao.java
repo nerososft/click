@@ -18,38 +18,15 @@ import java.util.List;
  */
 public interface BeesDao {
 
-    /**
-     * 根据基因名称获取基因id
-     * @param genename
-     * @return
-     */
-    List<Integer> getGeneId(List<String> genename);
-
-
-    /**
-     * 根据基因id和表名获取样本id
-     * @param geneid
-     * @return
-     */
-    List<Integer> getPropertyId(@Param("list") List<Integer> geneid,
-                                @Param("fuckcid") String cid);
-
-    /**
-     * 根据样本id在相应的数据表table查询
-     * @param propid
-     * @param table
-     * @return
-     */
-    List<Point> getBeesPoints(@Param("list") List<Integer> propid,
-                              @Param("table") String table);
-
-
     //以下是新的数据库查找设计
+    //获取基因id
     List<Integer> getGenesId(@Param("list") List<String> geneName,
                              @Param("dataType") String dataType);
 
+    //查找所有表
     List<String> getTables();
 
+    //查找所有字段
     List<String> getColumns(@Param("cancerType") String cancerType,
                             @Param("normal") String normal,
                             @Param("dataType") String dataType,
@@ -57,6 +34,7 @@ public interface BeesDao {
                             @Param("index") String index,
                             @Param("page") String page);
 
+    //查找point
     List<Point> getData(@Param("list") List<Integer> genesid,
                           @Param("cancerType") String cancerType,
                           @Param("normal") String normal,

@@ -23,6 +23,7 @@ public enum CONSTANT {
     FILE_ERROR("未知的文件错误"),
     FILE_UPLOAD_SUCCESS("文件上传成功"),
     FILE_UPLOAD_FAILED("文件上传失败"),
+    FILE_STORE_FAILED("文件储存失败"),
 
     MODULE_ADD_ERROE("模块添加失败"),
     MODULE_UPDATE_ERROR("模块更新失败"),

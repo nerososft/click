@@ -35,7 +35,12 @@ public interface ResourceDao {
      * @param uploaderId 上传者ID
      * @return 0 or resourceId
      */
-    int addResource(String fileName,String filePath,String hashCode,String fileSize,String fileFormat,long uploaderId);
+    int addResource(@Param("fileName") String fileName,
+                    @Param("filePath") String filePath,
+                    @Param("hashCode") String hashCode,
+                    @Param("fileSize") String fileSize,
+                    @Param("fileFormat") String fileFormat,
+                    @Param("uploaderId") long uploaderId);
 
     /**
      * 删除（屏蔽）资源通过资源ID

@@ -57,7 +57,7 @@ public class BeesDaoTest {
         genes.add("EGFR");
         genes.add("IHH");
         List<Integer> ids = beesDao.getGenesId(genes,"c");
-        List<Point> values = beesDao.getData(ids,"paad","n","c","l","0","1");
+        List<Point> values = beesDao.getData(ids,"lgg","n","c","y","0","1");
         System.out.println(values.toString());
     }
 

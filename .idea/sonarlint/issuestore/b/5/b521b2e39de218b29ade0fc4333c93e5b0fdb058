@@ -1,20 +1,20 @@
 
-:squid:S1166"%Either log or rethrow this exception.(¤ÖˆÎ
-:squid:S1166"%Either log or rethrow this exception.(Õ¥çÄ
-Fsquid:S2095",Close this "ClassPathXmlApplicationContext".(çÞßéúÿÿÿÿ
-9squid:S1166"%Either log or rethrow this exception.(ÿÒ„p
-Á%squid:RedundantThrowsDeclarationCheck"‘Remove the declaration of thrown exception 'org.nero.click.common.utils.verifycode.exception.VerifyFailedException' which is a runtime exception.(ÕˆÇ½
-?squid:S1166"%Either log or rethrow this exception.(ÐÐ¹óúÿÿÿÿ
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ž°žÄ
-9squid:S1166"%Either log or rethrow this exception.(»Þù	
-nsquid:S1192"MDefine a constant instead of duplicating this literal "IUserService" 3 times.(çÞßéúÿÿÿÿ8ûü…¬‰+
 ?squid:S1166"%Either log or rethrow this exception.(Àù¾Œùÿÿÿÿ
-Msquid:S2095",Close this "ClassPathXmlApplicationContext".(çÞßéúÿÿÿÿ8ûü…¬‰+
-?squid:S1166"%Either log or rethrow this exception.(ÐÐ¹óúÿÿÿÿ
 9squid:S1166"%Either log or rethrow this exception.(ÿÒ„p
+Fsquid:S2095",Close this "ClassPathXmlApplicationContext".(çÞßéúÿÿÿÿ
+Á%squid:RedundantThrowsDeclarationCheck"‘Remove the declaration of thrown exception 'org.nero.click.common.utils.verifycode.exception.VerifyFailedException' which is a runtime exception.(ÕˆÇ½
+9squid:S1166"%Either log or rethrow this exception.(»Þù	
+?squid:S1166"%Either log or rethrow this exception.(ÐÐ¹óúÿÿÿÿ
+?squid:S1166"%Either log or rethrow this exception.(ÐÐ¹óúÿÿÿÿ
+Msquid:S2095",Close this "ClassPathXmlApplicationContext".(çÞßéúÿÿÿÿ8ûü…¬‰+
+?squid:S1166"%Either log or rethrow this exception.(Óã™üÿÿÿÿ
 :squid:S1166"%Either log or rethrow this exception.(¤ÖˆÎ
 9squid:S1166"%Either log or rethrow this exception.(ÿÒ„p
-?squid:S1166"%Either log or rethrow this exception.(Óã™üÿÿÿÿ
-Fsquid:S2095",Close this "ClassPathXmlApplicationContext".(çÞßéúÿÿÿÿ
-:squid:S1166"%Either log or rethrow this exception.(¾”õà
 ?squid:S1166"%Either log or rethrow this exception.(ÐÐ¹óúÿÿÿÿ
+:squid:S1166"%Either log or rethrow this exception.(¤ÖˆÎ
+:squid:S1166"%Either log or rethrow this exception.(¾”õà
+:squid:S1166"%Either log or rethrow this exception.(Õ¥çÄ
+9squid:S1166"%Either log or rethrow this exception.(ÿÒ„p
+Fsquid:S2095",Close this "ClassPathXmlApplicationContext".(çÞßéúÿÿÿÿ
+nsquid:S1192"MDefine a constant instead of duplicating this literal "IUserService" 3 times.(çÞßéúÿÿÿÿ8ûü…¬‰+
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ž°žÄ

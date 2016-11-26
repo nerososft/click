@@ -1,0 +1,6 @@
+
+ssquid:S1488"^Immediately return this expression instead of assigning it to the temporary variable "points".(¹ÆŠ¬
+qsquid:S00117"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×ñôÄüÿÿÿÿ
+Wsquid:S2259"BNullPointerException might be thrown as 'beesDao' is nullable here(¹ÆŠ¬
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(ÓäÑüþÿÿÿÿ

@@ -4,6 +4,7 @@ import org.click.admin.entity.Resource;
 import org.nero.click.sso.dto.Operate;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
 import java.util.List;
 
 /**
@@ -22,7 +23,7 @@ public interface IResourceService {
      * @param fileName
      * @return
      */
-    Operate<Resource> addResource(MultipartFile file, long uploaderId, String fileName);
+    Operate<Resource> addResource(byte[] file, long uploaderId, String fileName);
 
 
     /**

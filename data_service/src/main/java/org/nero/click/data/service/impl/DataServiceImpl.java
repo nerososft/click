@@ -28,14 +28,16 @@ public class DataServiceImpl implements IDataService {
 
 
 
-    public List<Point> beeswarm(List<String> genename, String CancerType) {
+    public List<Point> beeswarm(List<String> geneName, String CancerType,String normal,String dataType,String value,String index,String page) {
 
-        String cid  = CancerType.substring(4)+"ID";
-        if(beesDao==null){
-            System.out.println("dao null");
-        }
 
-        List<Point> points = beesDao.getBeesPoints(beesDao.getPropertyId(beesDao.getGeneId(genename),cid),CancerType);
+        List<Point> points = beesDao.getData(beesDao.getGenesId(geneName,dataType),
+                CancerType,
+                normal,
+                dataType,
+                value,
+                index,
+                page);
 
         return points;
     }

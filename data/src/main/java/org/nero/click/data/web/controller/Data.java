@@ -31,15 +31,12 @@ public class Data {
     public Operate<List<List<List<Point>>>> beeswormnew(@PathVariable("genename") String genes,
                                                         @PathVariable("cancertype") String cancertype) {
 
+        try {
+            iDataService = (IDataService) Consumer.singleton().getBean("IDataService");
 
-        iDataService =(IDataService) Consumer.singleton().getBean("IDataService");
+            ///List<Point> p = dataService.beeswarm(genes,"lgg","n","c","y","0","1");
 
-        if(iDataService==null){
-            return new Operate<List<List<List<Point>>>>(false,"服务异常！",null);
-        }
-
-
-        String[] strings1 = genes.split(",");
+            String[] strings1 = genes.split(",");
 
             List<List<List<Point>>> allgens = new ArrayList<List<List<Point>>>();
             double x = 0.0;
@@ -50,13 +47,13 @@ public class Data {
                 List<String> stringList = new ArrayList<String>();
                 stringList.add(aStrings1);
                 //查询正常样本
-                List<Point> t = iDataService.beeswarm(stringList, "prop"+cancertype+"n");
+                List<Point> t = iDataService.beeswarm(stringList, "prop" + cancertype + "n");
                 for (Point point : t) {
                     point.setX(point.getX() + x);
                 }
                 System.out.println(t.size());
                 //查询非正常样本
-                List<Point> n = iDataService.beeswarm(stringList, "prop"+cancertype+"t");
+                List<Point> n = iDataService.beeswarm(stringList, "prop" + cancertype + "t");
                 for (Point point : n) {
                     point.setX(point.getX() + x);
                 }
@@ -70,7 +67,10 @@ public class Data {
                 allgens.add(genesteam);
             }
 
-            return new Operate<List<List<List<Point>>>>(true,allgens);
+            return new Operate<List<List<List<Point>>>>(true, allgens);
+        }catch (IllegalStateException e){
+            return new Operate<List<List<List<Point>>>>(false, "服务异常！", null);
+        }
     }
 
 

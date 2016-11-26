@@ -4,26 +4,6 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.nero.click.data.dao.BeesDao">
 
-    <select id="getGeneId" resultType="Integer">
-        SELECT geneID from gene where geneName in
-        <foreach collection="list" index="index" item="item" open="(" separator="," close=")">
-             #{item}
-        </foreach>
-    </select>
-    <select id="getPropertyId" resultType="Integer">
-        select propertyID FROM relation WHERE ${fuckcid} IN
-        <foreach collection="list" index="index" item="item" open="(" separator="," close=")">
-          #{item}
-        </foreach>
-    </select>
-    <select id="getBeesPoints" resultType="org.nero.click.data.dto.Point">
-        SELECT x,y,sampleID from ${table} where propertyID IN
-        <foreach collection="list" index="index" item="item" open="(" separator="," close=")">
-            #{item}
-        </foreach>
-    </select>
-
-
     <!--新的mapper-->
 
     <select id="getTables" resultType="String">
@@ -39,8 +19,8 @@
             '${item}'
         </foreach>
     </select>
-    <select id="getData" resultType="Float">
-        SELECT * from  ${cancerType}_${normal}_${dataType}_${value}_${index}_${page} where id IN
+    <select id="getData" resultType="org.nero.click.data.dto.Point">
+        SELECT * from  ${cancerType}_${normal}_${dataType}_${value}_${index}_${page} where geneid IN
         <foreach collection="list" index="index" item="item" open="(" separator="," close=")">
             ${item}
         </foreach>

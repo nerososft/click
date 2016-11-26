@@ -1,5 +1,6 @@
 package org.click.admin.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -8,7 +9,7 @@ import java.util.Date;
  * Date   :  16-11-13
  * Time   :  下午5:31
  */
-public class Resource {
+public class Resource implements Serializable {
     private long resourceId;
     private String filename;
     private String filepath;
