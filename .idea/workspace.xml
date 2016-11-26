@@ -6,123 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8024c39b-073a-4770-87b0-31ac06e9e2c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/6/16d1a50ba2d8ab32d4b941873911914532e905c6" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/9/19d5d50105bd23708f56345746b82c23865fc6e1" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/a/2ab7d53b9c918bab0cf63e6b2dba4cac693bd6d0" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/c/8cca3a859af0cf65a8fae1cd6c8203a39571a6d6" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/f/8f497b5b1c1cab4442af440fed0741eff32c3b89" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9f421edee36ab771d348c883f4e3568bc025ca00" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c1a0711c46fc1e77c0dfb6cb40156bdf393bd263" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/admin/WEB-INF/lib/admin_parent-1.0-SNAPSHOT.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/admin/WEB-INF/lib/common-1.0-SNAPSHOT.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/admin/WEB-INF/lib/commons-fileupload-1.3.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/admin/WEB-INF/lib/commons-io-1.3.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/web/admin/WEB-INF/lib/sso_parent-1.0-SNAPSHOT.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_3_2.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/target/click/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/jdbc.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/logback.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/mybatis-config.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/click/App.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/click/admin/CONSTANT/CONSTANT.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/click/admin/dto/Layout.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/click/admin/entity/Banner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/click/admin/entity/Footer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/click/admin/entity/Header.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/click/admin/entity/Link.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/click/admin/entity/Logo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/click/admin/entity/Module.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/click/admin/entity/News.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/click/admin/entity/Resource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/nero/click/App.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/nero/click/common/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/nero/click/common/filter/CORSFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/nero/click/common/utils/Constant.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/nero/click/common/utils/email/MailAuthenticator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/nero/click/common/utils/email/MailSenderFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/nero/click/common/utils/email/MailSenderType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/nero/click/common/utils/email/SimpleMailSender.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/nero/click/common/utils/file/FileType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/nero/click/common/utils/md5/FileDiffUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/nero/click/common/utils/md5/MD5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/nero/click/common/utils/rendom/RandomString.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/nero/click/common/utils/verifycode/Verify.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/nero/click/common/utils/verifycode/exception/VerifyFailedException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/nero/click/sso/dto/Operate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/nero/click/sso/entity/Authpair.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/nero/click/sso/entity/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/nero/click/sso/exceptions/UserException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/nero/click/sso/exceptions/user/ActiveException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/nero/click/sso/exceptions/user/LoginException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/nero/click/sso/exceptions/user/NoSuchUserException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/nero/click/sso/exceptions/user/RegisterException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/nero/click/sso/exceptions/user/TimeOutException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/schema.sql" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b521b2e39de218b29ade0fc4333c93e5b0fdb058" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b521b2e39de218b29ade0fc4333c93e5b0fdb058" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/target/classes/org/nero/click/admin/service/IResourceService.class" afterPath="$PROJECT_DIR$/admin/target/classes/org/nero/click/admin/service/IResourceService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/target/classes/org/nero/click/admin/web/controller/Resource.class" afterPath="$PROJECT_DIR$/admin/target/classes/org/nero/click/admin/web/controller/Resource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_parent/target/classes/org/click/admin/CONSTANT/CONSTANT.class" afterPath="$PROJECT_DIR$/admin_parent/target/classes/org/click/admin/CONSTANT/CONSTANT.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_parent/target/classes/org/click/admin/entity/Resource.class" afterPath="$PROJECT_DIR$/admin_parent/target/classes/org/click/admin/entity/Resource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_service/target/classes/org/nero/click/admin/dao/ResourceDao.class" afterPath="$PROJECT_DIR$/admin_service/target/classes/org/nero/click/admin/dao/ResourceDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_service/target/classes/org/nero/click/admin/service/IResourceService.class" afterPath="$PROJECT_DIR$/admin_service/target/classes/org/nero/click/admin/service/IResourceService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_service/target/classes/org/nero/click/admin/service/impl/ResourceServiceImpl.class" afterPath="$PROJECT_DIR$/admin_service/target/classes/org/nero/click/admin/service/impl/ResourceServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/lib/admin_parent_jar/admin_parent.jar" afterPath="$PROJECT_DIR$/build/lib/admin_parent_jar/admin_parent.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/lib/admin_service_jar/admin_service.jar" afterPath="$PROJECT_DIR$/build/lib/admin_service_jar/admin_service.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/lib/common_jar/common.jar" afterPath="$PROJECT_DIR$/build/lib/common_jar/common.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/lib/data_parent_jar/data_parent.jar" afterPath="$PROJECT_DIR$/build/lib/data_parent_jar/data_parent.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/lib/data_service_jar/data_service.jar" afterPath="$PROJECT_DIR$/build/lib/data_service_jar/data_service.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/lib/sso_parent_jar/sso_parent.jar" afterPath="$PROJECT_DIR$/build/lib/sso_parent_jar/sso_parent.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/sso_service.jar" afterPath="$PROJECT_DIR$/build/lib/sso_service_jar/sso_service.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/nero/click/admin/service/IResourceService.class" afterPath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/nero/click/admin/service/IResourceService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/nero/click/admin/web/controller/Resource.class" afterPath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/org/nero/click/admin/web/controller/Resource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/org/nero/click/common/utils/file/FileType.class" afterPath="$PROJECT_DIR$/common/target/classes/org/nero/click/common/utils/file/FileType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/dao/BeesDao.class" afterPath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/dao/BeesDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/service/IDataService.class" afterPath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/service/IDataService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/service/impl/DataServiceImpl.class" afterPath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/service/impl/DataServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/target/test-classes/org/nero/click/data/dao/BeesDaoTest.class" afterPath="$PROJECT_DIR$/data_service/target/test-classes/org/nero/click/data/dao/BeesDaoTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/target/test-classes/org/nero/click/data/service/impl/DataServiceImplTest.class" afterPath="$PROJECT_DIR$/data_service/target/test-classes/org/nero/click/data/service/impl/DataServiceImplTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/admin_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/admin_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/admin.iml" afterPath="$PROJECT_DIR$/admin/admin.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/pom.xml" afterPath="$PROJECT_DIR$/admin/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/src/main/java/org/nero/click/admin/service/IResourceService.java" afterPath="$PROJECT_DIR$/admin/src/main/java/org/nero/click/admin/service/IResourceService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/src/main/java/org/nero/click/admin/web/controller/Resource.java" afterPath="$PROJECT_DIR$/admin/src/main/java/org/nero/click/admin/web/controller/Resource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/src/main/resources/dubbo/consumer.xml" afterPath="$PROJECT_DIR$/admin/src/main/resources/dubbo/consumer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/src/main/resources/spring/spring-web.xml" afterPath="$PROJECT_DIR$/admin/src/main/resources/spring/spring-web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/target/classes/dubbo/consumer.xml" afterPath="$PROJECT_DIR$/admin/target/classes/dubbo/consumer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/target/classes/spring/spring-web.xml" afterPath="$PROJECT_DIR$/admin/target/classes/spring/spring-web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_parent/src/main/java/org/click/admin/CONSTANT/CONSTANT.java" afterPath="$PROJECT_DIR$/admin_parent/src/main/java/org/click/admin/CONSTANT/CONSTANT.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_parent/src/main/java/org/click/admin/entity/Resource.java" afterPath="$PROJECT_DIR$/admin_parent/src/main/java/org/click/admin/entity/Resource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_service/src/main/java/org/nero/click/admin/dao/ResourceDao.java" afterPath="$PROJECT_DIR$/admin_service/src/main/java/org/nero/click/admin/dao/ResourceDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_service/src/main/java/org/nero/click/admin/service/IResourceService.java" afterPath="$PROJECT_DIR$/admin_service/src/main/java/org/nero/click/admin/service/IResourceService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_service/src/main/java/org/nero/click/admin/service/impl/ResourceServiceImpl.java" afterPath="$PROJECT_DIR$/admin_service/src/main/java/org/nero/click/admin/service/impl/ResourceServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_service/src/main/resources/dubbo/provider.xml" afterPath="$PROJECT_DIR$/admin_service/src/main/resources/dubbo/provider.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_service/src/main/resources/mapper/resourceMapper.xml" afterPath="$PROJECT_DIR$/admin_service/src/main/resources/mapper/resourceMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_service/target/classes/dubbo/provider.xml" afterPath="$PROJECT_DIR$/admin_service/target/classes/dubbo/provider.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_service/target/classes/mapper/resourceMapper.xml" afterPath="$PROJECT_DIR$/admin_service/target/classes/mapper/resourceMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/dubbo/consumer.xml" afterPath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/dubbo/consumer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/spring/spring-web.xml" afterPath="$PROJECT_DIR$/build/web/admin/WEB-INF/classes/spring/spring-web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/jdbc.properties" afterPath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/jdbc.properties" afterPath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/file/FileType.java" afterPath="$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/file/FileType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/jdbc.properties" afterPath="$PROJECT_DIR$/common/src/main/resources/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/web/controller/Data.java" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/web/controller/Data.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/data_service.iml" afterPath="$PROJECT_DIR$/data_service/data_service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/pom.xml" afterPath="$PROJECT_DIR$/data_service/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/dao/BeesDao.java" afterPath="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/dao/BeesDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/IDataService.java" afterPath="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/IDataService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/impl/DataServiceImpl.java" afterPath="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/impl/DataServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/src/main/resources/mapper/beesMapper.xml" afterPath="$PROJECT_DIR$/data_service/src/main/resources/mapper/beesMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/dao/BeesDaoTest.java" afterPath="$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/dao/BeesDaoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/service/impl/DataServiceImplTest.java" afterPath="$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/service/impl/DataServiceImplTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/target/classes/mapper/beesMapper.xml" afterPath="$PROJECT_DIR$/data_service/target/classes/mapper/beesMapper.xml" />
-    </list>
+    <list default="true" id="8024c39b-073a-4770-87b0-31ac06e9e2c0" name="Default" comment="" />
     <ignored path="click.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -269,8 +153,8 @@
       <file leaf-file-name="jdbc.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/src/main/resources/jdbc.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="24" column="27" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="27" />
+            <state relative-caret-position="216">
+              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -1484,7 +1368,7 @@
       <workItem from="1479462112518" duration="11756000" />
       <workItem from="1479912320301" duration="7780000" />
       <workItem from="1480067272960" duration="14728000" />
-      <workItem from="1480141388836" duration="27308000" />
+      <workItem from="1480141388836" duration="27635000" />
     </task>
     <servers />
   </component>
@@ -1521,7 +1405,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="518208000" />
+    <option name="totallyTimeSpent" value="518535000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -2112,8 +1996,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/src/main/resources/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="27" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="27" />
+        <state relative-caret-position="216">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
           <folding />
         </state>
       </provider>
