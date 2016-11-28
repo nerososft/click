@@ -14,12 +14,17 @@ import java.util.List;
  */
 public interface IDataService {
     /**
-     * 根据基因名数组和癌症查询样本数据
-     * @param genename
+     *
+     * @param geneName
      * @param CancerType
+     * @param normal
+     * @param dataType
+     * @param value
+     * @param index
+     * @param page
      * @return
      */
-    List<Point> beeswarm(List<String> genename, String CancerType);
+    List<Point> beeswarm(List<String> geneName, String CancerType,String normal,String dataType,String value,String index,String page);
 
     /**
      * 山形图，根据染色体查询

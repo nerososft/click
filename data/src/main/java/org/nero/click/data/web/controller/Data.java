@@ -24,17 +24,26 @@ public class Data {
     private IDataService iDataService;
 
 
-    @RequestMapping(value = "/{genename}/{cancertype}/beeswarmnew",
+    /**
+     * find data by cancer type
+     * @param genes
+     * @param cancerType
+     * @param dataType
+     * @param value
+     * @return
+     */
+    @RequestMapping(value = "/{genename}/{cancertype}/{datatype}/{value}/bycancer",
             method = RequestMethod.GET,
             produces = {"application/json;charset=UTF-8"})
     @ResponseBody
-    public Operate<List<List<List<Point>>>> beeswormnew(@PathVariable("genename") String genes,
-                                                        @PathVariable("cancertype") String cancertype) {
+    public Operate<List<List<List<Point>>>> bycancer(@PathVariable("genename") String genes,
+                                                        @PathVariable("cancertype") String cancerType,
+                                                        @PathVariable("datatype") String dataType,
+                                                        @PathVariable("value") String value) {
 
         try {
             iDataService = (IDataService) Consumer.singleton().getBean("IDataService");
 
-            ///List<Point> p = dataService.beeswarm(genes,"lgg","n","c","y","0","1");
 
             String[] strings1 = genes.split(",");
 
@@ -47,18 +56,78 @@ public class Data {
                 List<String> stringList = new ArrayList<String>();
                 stringList.add(aStrings1);
                 //查询正常样本
-                List<Point> t = iDataService.beeswarm(stringList, "prop" + cancertype + "n");
+                List<Point> t = iDataService.beeswarm(stringList,cancerType,"n",dataType,value,"0","1");
                 for (Point point : t) {
                     point.setX(point.getX() + x);
                 }
                 System.out.println(t.size());
                 //查询非正常样本
-                List<Point> n = iDataService.beeswarm(stringList, "prop" + cancertype + "t");
+                x+=1.0;
+                List<Point> n = iDataService.beeswarm(stringList,cancerType,"t",dataType,value,"0","1");
                 for (Point point : n) {
                     point.setX(point.getX() + x);
                 }
                 System.out.println(n.size());
-                x += 3.0;
+                x += 2.0;
+                //添加正常样本
+                genesteam.add(t);
+                //添加不正常样本
+                genesteam.add(n);
+
+                allgens.add(genesteam);
+            }
+
+            return new Operate<List<List<List<Point>>>>(true, allgens);
+        }catch (IllegalStateException e){
+            return new Operate<List<List<List<Point>>>>(false, "服务异常！", null);
+        }
+    }
+
+    /**
+     * find data by gene
+     * @param genes
+     * @param cancerType
+     * @param dataType
+     * @param value
+     * @return
+     */
+    @RequestMapping(value = "/{genename}/{cancertype}/{datatype}/{value}/bygene",
+            method = RequestMethod.GET,
+            produces = {"application/json;charset=UTF-8"})
+    @ResponseBody
+    public Operate<List<List<List<Point>>>> bygene(@PathVariable("genename") String genes,
+                                                   @PathVariable("cancertype") String cancerType,
+                                                   @PathVariable("datatype") String dataType,
+                                                   @PathVariable("value") String value) {
+
+        try {
+            iDataService = (IDataService) Consumer.singleton().getBean("IDataService");
+
+
+            String[] strings1 = cancerType.split(",");
+
+            List<String> genename = new ArrayList<String>();
+            genename.add(genes);
+
+            List<List<List<Point>>> allgens = new ArrayList<List<List<Point>>>();
+            double x = 0.0;
+            for (String aStrings1 : strings1) {
+                List<List<Point>> genesteam = new ArrayList<List<Point>>();
+
+                //查询正常样本
+                List<Point> t = iDataService.beeswarm(genename,aStrings1,"n",dataType,value,"0","1");
+                for (Point point : t) {
+                    point.setX(point.getX() + x);
+                }
+                System.out.println(t.size());
+                //查询非正常样本
+                x+=1.0;
+                List<Point> n = iDataService.beeswarm(genename,aStrings1,"t",dataType,value,"0","1");
+                for (Point point : n) {
+                    point.setX(point.getX() + x);
+                }
+                System.out.println(n.size());
+                x += 2.0;
                 //添加正常样本
                 genesteam.add(t);
                 //添加不正常样本
@@ -74,11 +143,12 @@ public class Data {
     }
 
 
-    @RequestMapping(value = "/{chrom}/{type}/moutain",
+
+    @RequestMapping(value = "/{chrom}/{type}/bychrom",
             method = RequestMethod.GET,
             produces = {"application/json;charset=UTF-8"})
     @ResponseBody
-    public Operate<List<MoutainPoint>> moutain(@PathVariable("chrom") String chrom,
+    public Operate<List<MoutainPoint>> bychrom(@PathVariable("chrom") String chrom,
                                                @PathVariable("type") String type) {
 
         iDataService =(IDataService)  Consumer.singleton().getBean("IDataService");
