@@ -50,6 +50,7 @@ public class UserServiceImpl implements IUserService {
             }else{
                 //此处session注入domain
 
+
             }
         }
         return new Operate<User>(true, userDao.queryByEmail(authpair.getEmail()));

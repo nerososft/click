@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="admin:war exploded">
-    <output-path>$PROJECT_DIR$/build/web/admin</output-path>
+    <output-path>$PROJECT_DIR$/admin/target/click</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
