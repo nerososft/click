@@ -1,9 +1,10 @@
 package org.nero.click.data.web.controller;
 
+import org.apache.ibatis.annotations.Param;
 import org.nero.click.Consumer;
-import org.nero.click.data.dto.MoutainPoint;
 import org.nero.click.data.dto.Operate;
 import org.nero.click.data.dto.Point;
+import org.nero.click.data.dto.moutain.Moutain;
 import org.nero.click.data.service.IDataService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -22,8 +23,214 @@ import java.util.*;
 public class Data {
 
     private IDataService iDataService;
+    /***********************************************UTILS**************************************************************/
+    /**
+     * 样本x轴打散
+     * @param bees
+     * @return
+     */
+    public List<List<List<Point>>> xBeaten(List<List<List<Point>>> bees){
+        double distance = 0.0;
+        for(List<List<Point>> list_list_point:bees){
+            //+1
+            for (int j = 0;j<list_list_point.get(0).size();j++) {
+                list_list_point.get(0).get(j).setX(list_list_point.get(0).get(j).getX() + distance);
+            }
+            distance+=1.0;
+        }
+        return bees;
+    }
+
+    /**
+     * 双样本合并再打散
+     * @param bees1
+     * @param bees2
+     * @return
+     */
+    public Operate<List<List<List<Point>>>> combineBees(Operate<List<List<List<Point>>>> bees1,Operate<List<List<List<Point>>>> bees2){
+        //合并
+        for(int i = 0;i<bees1.getData().size();i++){
+            bees1.getData().get(i).add(bees2.getData().get(i).get(0));
+        }
+
+        double distance = 0.0;
+        //x轴打散
+        for(List<List<Point>> list_list_point:bees1.getData()){
+            //n
+            //+1
+            for (int j = 0;j<list_list_point.get(0).size();j++) {
+                list_list_point.get(0).get(j).setX(list_list_point.get(0).get(j).getX() + distance);
+            }
+            distance+=1.0;
+            //t
+            //+2
+            for (int j = 0;j<list_list_point.get(1).size();j++) {
+                list_list_point.get(1).get(j).setX(list_list_point.get(1).get(j).getX() + distance);
+            }
+            distance+=2.0;
+
+        }
+
+        return bees1;
+    }
+    /************************************************CHECK************************************************************/
+    /**
+     * 基因名称检测
+     * @param geneName
+     * @param dataType
+     * @return
+     */
+    @RequestMapping(value = "/{genename}/{datatype}/gene/check",
+            method = RequestMethod.GET,
+            produces = {"application/json;charset=UTF-8"})
+    @ResponseBody
+    public Operate<Boolean> checkGene(@PathVariable("genename")String geneName,
+                                      @PathVariable("datatype")String dataType){
+        try {
+            iDataService = (IDataService) Consumer.singleton().getBean("IDataService");
+            return iDataService.checkGene(dataType,geneName);
+        }catch (IllegalStateException e){
+            return new Operate<Boolean>(false, "服务异常！", null);
+        }
+    }
+
+    /**
+     * 检查癌症名称
+     * @param cancerName
+     * @param dataType
+     * @return
+     */
+    @RequestMapping(value = "/{cancername}/{datatype}/cancer/check",
+            method = RequestMethod.GET,
+            produces = {"application/json;charset=UTF-8"})
+    @ResponseBody
+    public Operate<Boolean> ckeckCancer(@PathVariable("cancername")String cancerName,
+                                        @PathVariable("datatype")String dataType){
+        try {
+            iDataService = (IDataService) Consumer.singleton().getBean("IDataService");
+            return iDataService.checkCancer(dataType,cancerName);
+        }catch (IllegalStateException e){
+            return new Operate<Boolean>(false, "服务异常！", null);
+        }
+    }
+    /***********************************************BY CANCER*********************************************************/
+    /**
+     * 获取cancer bees数据
+     * @param genes
+     * @Param simpleType
+     * @param cancerType
+     * @param dataType
+     * @param value
+     * @return
+     */
+    public Operate<List<List<List<Point>>>> get_cancer_bees(String genes,
+                                                     String simpleType,
+                                                     String cancerType,
+                                                     String dataType,
+                                                     String value){
+        try {
+            iDataService = (IDataService) Consumer.singleton().getBean("IDataService");
 
 
+            String[] strings1 = genes.split(",");
+
+            List<List<List<Point>>> allgens = new ArrayList<List<List<Point>>>();
+            for (String aStrings1 : strings1) {
+                List<List<Point>> genesteam = new ArrayList<List<Point>>();
+                //构造查询基因list
+                List<String> stringList = new ArrayList<String>();
+                stringList.add(aStrings1);
+                //查询样本
+                List<Point> bees = iDataService.beeswarm(stringList,cancerType,simpleType,dataType,value,"0","1");
+
+                //添加样本
+                genesteam.add(bees);
+                allgens.add(genesteam);
+            }
+
+            return new Operate<List<List<List<Point>>>>(true, allgens);
+        }catch (IllegalStateException e){
+            return new Operate<List<List<List<Point>>>>(false, "服务异常！", null);
+        }
+    }
+    /**
+     * 查询正常样本
+     * @param genes
+     * @param cancerType
+     * @param dataType
+     * @param value
+     * @return
+     */
+    public Operate<List<List<List<Point>>>> bycancer_nonmalignant(String genes,
+                                                                  String cancerType,
+                                                                  String dataType,
+                                                                  String value){
+       return get_cancer_bees(genes,"n",cancerType,dataType,value);
+    }
+
+    /**
+     * 查询不正常样本
+     * @param genes
+     * @param cancerType
+     * @param dataType
+     * @param value
+     * @return
+     */
+    public Operate<List<List<List<Point>>>> bycancer_tumor(String genes,
+                                                           String cancerType,
+                                                           String dataType,
+                                                           String value){
+        return get_cancer_bees(genes,"t",cancerType,dataType,value);
+    }
+
+    /**
+     * 查询nonmalignant样本
+     * @param genes
+     * @param cancerType
+     * @param dataType
+     * @param value
+     * @return
+     */
+    @RequestMapping(value = "/{genename}/{cancertype}/{datatype}/{value}/bycancer/nonmalignant",
+            method = RequestMethod.GET,
+            produces = {"application/json;charset=UTF-8"})
+    @ResponseBody
+    public Operate<List<List<List<Point>>>> bycancer_nonmalignant_api(@PathVariable("genename") String genes,
+                                                     @PathVariable("cancertype") String cancerType,
+                                                     @PathVariable("datatype") String dataType,
+                                                     @PathVariable("value") String value) {
+        Operate<List<List<List<Point>>>> bees_nonmalignant =  bycancer_nonmalignant(genes,cancerType,dataType,value);
+        if(bees_nonmalignant.isState()) {
+            return new Operate<List<List<List<Point>>>>(true,xBeaten(bees_nonmalignant.getData()));
+        }
+        return bees_nonmalignant;
+
+    }
+
+    /**
+     * 查询tumor样本
+     * @param genes
+     * @param cancerType
+     * @param dataType
+     * @param value
+     * @return
+     */
+    @RequestMapping(value = "/{genename}/{cancertype}/{datatype}/{value}/bycancer/tumor",
+            method = RequestMethod.GET,
+            produces = {"application/json;charset=UTF-8"})
+    @ResponseBody
+    public Operate<List<List<List<Point>>>> bycancer_tumor_api(@PathVariable("genename") String genes,
+                                                                      @PathVariable("cancertype") String cancerType,
+                                                                      @PathVariable("datatype") String dataType,
+                                                                      @PathVariable("value") String value) {
+
+        Operate<List<List<List<Point>>>> bees_tumor =  bycancer_tumor(genes,cancerType,dataType,value);
+        if(bees_tumor.isState()) {
+            return new Operate<List<List<List<Point>>>>(true,xBeaten(bees_tumor.getData()));
+        }
+        return bees_tumor;
+
+    }
     /**
      * find data by cancer type
      * @param genes
@@ -36,44 +243,61 @@ public class Data {
             method = RequestMethod.GET,
             produces = {"application/json;charset=UTF-8"})
     @ResponseBody
-    public Operate<List<List<List<Point>>>> bycancer(@PathVariable("genename") String genes,
+    public Operate<List<List<List<Point>>>> bycancer_api(@PathVariable("genename") String genes,
                                                         @PathVariable("cancertype") String cancerType,
                                                         @PathVariable("datatype") String dataType,
                                                         @PathVariable("value") String value) {
 
+        List<List<List<Point>>> allBees = new ArrayList<List<List<Point>>>();
+
+        Operate<List<List<List<Point>>>> byCancerNonmalignant = bycancer_nonmalignant(genes,cancerType,dataType,value);
+        Operate<List<List<List<Point>>>> byCancerTumor = bycancer_tumor(genes,cancerType,dataType,value);
+
+        if(byCancerNonmalignant.isState()&&byCancerTumor.isState()){
+
+            //合并
+            return combineBees(byCancerNonmalignant,byCancerTumor);
+
+        }
+        return byCancerNonmalignant.isState()?byCancerTumor:byCancerNonmalignant;
+    }
+
+
+
+    /***********************************************BY GENE ***********************************************************/
+    /**
+     * 获取样本bygene
+     * @param genes
+     * @param simpleType
+     * @param cancerType
+     * @param dataType
+     * @param value
+     * @return
+     */
+    public Operate<List<List<List<Point>>>> get_gene_bees(String genes,
+                                                            String simpleType,
+                                                            String cancerType,
+                                                            String dataType,
+                                                            String value){
         try {
             iDataService = (IDataService) Consumer.singleton().getBean("IDataService");
 
 
-            String[] strings1 = genes.split(",");
+            String[] strings1 = cancerType.split(",");
 
+            List<String> genename = new ArrayList<String>();
+            genename.add(genes);
             List<List<List<Point>>> allgens = new ArrayList<List<List<Point>>>();
             double x = 0.0;
             for (String aStrings1 : strings1) {
                 List<List<Point>> genesteam = new ArrayList<List<Point>>();
-
-                //构造查询基因list
-                List<String> stringList = new ArrayList<String>();
-                stringList.add(aStrings1);
-                //查询正常样本
-                List<Point> t = iDataService.beeswarm(stringList,cancerType,"n",dataType,value,"0","1");
-                for (Point point : t) {
+                //查询样本
+                List<Point> bees = iDataService.beeswarm(genename,aStrings1,simpleType,dataType,value,"0","1");
+                for (Point point : bees) {
                     point.setX(point.getX() + x);
                 }
-                System.out.println(t.size());
-                //查询非正常样本
-                x+=1.0;
-                List<Point> n = iDataService.beeswarm(stringList,cancerType,"t",dataType,value,"0","1");
-                for (Point point : n) {
-                    point.setX(point.getX() + x);
-                }
-                System.out.println(n.size());
-                x += 2.0;
-                //添加正常样本
-                genesteam.add(t);
-                //添加不正常样本
-                genesteam.add(n);
-
+                //添加样本
+                genesteam.add(bees);
                 allgens.add(genesteam);
             }
 
@@ -84,83 +308,159 @@ public class Data {
     }
 
     /**
-     * find data by gene
+     * 获取n样本bygene
      * @param genes
      * @param cancerType
      * @param dataType
      * @param value
      * @return
      */
+    public Operate<List<List<List<Point>>>> bygene_nonmalignant(String genes,
+                                                                  String cancerType,
+                                                                  String dataType,
+                                                                  String value){
+        return get_gene_bees(genes,"n",cancerType,dataType,value);
+    }
+
+    /**
+     * 获取t样本bygene
+     * @param genes
+     * @param cancerType
+     * @param dataType
+     * @param value
+     * @return
+     */
+    public Operate<List<List<List<Point>>>> bygene_tumor(String genes,
+                                                           String cancerType,
+                                                           String dataType,
+                                                           String value){
+        return get_gene_bees(genes,"t",cancerType,dataType,value);
+    }
+
+
+    /**
+     * 获取n样本API
+     * @param genes
+     * @param cancerType
+     * @param dataType
+     * @param value
+     * @return
+     */
+    @RequestMapping(value = "/{genename}/{cancertype}/{datatype}/{value}/bygene/nonmalignant",
+            method = RequestMethod.GET,
+            produces = {"application/json;charset=UTF-8"})
+    @ResponseBody
+    public Operate<List<List<List<Point>>>> bygene_nonmalignant_api(@PathVariable("genename") String genes,
+                                                                      @PathVariable("cancertype") String cancerType,
+                                                                      @PathVariable("datatype") String dataType,
+                                                                      @PathVariable("value") String value) {
+        Operate<List<List<List<Point>>>> bees_nonmalignant =  bygene_nonmalignant(genes,cancerType,dataType,value);
+        if(bees_nonmalignant.isState()) {
+            return new Operate<List<List<List<Point>>>>(true,xBeaten(bees_nonmalignant.getData()));
+        }
+        return bees_nonmalignant;
+
+    }
+
+    /**
+     * 查询tumor样本API
+     * @param genes
+     * @param cancerType
+     * @param dataType
+     * @param value
+     * @return
+     */
+    @RequestMapping(value = "/{genename}/{cancertype}/{datatype}/{value}/bygene/tumor",
+            method = RequestMethod.GET,
+            produces = {"application/json;charset=UTF-8"})
+    @ResponseBody
+    public Operate<List<List<List<Point>>>> bygene_tumor_api(@PathVariable("genename") String genes,
+                                                               @PathVariable("cancertype") String cancerType,
+                                                               @PathVariable("datatype") String dataType,
+                                                               @PathVariable("value") String value) {
+
+        Operate<List<List<List<Point>>>> bees_tumor =  bygene_tumor(genes,cancerType,dataType,value);
+        if(bees_tumor.isState()) {
+            return new Operate<List<List<List<Point>>>>(true,xBeaten(bees_tumor.getData()));
+        }
+        return bees_tumor;
+
+    }
+    /**
+     * bygene API
+     * @param genes
+     * @param cancerType
+     * @param dataType
+     * @param value
+     * @return
+     *
+     */
     @RequestMapping(value = "/{genename}/{cancertype}/{datatype}/{value}/bygene",
             method = RequestMethod.GET,
             produces = {"application/json;charset=UTF-8"})
     @ResponseBody
-    public Operate<List<List<List<Point>>>> bygene(@PathVariable("genename") String genes,
-                                                   @PathVariable("cancertype") String cancerType,
-                                                   @PathVariable("datatype") String dataType,
-                                                   @PathVariable("value") String value) {
+    public Operate<List<List<List<Point>>>> bygene_api(@PathVariable("genename") String genes,
+                                                         @PathVariable("cancertype") String cancerType,
+                                                         @PathVariable("datatype") String dataType,
+                                                         @PathVariable("value") String value) {
 
+        List<List<List<Point>>> allBees = new ArrayList<List<List<Point>>>();
+
+        Operate<List<List<List<Point>>>> byGeneNonmalignant = bygene_nonmalignant(genes,cancerType,dataType,value);
+        Operate<List<List<List<Point>>>> byGeneTumor = bygene_tumor(genes,cancerType,dataType,value);
+
+        if(byGeneNonmalignant.isState()&&byGeneTumor.isState()){
+
+            //合并
+            return combineBees(byGeneNonmalignant,byGeneTumor);
+
+        }
+        return byGeneNonmalignant.isState()?byGeneTumor:byGeneNonmalignant;
+    }
+
+
+    /***********************************************MOUTAIN*************************************************************/
+
+
+    //http://47.88.77.83:8080/data/data/gbm/1/c/l/mean/bychromosomes
+
+    @RequestMapping(value = "/{cancerType}/{chromosomes}/{dataType}/{value}/{showValue}/bychromosomes",
+            method = RequestMethod.GET,
+            produces = {"application/json;charset=UTF-8"})
+    @ResponseBody
+    public Operate<Moutain> byChromosomes(@PathVariable("cancerType") String cancerType,
+                                          @PathVariable("chromosomes") String chromosomes,
+                                          @PathVariable("dataType") String dataType,
+                                          @PathVariable("value") String value,
+                                          @PathVariable("showValue") String showValue) {
         try {
             iDataService = (IDataService) Consumer.singleton().getBean("IDataService");
 
 
-            String[] strings1 = cancerType.split(",");
-
-            List<String> genename = new ArrayList<String>();
-            genename.add(genes);
-
-            List<List<List<Point>>> allgens = new ArrayList<List<List<Point>>>();
-            double x = 0.0;
-            for (String aStrings1 : strings1) {
-                List<List<Point>> genesteam = new ArrayList<List<Point>>();
-
-                //查询正常样本
-                List<Point> t = iDataService.beeswarm(genename,aStrings1,"n",dataType,value,"0","1");
-                for (Point point : t) {
-                    point.setX(point.getX() + x);
-                }
-                System.out.println(t.size());
-                //查询非正常样本
-                x+=1.0;
-                List<Point> n = iDataService.beeswarm(genename,aStrings1,"t",dataType,value,"0","1");
-                for (Point point : n) {
-                    point.setX(point.getX() + x);
-                }
-                System.out.println(n.size());
-                x += 2.0;
-                //添加正常样本
-                genesteam.add(t);
-                //添加不正常样本
-                genesteam.add(n);
-
-                allgens.add(genesteam);
-            }
-
-            return new Operate<List<List<List<Point>>>>(true, allgens);
+            return new Operate<Moutain>(true, iDataService.moutain(cancerType, chromosomes, dataType, value, showValue));
         }catch (IllegalStateException e){
-            return new Operate<List<List<List<Point>>>>(false, "服务异常！", null);
+            return new Operate<Moutain>(false,"服务异常！",null);
         }
+
     }
 
 
-
-    @RequestMapping(value = "/{chrom}/{type}/bychrom",
+    /*********************************************曼哈顿**************************************************/
+    @RequestMapping(value = "/{cancerType}/{dataType}/bymanhattan",
             method = RequestMethod.GET,
             produces = {"application/json;charset=UTF-8"})
     @ResponseBody
-    public Operate<List<MoutainPoint>> bychrom(@PathVariable("chrom") String chrom,
-                                               @PathVariable("type") String type) {
+    public Operate<List<List<Point>>> getManhattan(@PathVariable("cancerType") String cancerType,
+                                                   @PathVariable("dataType") String dataType){
 
-        iDataService =(IDataService)  Consumer.singleton().getBean("IDataService");
-
-        List<MoutainPoint> moutainPoints = iDataService.moutain(chrom,type);
-        float x = 0;
-        for(MoutainPoint m:moutainPoints){
-            m.setX(x);
-            x+=0.001;
+        try{
+            iDataService = (IDataService) Consumer.singleton().getBean("IDataService");
+            return new Operate<List<List<Point>>>(true,iDataService.getManhattan(cancerType,dataType));
+        }catch(IllegalStateException e){
+            return new Operate<List<List<Point>>>(false,"服务异常！",null);
         }
 
-        return new Operate<List<MoutainPoint>>(true,moutainPoints);
-
     }
+
+
 }

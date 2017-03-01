@@ -2,41 +2,39 @@ package org.nero.click.data.dao;
 
 import org.apache.ibatis.annotations.Param;
 import org.nero.click.data.dto.Point;
+import org.nero.click.data.entity.Gene;
 
 import java.util.List;
 
 /**
- * Author nero
- * Date   2016/10/21 0021
- * Time   18:49
+ * Author neroyang
  * Email  nerosoft@outlook.com
+ * Date   2017/2/26
+ * Time   下午9:24
  */
 public interface ManhattanDao {
 
-
     /**
-     * 根据染色体获取基因id
-     * @param ucChrom
+     * 获取相应染色体基因数据
+     * @param chromosome
+     * @param dataType
      * @return
      */
-    List<Integer> getGeneId(List<Integer> ucChrom);
+    List<String> getManhattanData(@Param("chromosome") String chromosome,
+                              @Param("dataType") String dataType);
 
     /**
-     * 根据基因获取propertyId
-     * @param gengId
+     * 获取曼哈顿所有样本
+     * @param cancerType
+     * @param dataType
+     * @param geneId
      * @return
      */
-    List<Integer> getPropertyId(List<Integer> gengId);
+    List<Point> getSampleAll(@Param("cancerType") String cancerType,
+                             @Param("dataType") String dataType,
+                             @Param("geneId") List<String> geneId,
+                             @Param("normal") String normal);
 
-
-    /**
-     * 获取麦哈顿图数据
-     * @param ptopertyId
-     * @param cancerTable
-     * @return
-     */
-    List<Point> manhattan(@Param("list") List<Integer> ptopertyId,
-                          @Param("table") String cancerTable);
 
 
 }

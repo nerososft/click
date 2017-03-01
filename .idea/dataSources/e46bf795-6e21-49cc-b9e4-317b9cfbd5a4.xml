@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - click@47.88.77.83">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="click">
+      <Visible>1</Visible>
+    </schema>
+    <table id="3" parent="2" name="banner"/>
+    <table id="4" parent="2" name="footer"/>
+    <table id="5" parent="2" name="header"/>
+    <table id="6" parent="2" name="link"/>
+    <table id="7" parent="2" name="logo"/>
+    <table id="8" parent="2" name="module"/>
+    <table id="9" parent="2" name="resource"/>
+    <table id="10" parent="2" name="c_gene"/>
+    <table id="11" parent="2" name="user"/>
+    <table id="12" parent="2" name="gbm_n_c_y_0_1"/>
+    <table id="13" parent="2" name="lgg_n_c_y_0_1"/>
+    <table id="14" parent="2" name="lgg_t_c_y_0_1"/>
+    <column id="15" parent="3" name="id">
+      <DataType>int(32)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="16" parent="3" name="descrip">
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="17" parent="3" name="href_url">
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="18" parent="3" name="img_url">
+      <DataType>varchar(128)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="19" parent="3" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="20" parent="4" name="label">
+      <DataType>varchar(128)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="21" parent="4" name="PRIMARY">
+      <ColNames>label</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="22" parent="5" name="title">
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="23" parent="5" name="label">
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <key id="24" parent="5" name="PRIMARY">
+      <ColNames>title</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="25" parent="6" name="id">
+      <DataType>int(32)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="26" parent="6" name="name">
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="27" parent="6" name="href_url">
+      <DataType>varchar(128)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="28" parent="6" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="29" parent="7" name="id">
+      <DataType>int(32)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="30" parent="7" name="descrip">
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="31" parent="7" name="href_url">
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="32" parent="7" name="img_url">
+      <DataType>varchar(128)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="33" parent="7" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="34" parent="8" name="module_id">
+      <DataType>int(32)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="35" parent="8" name="module_name">
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="36" parent="8" name="module_desc">
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="37" parent="8" name="module_url">
+      <DataType>varchar(128)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="38" parent="8" name="module_img_url">
+      <DataType>varchar(128)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="39" parent="8" name="PRIMARY">
+      <ColNames>module_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="40" parent="9" name="resource_id">
+      <DataType>int(32)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="41" parent="9" name="filename">
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="42" parent="9" name="filepath">
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="43" parent="9" name="hash_code">
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="44" parent="9" name="file_size">
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="45" parent="9" name="uploader_id">
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="46" parent="9" name="upload_time">
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;CURRENT_TIMESTAMP&apos;</DefaultExpression>
+    </column>
+    <index id="47" parent="9" name="hash_code">
+      <ColNames>hash_code</ColNames>
+    </index>
+    <key id="48" parent="9" name="PRIMARY">
+      <ColNames>resource_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="49" parent="10" name="ID">
+      <DataType>smallint(6)|0</DataType>
+    </column>
+    <column id="50" parent="10" name="genename">
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="51" parent="10" name="ucChrom">
+      <DataType>tinyint(4)|0</DataType>
+    </column>
+    <column id="52" parent="10" name="ucStart">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="53" parent="10" name="ucStop">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="54" parent="10" name="ucCyto">
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="55" parent="10" name="unArm">
+      <DataType>char(1)|0</DataType>
+    </column>
+    <column id="56" parent="11" name="id">
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="57" parent="11" name="username">
+      <DataType>varchar(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="58" parent="11" name="email">
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="59" parent="11" name="token">
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="60" parent="11" name="phone">
+      <DataType>varchar(16)|0</DataType>
+    </column>
+    <column id="61" parent="11" name="ctime">
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="62" parent="11" name="isactive">
+      <DataType>tinyint(4)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="63" parent="11" name="password">
+      <DataType>varchar(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="64" parent="11" name="email">
+      <ColNames>email</ColNames>
+    </index>
+    <key id="65" parent="11" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="66" parent="12" name="geneid">
+      <DataType>smallint(6)|0</DataType>
+    </column>
+    <column id="67" parent="12" name="y">
+      <DataType>float(7,4)|0</DataType>
+    </column>
+    <column id="68" parent="12" name="sampleid">
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <index id="69" parent="12" name="in_geneid">
+      <ColNames>geneid</ColNames>
+    </index>
+    <column id="70" parent="13" name="geneid">
+      <DataType>smallint(6)|0</DataType>
+    </column>
+    <column id="71" parent="13" name="y">
+      <DataType>float(7,4)|0</DataType>
+    </column>
+    <column id="72" parent="13" name="sampleid">
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <index id="73" parent="13" name="in_geneid">
+      <ColNames>geneid</ColNames>
+    </index>
+    <column id="74" parent="14" name="geneid">
+      <DataType>smallint(6)|0</DataType>
+    </column>
+    <column id="75" parent="14" name="y">
+      <DataType>float(7,4)|0</DataType>
+    </column>
+    <column id="76" parent="14" name="sampleid">
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <index id="77" parent="14" name="in_geneid">
+      <ColNames>geneid</ColNames>
+    </index>
+  </database-model>
+</dataSource>

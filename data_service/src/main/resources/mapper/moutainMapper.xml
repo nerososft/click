@@ -4,8 +4,19 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.nero.click.data.dao.MoutainDao">
 
-    <select id="moutain" resultType="org.nero.click.data.dto.MoutainPoint">
-        SELECT geneName,${type} from gene where ucChrom = ${chromosomes} ;
+    <select id="getMoutainData" resultType="org.nero.click.data.entity.Gene">
+        SELECT * from ${dataType}_gene where ucChrom = ${chromosome} ;
+    </select>
+    <select id="getSample" resultType="Double">
+        SELECT y from  ${cancerType}_${normal}_${dataType}_${value}_${index}_${page} where geneid = ${geneId};
     </select>
 
+
+    <select id="getMoutain" resultType="Double">
+        select ${which} FROM ${dataType}_${normal}_${isLog}_moutain WHERE geneid in
+        <foreach collection="geneId" index="index" item="item" open="(" separator="," close=")">
+            ${item}
+        </foreach>
+        AND cancertype = '${cancerType}' ;
+    </select>
 </mapper>

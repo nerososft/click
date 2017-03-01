@@ -1,0 +1,1058 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - click@tju.yuchunyu.me">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="click">
+      <Visible>1</Visible>
+    </schema>
+    <table id="3" parent="2" name="gene"/>
+    <table id="4" parent="2" name="getmid"/>
+    <table id="5" parent="2" name="getq1"/>
+    <table id="6" parent="2" name="propgbmn"/>
+    <table id="7" parent="2" name="propgbmn_copy"/>
+    <table id="8" parent="2" name="propgbmt"/>
+    <table id="9" parent="2" name="proplggn"/>
+    <table id="10" parent="2" name="proplggt"/>
+    <table id="11" parent="2" name="propluadn"/>
+    <table id="12" parent="2" name="propluadt"/>
+    <table id="13" parent="2" name="propluscn"/>
+    <table id="14" parent="2" name="proplusct"/>
+    <table id="15" parent="2" name="relation"/>
+    <table id="16" parent="2" name="samplenum"/>
+    <table id="17" parent="2" name="user"/>
+    <table id="18" parent="2" name="news"/>
+    <table id="19" parent="2" name="header"/>
+    <table id="20" parent="2" name="footer"/>
+    <table id="21" parent="2" name="link"/>
+    <table id="22" parent="2" name="logo"/>
+    <table id="23" parent="2" name="banner"/>
+    <routine id="24" parent="2" name="chromosome">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="25" parent="2" name="getRelation">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="26" parent="2" name="ji">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="27" parent="2" name="jiQ1">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="28" parent="2" name="jiQ3">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="29" parent="2" name="ou">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="30" parent="2" name="ouQ1">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="31" parent="2" name="ouQ3">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="32" parent="2" name="select">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="33" parent="2" name="TESTji">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="34" parent="2" name="TESTou">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="35" parent="2" name="tgbmn">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="36" parent="2" name="tgbmt">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="37" parent="2" name="tlggn">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="38" parent="2" name="tlggt">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="39" parent="2" name="tloggbmn">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="40" parent="2" name="tloggbmt">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="41" parent="2" name="tloglggn">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="42" parent="2" name="tloglggt">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="43" parent="2" name="tlogluadn">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="44" parent="2" name="tlogluadt">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="45" parent="2" name="tlogluscn">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="46" parent="2" name="tloglusct">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="47" parent="2" name="tluadn">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="48" parent="2" name="tluadt">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="49" parent="2" name="tluscn">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="50" parent="2" name="tlusct">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="51" parent="2" name="zhongzhi">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <column id="52" parent="3" name="geneID">
+      <DataType>int(5)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="53" parent="3" name="geneName">
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="54" parent="3" name="ucChrom">
+      <DataType>varchar(4)|0</DataType>
+    </column>
+    <column id="55" parent="3" name="ucStart">
+      <DataType>int(7)|0</DataType>
+    </column>
+    <column id="56" parent="3" name="ucStop">
+      <DataType>int(7)|0</DataType>
+    </column>
+    <column id="57" parent="3" name="ucCyto">
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="58" parent="3" name="ucArm">
+      <DataType>varchar(2)|0</DataType>
+    </column>
+    <column id="59" parent="3" name="avgGBMn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="60" parent="3" name="midGBMn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="61" parent="3" name="q1GBMn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="62" parent="3" name="q3GBMn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="63" parent="3" name="qupGBMn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="64" parent="3" name="qdownGBMn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="65" parent="3" name="tgbmn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="66" parent="3" name="avgGBMt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="67" parent="3" name="midGBMt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="68" parent="3" name="q1GBMt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="69" parent="3" name="q3GBMt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="70" parent="3" name="qupGBMt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="71" parent="3" name="qdownGBMt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="72" parent="3" name="tgbmt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="73" parent="3" name="avgLGGn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="74" parent="3" name="midLGGn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="75" parent="3" name="q1LGGn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="76" parent="3" name="q3LGGn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="77" parent="3" name="qupLGGn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="78" parent="3" name="qdownLGGn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="79" parent="3" name="avgLGGt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="80" parent="3" name="midLGGt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="81" parent="3" name="q1LGGt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="82" parent="3" name="q3LGGt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="83" parent="3" name="qupLGGt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="84" parent="3" name="qdownLGGt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="85" parent="3" name="avgLUADn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="86" parent="3" name="midLUADn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="87" parent="3" name="q1LUADn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="88" parent="3" name="q3LUADn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="89" parent="3" name="qupLUADn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="90" parent="3" name="qdownLUADn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="91" parent="3" name="avgLUADt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="92" parent="3" name="midLUADt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="93" parent="3" name="q1LUADt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="94" parent="3" name="q3LUADt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="95" parent="3" name="qupLUADt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="96" parent="3" name="qdownLUADT">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="97" parent="3" name="avgLUSCn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="98" parent="3" name="midLUSCn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="99" parent="3" name="q1LUSCn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="100" parent="3" name="q3LUSCn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="101" parent="3" name="qupLUSCn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="102" parent="3" name="qdownLUSCn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="103" parent="3" name="avgLUSCt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="104" parent="3" name="midLUSCt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="105" parent="3" name="q1LUSCt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="106" parent="3" name="q3LUSCt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="107" parent="3" name="qupLUSCt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="108" parent="3" name="qdownLUSCt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="109" parent="3" name="lavggbmn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="110" parent="3" name="lmidgbmn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="111" parent="3" name="lqdowngbmn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="112" parent="3" name="lq1gbmn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="113" parent="3" name="lq3gbmn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="114" parent="3" name="lqupgbmn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="115" parent="3" name="lavggbmt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="116" parent="3" name="lmidgbmt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="117" parent="3" name="lqdowngbmt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="118" parent="3" name="lq1gbmt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="119" parent="3" name="lq3gbmt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="120" parent="3" name="lqupgbmt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="121" parent="3" name="lavglggn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="122" parent="3" name="lmidlggn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="123" parent="3" name="lqdownlggn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="124" parent="3" name="lq1lggn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="125" parent="3" name="lq3lggn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="126" parent="3" name="lquplggn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="127" parent="3" name="lavglggt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="128" parent="3" name="lmidlggt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="129" parent="3" name="lqdownlggt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="130" parent="3" name="lq1lggt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="131" parent="3" name="lq3lggt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="132" parent="3" name="lquplggt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="133" parent="3" name="lavgluadn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="134" parent="3" name="lmidluadn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="135" parent="3" name="lqdownluadn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="136" parent="3" name="lq1luadn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="137" parent="3" name="lq3luadn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="138" parent="3" name="lqupluadn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="139" parent="3" name="lavgluadt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="140" parent="3" name="lmidluadt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="141" parent="3" name="lqdownluadt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="142" parent="3" name="lq1luadt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="143" parent="3" name="lq3luadt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="144" parent="3" name="lqupluadt">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="145" parent="3" name="lavgluscn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="146" parent="3" name="lmidluscn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="147" parent="3" name="lqdownluscn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="148" parent="3" name="lq1luscn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="149" parent="3" name="lq3luscn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="150" parent="3" name="lqupluscn">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="151" parent="3" name="lavglusct">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="152" parent="3" name="lmidlusct">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="153" parent="3" name="lqdownlusct">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="154" parent="3" name="lq1lusct">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="155" parent="3" name="lq3lusct">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="156" parent="3" name="lquplusct">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <index id="157" parent="3" name="index">
+      <ColNames>geneName</ColNames>
+    </index>
+    <key id="158" parent="3" name="PRIMARY">
+      <ColNames>geneID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="159" parent="4" name="id">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="160" parent="4" name="Q1">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <key id="161" parent="4" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="162" parent="5" name="id">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="163" parent="5" name="q1">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <key id="164" parent="5" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="165" parent="6" name="propertyID">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="166" parent="6" name="x">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="167" parent="6" name="y">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="168" parent="6" name="yLog">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="169" parent="6" name="sampleID">
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="170" parent="6" name="value">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="171" parent="6" name="valueLog">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <key id="172" parent="6" name="PRIMARY">
+      <ColNames>propertyID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="173" parent="7" name="propertyID">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="174" parent="7" name="x">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="175" parent="7" name="y">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="176" parent="7" name="yLog">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="177" parent="7" name="sampleID">
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="178" parent="7" name="value">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="179" parent="7" name="valueLog">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <key id="180" parent="7" name="PRIMARY">
+      <ColNames>propertyID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="181" parent="8" name="propertyID">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="182" parent="8" name="x">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="183" parent="8" name="y">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="184" parent="8" name="yLog">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="185" parent="8" name="sampleID">
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="186" parent="8" name="value">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="187" parent="8" name="valueLog">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <key id="188" parent="8" name="PRIMARY">
+      <ColNames>propertyID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="189" parent="9" name="propertyID">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="190" parent="9" name="x">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="191" parent="9" name="y">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="192" parent="9" name="yLog">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="193" parent="9" name="sampleID">
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="194" parent="9" name="value">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="195" parent="9" name="valueLog">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <key id="196" parent="9" name="PRIMARY">
+      <ColNames>propertyID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="197" parent="10" name="propertyID">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="198" parent="10" name="x">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="199" parent="10" name="y">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="200" parent="10" name="yLog">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="201" parent="10" name="sampleID">
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="202" parent="10" name="value">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="203" parent="10" name="valueLog">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <key id="204" parent="10" name="PRIMARY">
+      <ColNames>propertyID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="205" parent="11" name="propertyID">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="206" parent="11" name="x">
+      <DataType>float(9,6)|0</DataType>
+    </column>
+    <column id="207" parent="11" name="y">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="208" parent="11" name="yLog">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="209" parent="11" name="sampleID">
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="210" parent="11" name="value">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="211" parent="11" name="valueLog">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <key id="212" parent="11" name="PRIMARY">
+      <ColNames>propertyID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="213" parent="12" name="propertyID">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="214" parent="12" name="x">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="215" parent="12" name="y">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="216" parent="12" name="yLog">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="217" parent="12" name="sampleID">
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="218" parent="12" name="value">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="219" parent="12" name="valueLog">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <key id="220" parent="12" name="PRIMARY">
+      <ColNames>propertyID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="221" parent="13" name="propertyID">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="222" parent="13" name="x">
+      <DataType>float(9,6)|0</DataType>
+    </column>
+    <column id="223" parent="13" name="y">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="224" parent="13" name="yLog">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="225" parent="13" name="sampleID">
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="226" parent="13" name="value">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="227" parent="13" name="valueLog">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <key id="228" parent="13" name="PRIMARY">
+      <ColNames>propertyID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="229" parent="14" name="propertyID">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="230" parent="14" name="x">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="231" parent="14" name="y">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="232" parent="14" name="yLog">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="233" parent="14" name="sampleID">
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="234" parent="14" name="value">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <column id="235" parent="14" name="valueLog">
+      <DataType>float(9,4)|0</DataType>
+    </column>
+    <key id="236" parent="14" name="PRIMARY">
+      <ColNames>propertyID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="237" parent="15" name="propertyID">
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="238" parent="15" name="gbmnID">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="239" parent="15" name="gbmtID">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="240" parent="15" name="lggnID">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="241" parent="15" name="lggtID">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="242" parent="15" name="luadnID">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="243" parent="15" name="luadtID">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="244" parent="15" name="luscnID">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="245" parent="15" name="lusctID">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="246" parent="15" name="index1">
+      <ColNames>luadnID</ColNames>
+    </index>
+    <index id="247" parent="15" name="index2">
+      <ColNames>gbmnID</ColNames>
+    </index>
+    <index id="248" parent="15" name="index3">
+      <ColNames>gbmtID</ColNames>
+    </index>
+    <index id="249" parent="15" name="index4">
+      <ColNames>lggnID</ColNames>
+    </index>
+    <index id="250" parent="15" name="index5">
+      <ColNames>lggtID</ColNames>
+    </index>
+    <index id="251" parent="15" name="index6">
+      <ColNames>luadtID</ColNames>
+    </index>
+    <index id="252" parent="15" name="index7">
+      <ColNames>luscnID</ColNames>
+    </index>
+    <index id="253" parent="15" name="index8">
+      <ColNames>lusctID</ColNames>
+    </index>
+    <key id="254" parent="15" name="PRIMARY">
+      <ColNames>propertyID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="255" parent="16" name="name">
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="256" parent="16" name="num">
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="257" parent="17" name="id">
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="258" parent="17" name="username">
+      <DataType>varchar(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="259" parent="17" name="email">
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="260" parent="17" name="token">
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="261" parent="17" name="phone">
+      <DataType>varchar(16)|0</DataType>
+    </column>
+    <column id="262" parent="17" name="ctime">
+      <DataType>datetime|0</DataType>
+      <DefaultExpression>&apos;CURRENT_TIMESTAMP&apos;</DefaultExpression>
+    </column>
+    <column id="263" parent="17" name="isactive">
+      <DataType>tinyint(4)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="264" parent="17" name="password">
+      <DataType>varchar(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="265" parent="17" name="email">
+      <ColNames>email</ColNames>
+    </index>
+    <key id="266" parent="17" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="267" parent="18" name="id">
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="268" parent="18" name="title">
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="269" parent="18" name="content">
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="270" parent="18" name="isdel">
+      <DataType>tinyint(4)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="271" parent="18" name="readcount">
+      <DataType>bigint(20)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="272" parent="18" name="ctime">
+      <DataType>datetime|0</DataType>
+      <DefaultExpression>&apos;CURRENT_TIMESTAMP&apos;</DefaultExpression>
+    </column>
+    <key id="273" parent="18" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="274" parent="19" name="title">
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="275" parent="19" name="label">
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <key id="276" parent="19" name="PRIMARY">
+      <ColNames>title</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="277" parent="20" name="label">
+      <DataType>varchar(128)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="278" parent="20" name="PRIMARY">
+      <ColNames>label</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="279" parent="21" name="id">
+      <DataType>int(32)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="280" parent="21" name="name">
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="281" parent="21" name="href_url">
+      <DataType>varchar(128)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="282" parent="21" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="283" parent="22" name="id">
+      <DataType>int(32)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="284" parent="22" name="descrip">
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="285" parent="22" name="href_url">
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="286" parent="22" name="img_url">
+      <DataType>varchar(128)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="287" parent="22" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="288" parent="23" name="id">
+      <DataType>int(32)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="289" parent="23" name="descrip">
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="290" parent="23" name="href_url">
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="291" parent="23" name="img_url">
+      <DataType>varchar(128)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="292" parent="23" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <argument id="293" parent="24" name="chromosome">
+      <DataType>char(2)|0</DataType>
+    </argument>
+    <argument id="294" parent="32" name="tname">
+      <DataType>char(15)|0</DataType>
+    </argument>
+    <argument id="295" parent="35" name="g1name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="296" parent="35" name="g2name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="297" parent="35" name="alpha">
+      <DataType>float(10,4)|0</DataType>
+    </argument>
+    <argument id="298" parent="36" name="g1name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="299" parent="36" name="g2name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="300" parent="36" name="alpha">
+      <DataType>float(10,4)|0</DataType>
+    </argument>
+    <argument id="301" parent="37" name="g1name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="302" parent="37" name="g2name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="303" parent="37" name="alpha">
+      <DataType>float(10,4)|0</DataType>
+    </argument>
+    <argument id="304" parent="38" name="g1name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="305" parent="38" name="g2name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="306" parent="38" name="alpha">
+      <DataType>float(10,4)|0</DataType>
+    </argument>
+    <argument id="307" parent="39" name="g1name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="308" parent="39" name="g2name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="309" parent="39" name="alpha">
+      <DataType>float(10,4)|0</DataType>
+    </argument>
+    <argument id="310" parent="40" name="g1name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="311" parent="40" name="g2name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="312" parent="40" name="alpha">
+      <DataType>float(10,4)|0</DataType>
+    </argument>
+    <argument id="313" parent="41" name="g1name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="314" parent="41" name="g2name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="315" parent="41" name="alpha">
+      <DataType>float(10,4)|0</DataType>
+    </argument>
+    <argument id="316" parent="42" name="g1name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="317" parent="42" name="g2name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="318" parent="42" name="alpha">
+      <DataType>float(10,4)|0</DataType>
+    </argument>
+    <argument id="319" parent="43" name="g1name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="320" parent="43" name="g2name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="321" parent="43" name="alpha">
+      <DataType>float(10,4)|0</DataType>
+    </argument>
+    <argument id="322" parent="44" name="g1name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="323" parent="44" name="g2name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="324" parent="44" name="alpha">
+      <DataType>float(10,4)|0</DataType>
+    </argument>
+    <argument id="325" parent="45" name="g1name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="326" parent="45" name="g2name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="327" parent="45" name="alpha">
+      <DataType>float(10,4)|0</DataType>
+    </argument>
+    <argument id="328" parent="46" name="g1name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="329" parent="46" name="g2name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="330" parent="46" name="alpha">
+      <DataType>float(10,4)|0</DataType>
+    </argument>
+    <argument id="331" parent="47" name="g1name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="332" parent="47" name="g2name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="333" parent="47" name="alpha">
+      <DataType>float(10,4)|0</DataType>
+    </argument>
+    <argument id="334" parent="48" name="g1name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="335" parent="48" name="g2name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="336" parent="48" name="alpha">
+      <DataType>float(10,4)|0</DataType>
+    </argument>
+    <argument id="337" parent="49" name="g1name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="338" parent="49" name="g2name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="339" parent="49" name="alpha">
+      <DataType>float(10,4)|0</DataType>
+    </argument>
+    <argument id="340" parent="50" name="g1name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="341" parent="50" name="g2name">
+      <DataType>char(20)|0</DataType>
+    </argument>
+    <argument id="342" parent="50" name="alpha">
+      <DataType>float(10,4)|0</DataType>
+    </argument>
+  </database-model>
+</dataSource>

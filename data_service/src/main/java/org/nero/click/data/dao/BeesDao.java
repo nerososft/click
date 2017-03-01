@@ -9,7 +9,6 @@ package org.nero.click.data.dao;
 
 import org.apache.ibatis.annotations.Param;
 import org.nero.click.data.dto.Point;
-import org.nero.click.data.dto.Box;
 
 import java.util.List;
 

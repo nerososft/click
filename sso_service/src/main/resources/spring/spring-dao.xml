@@ -6,7 +6,7 @@
          http://www.springframework.org/schema/beans/spring-beans.xsd
          http://www.springframework.org/schema/context
          http://www.springframework.org/schema/context/spring-context-3.2.xsd">
-    <context:property-placeholder location="classpath:jdbc.properties"/>
+    <context:property-placeholder location="classpath:jdbc.properties,redis.properties"/>
 
     <!-- database connection pool-->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
@@ -24,6 +24,17 @@
         <property name="acquireRetryAttempts" value="${c3p0.acquireRetryAttempts}"/>
 
     </bean>
+
+    <!--redis session connection-->
+    <bean class="org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration"/>
+    <bean class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory">
+        <property name="hostName" value="${redis.session.hostName}" />
+        <property name="password" value="${redis.session.password}" />
+        <property name="port" value="${redis.session.port}" />
+        <property name="database" value="${redis.session.database}" />
+    </bean>
+
+
 
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>

@@ -1,8 +1,6 @@
 package org.nero.click.data.dao;
 
-import org.nero.click.data.entity.Gene;
-
-import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * author： nero
@@ -12,16 +10,6 @@ import java.util.List;
  */
 public interface GeneDao {
 
-    List<Gene> selectAll();
-
-    List<Gene> queryByGenes(List<String> genes,
-                            String cancerType,
-                            String biaoDaLiang,
-                            String copyNum,
-                            String jiaJiHua,
-                            String isNormal,
-                            String boxLineTu,
-                            String isLog,
-                            String isZ,
-                            String isT);
+    String findGene(@Param("dataType") String dataType,
+                    @Param("geneName") String geneName);
 }

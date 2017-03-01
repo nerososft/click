@@ -3,6 +3,8 @@ package org.nero.click.sso.service.impl;
 import org.nero.click.common.utils.md5.MD5;
 import org.nero.click.sso.dao.UserDao;
 import org.nero.click.sso.dto.Operate;
+import org.nero.click.sso.dto.Token;
+import org.nero.click.sso.dto.UserInfo;
 import org.nero.click.sso.entity.Authpair;
 import org.nero.click.sso.exceptions.user.*;
 import org.nero.click.sso.service.IUserService;
@@ -104,5 +106,16 @@ public class UserServiceImpl implements IUserService {
             }
         }
         return new Operate<User>(true,userDao.query(user.getId()));
+    }
+
+
+
+
+
+    public Operate<UserInfo> getUserInfo(Token appToken, Token userToken) {
+
+
+        return null;
+
     }
 }

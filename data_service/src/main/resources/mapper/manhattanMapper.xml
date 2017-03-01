@@ -4,30 +4,14 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.nero.click.data.dao.ManhattanDao">
 
-    <!--/**-->
-    <!--* 根据染色体获取基因id-->
-    <!--* @param ucChrom-->
-    <!--* @return-->
-    <!--*/-->
-    <!--List<Integer> getGeneId(Integer ucChrom);-->
-
-    <!--/**-->
-    <!--* 根据基因获取propertyId-->
-    <!--* @param gengId-->
-    <!--* @return-->
-    <!--*/-->
-    <!--List<Integer> getPropertyId(Integer gengId);-->
-
-
-    <!--/**-->
-    <!--* 获取麦哈顿图数据-->
-    <!--* @param ptopertyId-->
-    <!--* @param cancerTable-->
-    <!--* @return-->
-    <!--*/-->
-    <!--List<Point> manhattan(Integer ptopertyId,String cancerTable);-->
-    <select id="manhattan" resultType="org.nero.click.data.dto.MoutainPoint">
---         SELECT geneName,${type} from gene where ucChrom = ${chromosomes} ;
+    <select id="getManhattanData" resultType="String">
+        SELECT ID from ${dataType}_gene_manhadun where ucChrom = ${chromosome} ;
+    </select>
+    <select id="getSampleAll" resultType="org.nero.click.data.dto.Point">
+        select * FROM ${cancerType}_${normal}_${dataType}_l_0_1_manhadun WHERE geneid in
+        <foreach collection="geneId" index="index" item="item" open="(" separator="," close=")">
+            ${item}
+        </foreach>
     </select>
 
 </mapper>
