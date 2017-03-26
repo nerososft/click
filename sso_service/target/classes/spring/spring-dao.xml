@@ -6,15 +6,15 @@
          http://www.springframework.org/schema/beans/spring-beans.xsd
          http://www.springframework.org/schema/context
          http://www.springframework.org/schema/context/spring-context-3.2.xsd">
-    <context:property-placeholder location="classpath:jdbc.properties"/>
+    <context:property-placeholder location="classpath:jdbc.properties,redis.properties"/>
 
     <!-- database connection pool-->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
         <!--config database connection pool-->
-        <property name="driverClass" value="${driver}"/>
-        <property name="jdbcUrl" value="${url}"/>
-        <property name="user" value="${jdbc.username}"/>
-        <property name="password" value="${jdbc.password}"/>
+        <property name="driverClass" value="${sso.driver}"/>
+        <property name="jdbcUrl" value="${sso.url}"/>
+        <property name="user" value="${sso.jdbc.username}"/>
+        <property name="password" value="${sso.jdbc.password}"/>
 
         <!--private property of c3p0 connection pool-->
         <property name="maxPoolSize" value="${c3p0.maxPoolSize}"/>
@@ -24,6 +24,8 @@
         <property name="acquireRetryAttempts" value="${c3p0.acquireRetryAttempts}"/>
 
     </bean>
+
+
 
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>

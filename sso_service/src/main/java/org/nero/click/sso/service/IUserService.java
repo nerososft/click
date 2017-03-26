@@ -24,14 +24,6 @@ public interface IUserService {
 
     Operate RegisterAuth(String token) throws NoSuchAlgorithmException, UnsupportedEncodingException;
 
-
-    /**
-     * 第三方应用获取用户信息
-     *
-     * @param appToken 第三方应用访问令牌
-     * @param userToken 用户访问令牌
-     * @return 基本用户信息
-     */
     Operate<UserInfo> getUserInfo(Token appToken,Token userToken);
 
 }

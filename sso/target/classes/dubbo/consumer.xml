@@ -11,4 +11,6 @@
     <dubbo:application name="sso" />       <!-- 使用multicast广播注册中心暴露发现服务地址 -->
     <dubbo:registry  protocol="zookeeper" address="zookeeper://127.0.0.1:2181" />         <!-- 生成远程服务代理，可以和本地bean一样使用demoService -->
     <dubbo:reference id="IUserService" interface="org.nero.click.sso.service.IUserService"/>
+    <dubbo:reference id="IAuthService" interface="org.nero.click.sso.service.IAuthService"/>
+    <dubbo:reference id="IAccessService" interface="org.nero.click.sso.service.IAccessService"/>
 </beans>

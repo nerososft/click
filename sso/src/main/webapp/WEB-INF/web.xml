@@ -6,7 +6,7 @@
          metadata-complete="true">
   <!--change servlet version to 3.1 -->
   <servlet>
-    <servlet-name>click-sso-dispatcher</servlet-name>
+    <servlet-name>data-dispatcher</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     <init-param>
       <param-name>contextConfigLocation</param-name>
@@ -14,36 +14,20 @@
     </init-param>
   </servlet>
   <servlet-mapping>
-    <servlet-name>click-sso-dispatcher</servlet-name>
+    <servlet-name>data-dispatcher</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
-
   <servlet>
     <servlet-name>Consumer</servlet-name>
     <servlet-class>org.nero.click.Main</servlet-class>
     <load-on-startup>1</load-on-startup>
   </servlet>
-
-  <!--session过滤器-->
   <filter>
-    <filter-name>springSessionRepositoryFilter</filter-name>
-    <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+    <filter-name>cors</filter-name>
+    <filter-class>org.nero.click.common.filter.CORSFilter</filter-class>
   </filter>
   <filter-mapping>
-    <filter-name>springSessionRepositoryFilter</filter-name>
+    <filter-name>cors</filter-name>
     <url-pattern>/*</url-pattern>
-    <dispatcher>REQUEST</dispatcher>
-    <dispatcher>ERROR</dispatcher>
   </filter-mapping>
-
-
-  <!--允许跨域-->
- <filter>
-     <filter-name>cors</filter-name>
-     <filter-class>org.nero.click.common.filter.CORSFilter</filter-class>
-   </filter>
-   <filter-mapping>
-     <filter-name>cors</filter-name>
-     <url-pattern>/*</url-pattern>
-   </filter-mapping>
 </web-app>

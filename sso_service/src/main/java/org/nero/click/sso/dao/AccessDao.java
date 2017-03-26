@@ -1,5 +1,7 @@
 package org.nero.click.sso.dao;
 
+import org.apache.ibatis.annotations.Param;
+import org.nero.click.sso.dto.AccessInfo;
 import org.nero.click.sso.entity.Access;
 
 /**
@@ -8,6 +10,7 @@ import org.nero.click.sso.entity.Access;
  * Date   2016/12/20
  * Time   下午3:33
  */
+
 public interface AccessDao {
 
     /**
@@ -17,6 +20,24 @@ public interface AccessDao {
      * @param appSecretKey 第三方私钥
      * @return 令牌
      */
-    Access findByAccessRequest(String appKey,String appSecretKey);
+    Access findByAccessRequest(@Param("appkey") String appKey,
+                               @Param("appsecretkey") String appSecretKey);
 
+
+    Long updateAccessToken(@Param("appkey") String appKey,
+                           @Param("token") String token,
+                           @Param("exper") Long exper);
+
+    Access findByToken(@Param("token") String token);
+
+
+    Access findByAccessToken(@Param("accessToken") String accessToken);
+
+    Long updateToken(@Param("accesstoken") String accessToken,
+                     @Param("token") String token);
+
+    AccessInfo getAppByKey(@Param("appkey") String appKey,
+                           @Param("appsecretkey") String appSecretKey);
+
+    AccessInfo getAppByTicket(@Param("ticket") String ticket);
 }

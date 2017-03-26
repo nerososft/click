@@ -3,11 +3,15 @@ package org.nero.click.data.service;
 import org.apache.ibatis.annotations.Param;
 import org.nero.click.data.dto.Operate;
 import org.nero.click.data.dto.Point;
+import org.nero.click.data.dto.manhattan.MTPoint;
+import org.nero.click.data.dto.manhattan.ManhattanPoint;
 import org.nero.click.data.dto.moutain.Arm;
 import org.nero.click.data.dto.moutain.Cyto;
 import org.nero.click.data.dto.moutain.MPoint;
 import org.nero.click.data.dto.moutain.Moutain;
 import org.nero.click.data.entity.Gene;
+import org.nero.click.data.entity.PGene;
+import org.nero.click.data.entity.SimpleGene;
 
 import java.util.List;
 
@@ -109,11 +113,35 @@ public interface IDataService {
     Moutain moutain(String cancerType,String chromosomes, String dataType,String value,String showValue);
 
 
+    List<String> getMGeneId(List<SimpleGene> simpleGenes);
 
     /**
      * 曼哈顿数据出来啦
      * @param cancerType
      * @return
      */
-    List<List<Point>> getManhattan(@Param("cancerType") String cancerType, @Param("dataType") String dataType);
+    List<List<Point>> getManhattan(String cancerType, String dataType);
+
+    /**
+     * 获取曼哈顿，新的T检验得出的结果
+     * @param cancerType1
+     * @param cancerType2
+     * @param normal1
+     * @param normal2
+     * @param dataType
+     * @param isLog
+     * @return
+     */
+    List<List<MTPoint>> getTanhattan(String cancerType1, String cancerType2, String normal1, String normal2, String dataType, String isLog);
+
+    /**
+     * 获取曼哈顿通过pvalue
+     * author ： Neroyang
+     * email ：nerosoft@outlook.com
+     * date 2017-3-26 下午
+     * @param dataType
+     * @return
+     */
+    List<List<PGene>> getPanhattan(String cancerType, String dataType);
+
 }

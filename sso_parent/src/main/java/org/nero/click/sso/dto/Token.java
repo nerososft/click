@@ -14,6 +14,10 @@ public class Token implements Serializable {
     public Token() {
     }
 
+    public Token(String token) {
+        this.token = token;
+    }
+
     public String getToken() {
         return token;
     }

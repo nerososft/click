@@ -1,0 +1,45 @@
+CREATE TABLE IF NOT EXISTS model(
+  model_no INT NOT NULL COMMENT '机型码',
+  capacity DOUBLE COMMENT '运输能力',
+  weight DOUBLE COMMENT '重量'
+)ENGINE=InnoDB;
+
+CREATE TABLE IF NOT EXISTS plane(
+  reg_no INT PRIMARY KEY COMMENT '登记号',
+  type INT NOT NULL COMMENT '机型'
+)ENGINE = InnoDB;
+
+CREATE TABLE IF NOT EXISTS expert(
+  model_no INT NOT NULL COMMENT '机型码',
+  techician_ssn INT NOT NULL COMMENT '专家'
+)ENGINE =InnoDB;
+
+CREATE TABLE IF NOT EXISTS test_info(
+  hour INT(2) COMMENT '小时',
+  date DATETIME COMMENT '日期',
+  score DOUBLE COMMENT '分数',
+  reg_no INT NOT NULL COMMENT '飞机登记号',
+  faa_no INT NOT NULL COMMENT 'FAA测试码',
+  technician_ssn INT NOT NULL COMMENT '专家'
+)ENGINE = InnoDB;
+
+CREATE TABLE IF NOT EXISTS test(
+  faa_no INT NOT NULL COMMENT 'FAA测试码',
+  name VARCHAR(32) NOT NULL COMMENT '名字',
+  best_score DOUBLE NOT NULL COMMENT '最好分数'
+)ENGINE =InnoDB;
+
+CREATE TABLE IF NOT EXISTS traffic_control(
+  ssn_no INT NOT NULL PRIMARY KEY COMMENT 'SSN',
+  union_no INT NOT NULL COMMENT '成员号',
+  test_date DATETIME COMMENT '体检日期'
+)ENGINE =InnoDB;
+
+CREATE TABLE IF NOT EXISTS technician(
+  ssn_no INT NOT NULL PRIMARY KEY COMMENT 'SSN',
+  union_no INT NOT NULL COMMENT '成员号',
+  name VARCHAR(32) NOT NULL COMMENT '姓名',
+  address VARCHAR(32) NOT NULL COMMENT '地址',
+  phone_num INT(11) NOT NULL COMMENT '电话号码',
+  wages DOUBLE NOT NULL COMMENT '工资'
+)ENGINE =InnoDB;

@@ -7,77 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8024c39b-073a-4770-87b0-31ac06e9e2c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_21.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_12_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_1_1_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_7_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_session_spring_session_1_2_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_2_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_2_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/resources/redis.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/CONSTANT.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/dto/moutain/Arm.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/dto/moutain/Cyto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/dto/moutain/MPoint.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/dto/moutain/Moutain.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/entity/MoutainData.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/dao/GeneDaoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/dao/ManhattanDaoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/dao/MoutainDaoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/service/IDataServiceTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/CONSTANT.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/entity/Access.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/dao/AccessDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/IVerifyService.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/target/classes/org/nero/click/admin/Consumer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/target/classes/org/nero/click/admin/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/target/classes/org/nero/click/admin/service/IPageService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/target/classes/org/nero/click/admin/service/IResourceService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/target/classes/org/nero/click/admin/web/controller/Page.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/target/classes/org/nero/click/admin/web/controller/Resource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/target/classes/org/nero/click/sso/service/IAuthService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_parent/target/classes/org/click/App.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_parent/target/classes/org/click/admin/CONSTANT/CONSTANT.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_parent/target/classes/org/click/admin/dto/Layout.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_parent/target/classes/org/click/admin/entity/Banner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_parent/target/classes/org/click/admin/entity/Footer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_parent/target/classes/org/click/admin/entity/Header.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_parent/target/classes/org/click/admin/entity/Link.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_parent/target/classes/org/click/admin/entity/Logo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_parent/target/classes/org/click/admin/entity/Module.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_parent/target/classes/org/click/admin/entity/News.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_parent/target/classes/org/click/admin/entity/Resource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_parent/target/test-classes/org/click/AppTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_service/target/classes/org/nero/click/App.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_service/target/classes/org/nero/click/admin/dao/BannerDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_service/target/classes/org/nero/click/admin/dao/FooterDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_service/target/classes/org/nero/click/admin/dao/HeaderDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_service/target/classes/org/nero/click/admin/dao/LinkDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_service/target/classes/org/nero/click/admin/dao/LogoDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_service/target/classes/org/nero/click/admin/dao/ModuleDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_service/target/classes/org/nero/click/admin/dao/NewsDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_service/target/classes/org/nero/click/admin/dao/ResourceDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_service/target/classes/org/nero/click/admin/service/IModuleService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_service/target/classes/org/nero/click/admin/service/INewsService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_service/target/classes/org/nero/click/admin/service/IPageService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_service/target/classes/org/nero/click/admin/service/IResourceService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_service/target/classes/org/nero/click/admin/service/impl/ModuleServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_service/target/classes/org/nero/click/admin/service/impl/NewsServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_service/target/classes/org/nero/click/admin/service/impl/PageServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_service/target/classes/org/nero/click/admin/service/impl/ResourceServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_service/target/test-classes/org/nero/click/AppTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_service/target/test-classes/org/nero/click/admin/dao/BannerDaoTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_service/target/test-classes/org/nero/click/admin/dao/FooterDaoTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_service/target/test-classes/org/nero/click/admin/dao/HeaderDaoTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_service/target/test-classes/org/nero/click/admin/dao/LinkDaoTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_service/target/test-classes/org/nero/click/admin/dao/LogoDaoTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_service/target/test-classes/org/nero/click/admin/dao/ModuleDaoTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_service/target/test-classes/org/nero/click/admin/dao/NewsDaoTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_service/target/test-classes/org/nero/click/admin/service/impl/PageServiceImplTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin_service/target/test-classes/org/nero/click/admin/service/impl/ResourceServiceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/common_jar/common.jar" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/sql/homework.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/dto/manhattan/MTPoint.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/dto/manhattan/ManhattanPoint.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/entity/PGene.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/entity/SimpleGene.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/utils/TTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/service/IAccessService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/service/IAuthService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/web/controller/ThirdSSO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso/src/main/webapp/WEB-INF/jsp/error.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso/src/main/webapp/WEB-INF/jsp/login.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/dto/AccessInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/dto/FeedBack.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/dto/Ticket.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso_service/src/main/resources/SqlSchema/schema.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso_service/src/main/resources/mapper/appMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso_service/src/test/java/org/nero/click/sso/dao/AccessDaoTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso_service/src/test/java/org/nero/click/sso/service/impl/AccessServiceImplTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso_service/src/test/java/org/nero/click/sso/service/impl/AuthServiceImplTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso_service/src/test/java/org/nero/click/sso/service/observer/RegisterObserverTest.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/data_parent_jar/data_parent.jar" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/data_service_jar/activation-1.1.jar" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/data_service_jar/aopalliance-1.0.jar" afterPath="" />
@@ -120,214 +69,194 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/data_service_jar/zookeeper-3.3.1-1.0.0.jar" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/data_service_jar/zookeeper-3.3.1.jar" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/data_service_jar/zookeeper-3.3.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/dubbo/consumer.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/jdbc.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/logback.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/mybatis-config.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/App.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/Consumer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/common/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/common/filter/CORSFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/common/utils/Constant.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/common/utils/email/MailAuthenticator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/common/utils/email/MailSenderFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/common/utils/email/MailSenderType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/common/utils/email/SimpleMailSender.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/common/utils/file/FileType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/common/utils/md5/FileDiffUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/common/utils/md5/MD5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/common/utils/rendom/RandomString.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/common/utils/verifycode/Verify.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/common/utils/verifycode/exception/VerifyFailedException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/data/dto/Box.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/data/dto/MoutainPoint.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/data/dto/Operate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/data/dto/Point.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/data/entity/Domian.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/data/entity/Gene.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/data/entity/News.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/data/entity/Propgbmn.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/data/entity/beeswarm/Genep.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/data/service/IDataService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/data/web/controller/Data.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/sso/dto/Operate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/sso/entity/Authpair.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/sso/entity/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/sso/exceptions/UserException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/sso/exceptions/user/ActiveException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/sso/exceptions/user/LoginException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/sso/exceptions/user/NoSuchUserException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/sso/exceptions/user/RegisterException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/org/nero/click/sso/exceptions/user/TimeOutException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/schema.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/classes/spring/spring-web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/jsp/test.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/activation-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/aopalliance-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/c3p0-0.9.1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/commons-email-1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/commons-logging-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/dubbo-2.5.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/hamcrest-core-1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/jackson-annotations-2.5.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/jackson-core-2.5.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/jackson-databind-2.5.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/javassist-3.15.0-GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/javax.mail-1.5.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/javax.servlet-api-3.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/jline-0.9.94.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/junit-4.11.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/log4j-1.2.15.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/logback-classic-1.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/logback-core-1.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/mail-1.5.0-b01.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/mybatis-3.3.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/mybatis-spring-1.2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/mysql-connector-java-5.1.35.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/netty-3.2.5.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/netty-all-5.0.0.Alpha2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/org.eclipse.paho.client.mqttv3-1.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/slf4j-api-1.7.12.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/spring-aop-4.1.7.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/spring-beans-4.1.7.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/spring-context-4.1.7.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/spring-core-4.1.7.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/spring-expression-4.1.7.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/spring-jdbc-4.1.7.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/spring-test-4.1.7.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/spring-tx-4.1.7.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/spring-web-4.1.7.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/spring-webmvc-4.1.7.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/standard-1.1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/zkclient-0.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/zookeeper-3.3.1-1.0.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/zookeeper-3.3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/lib/zookeeper-3.3.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/dto/Box.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/dto/MoutainPoint.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/entity/Domian.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/entity/News.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/entity/Propgbmn.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/entity/beeswarm/Genep.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data_parent/target/classes/org/nero/click/data/dto/Box.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data_parent/target/classes/org/nero/click/data/dto/MoutainPoint.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data_parent/target/classes/org/nero/click/data/entity/Domian.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data_parent/target/classes/org/nero/click/data/entity/News.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data_parent/target/classes/org/nero/click/data/entity/Propgbmn.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data_parent/target/classes/org/nero/click/data/entity/beeswarm/Genep.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/dao/DomianDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/dao/PropgbmnDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data_service/src/main/resources/mapper/domianMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data_service/target/classes/mapper/domianMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/dao/DomianDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/dao/PropgbmnDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sso/target/classes/org/nero/click/Consumer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sso/target/classes/org/nero/click/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sso/target/classes/org/nero/click/sso/service/IUserService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sso/target/classes/org/nero/click/sso/web/controller/Auth.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sso_service/target/classes/org/nero/click/App.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sso_service/target/classes/org/nero/click/sso/service/impl/AuthServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sso_service/target/classes/org/nero/click/sso/service/observer/RegisterObserver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sso_service/target/test-classes/org/click/AppTest.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/org/nero/click/common/Main.class" afterPath="$PROJECT_DIR$/common/target/classes/org/nero/click/common/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/org/nero/click/common/filter/CORSFilter.class" afterPath="$PROJECT_DIR$/common/target/classes/org/nero/click/common/filter/CORSFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/org/nero/click/common/utils/Constant.class" afterPath="$PROJECT_DIR$/common/target/classes/org/nero/click/common/utils/Constant.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/org/nero/click/common/utils/email/MailAuthenticator.class" afterPath="$PROJECT_DIR$/common/target/classes/org/nero/click/common/utils/email/MailAuthenticator.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_parent_jar/sso_parent.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/activation-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/aopalliance-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/c3p0-0.9.1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/commons-email-1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/commons-logging-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/dubbo-2.5.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/jackson-annotations-2.5.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/jackson-core-2.5.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/jackson-databind-2.5.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/javassist-3.15.0-GA.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/javax.mail-1.5.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/javax.servlet-api-3.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/jline-0.9.94.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/jstl-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/log4j-1.2.15.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/logback-classic-1.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/logback-core-1.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/mail-1.5.0-b01.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/mybatis-3.3.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/mybatis-spring-1.2.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/mysql-connector-java-5.1.35.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/netty-3.2.5.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/netty-all-5.0.0.Alpha2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/org.eclipse.paho.client.mqttv3-1.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/slf4j-api-1.7.12.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/spring-aop-4.1.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/spring-beans-4.1.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/spring-context-4.1.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/spring-core-4.1.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/spring-expression-4.1.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/spring-jdbc-4.1.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/spring-test-4.1.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/spring-tx-4.1.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/spring-web-4.1.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/spring-webmvc-4.1.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/sso_service.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/standard-1.1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/zkclient-0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/zookeeper-3.3.1-1.0.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/zookeeper-3.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/lib/sso_service_jar/zookeeper-3.3.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/click.war" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/dubbo/consumer.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/jdbc.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/logback.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/mybatis-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/org/nero/click/App.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/org/nero/click/Consumer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/org/nero/click/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/org/nero/click/common/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/org/nero/click/common/filter/CORSFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/org/nero/click/common/utils/Constant.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/org/nero/click/common/utils/email/MailAuthenticator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/org/nero/click/common/utils/email/MailSenderFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/org/nero/click/common/utils/email/MailSenderType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/org/nero/click/common/utils/email/SimpleMailSender.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/org/nero/click/common/utils/file/FileType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/org/nero/click/common/utils/md5/FileDiffUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/org/nero/click/common/utils/md5/MD5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/org/nero/click/common/utils/rendom/RandomString.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/org/nero/click/common/utils/verifycode/Verify.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/org/nero/click/common/utils/verifycode/exception/VerifyFailedException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/org/nero/click/sso/dto/Operate.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/org/nero/click/sso/entity/Authpair.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/org/nero/click/sso/entity/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/org/nero/click/sso/exceptions/UserException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/org/nero/click/sso/exceptions/user/ActiveException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/org/nero/click/sso/exceptions/user/LoginException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/org/nero/click/sso/exceptions/user/NoSuchUserException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/org/nero/click/sso/exceptions/user/RegisterException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/org/nero/click/sso/exceptions/user/TimeOutException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/org/nero/click/sso/service/IUserService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/org/nero/click/sso/web/controller/Auth.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/schema.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/classes/spring/spring-web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/activation-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/aopalliance-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/c3p0-0.9.1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/commons-email-1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/commons-logging-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/dubbo-2.5.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/hamcrest-core-1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/jackson-annotations-2.5.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/jackson-core-2.5.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/jackson-databind-2.5.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/javassist-3.15.0-GA.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/javax.mail-1.5.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/javax.servlet-api-3.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/jline-0.9.94.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/junit-4.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/log4j-1.2.15.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/logback-classic-1.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/logback-core-1.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/mail-1.5.0-b01.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/mybatis-3.3.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/mybatis-spring-1.2.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/mysql-connector-java-5.1.35.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/netty-3.2.5.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/netty-all-5.0.0.Alpha2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/org.eclipse.paho.client.mqttv3-1.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/slf4j-api-1.7.12.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/spring-aop-4.1.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/spring-beans-4.1.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/spring-context-4.1.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/spring-core-4.1.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/spring-expression-4.1.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/spring-jdbc-4.1.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/spring-test-4.1.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/spring-tx-4.1.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/spring-web-4.1.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/spring-webmvc-4.1.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/standard-1.1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/zkclient-0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/zookeeper-3.3.1-1.0.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/zookeeper-3.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/lib/zookeeper-3.3.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/sso/WEB-INF/web.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/lib/admin_service_jar/admin_service.jar" afterPath="$PROJECT_DIR$/build/lib/admin_service_jar/admin_service.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/org/nero/click/common/utils/email/MailSenderFactory.class" afterPath="$PROJECT_DIR$/common/target/classes/org/nero/click/common/utils/email/MailSenderFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/org/nero/click/common/utils/email/MailSenderType.class" afterPath="$PROJECT_DIR$/common/target/classes/org/nero/click/common/utils/email/MailSenderType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/org/nero/click/common/utils/email/SimpleMailSender.class" afterPath="$PROJECT_DIR$/common/target/classes/org/nero/click/common/utils/email/SimpleMailSender.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/org/nero/click/common/utils/file/FileType.class" afterPath="$PROJECT_DIR$/common/target/classes/org/nero/click/common/utils/file/FileType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/org/nero/click/common/utils/md5/FileDiffUtil.class" afterPath="$PROJECT_DIR$/common/target/classes/org/nero/click/common/utils/md5/FileDiffUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/org/nero/click/common/utils/md5/MD5.class" afterPath="$PROJECT_DIR$/common/target/classes/org/nero/click/common/utils/md5/MD5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/org/nero/click/common/utils/rendom/RandomString.class" afterPath="$PROJECT_DIR$/common/target/classes/org/nero/click/common/utils/rendom/RandomString.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/org/nero/click/common/utils/verifycode/Verify.class" afterPath="$PROJECT_DIR$/common/target/classes/org/nero/click/common/utils/verifycode/Verify.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/org/nero/click/common/utils/verifycode/exception/VerifyFailedException.class" afterPath="$PROJECT_DIR$/common/target/classes/org/nero/click/common/utils/verifycode/exception/VerifyFailedException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/target/classes/org/nero/click/Consumer.class" afterPath="$PROJECT_DIR$/data/target/classes/org/nero/click/Consumer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/target/classes/org/nero/click/Main.class" afterPath="$PROJECT_DIR$/data/target/classes/org/nero/click/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/target/classes/org/nero/click/data/service/IDataService.class" afterPath="$PROJECT_DIR$/data/target/classes/org/nero/click/data/service/IDataService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/target/classes/org/nero/click/data/web/controller/Data.class" afterPath="$PROJECT_DIR$/data/target/classes/org/nero/click/data/web/controller/Data.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_parent/target/classes/org/nero/click/App.class" afterPath="$PROJECT_DIR$/data_parent/target/classes/org/nero/click/App.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_parent/target/classes/org/nero/click/data/dto/Operate.class" afterPath="$PROJECT_DIR$/data_parent/target/classes/org/nero/click/data/dto/Operate.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/target/click/WEB-INF/classes/org/nero/click/data/service/IDataService.class" afterPath="$PROJECT_DIR$/data/target/click/WEB-INF/classes/org/nero/click/data/service/IDataService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/target/click/WEB-INF/classes/org/nero/click/data/web/controller/Data.class" afterPath="$PROJECT_DIR$/data/target/click/WEB-INF/classes/org/nero/click/data/web/controller/Data.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/target/click/WEB-INF/lib/common-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/data/target/click/WEB-INF/lib/common-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/target/click/WEB-INF/lib/data_parent-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/data/target/click/WEB-INF/lib/data_parent-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/target/click/WEB-INF/lib/sso_parent-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/data/target/click/WEB-INF/lib/sso_parent-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_parent/target/classes/org/nero/click/data/dto/Point.class" afterPath="$PROJECT_DIR$/data_parent/target/classes/org/nero/click/data/dto/Point.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_parent/target/classes/org/nero/click/data/entity/Gene.class" afterPath="$PROJECT_DIR$/data_parent/target/classes/org/nero/click/data/entity/Gene.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_parent/target/test-classes/org/click/AppTest.class" afterPath="$PROJECT_DIR$/data_parent/target/test-classes/org/click/AppTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/App.class" afterPath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/App.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/cache/CacheThread.class" afterPath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/cache/CacheThread.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/cache/ICacheService.class" afterPath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/cache/ICacheService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/cache/impl/CacheServiceImpl.class" afterPath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/cache/impl/CacheServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/dao/BeesDao.class" afterPath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/dao/BeesDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/dao/GeneDao.class" afterPath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/dao/GeneDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/dao/ManhattanDao.class" afterPath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/dao/ManhattanDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/dao/MoutainDao.class" afterPath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/dao/MoutainDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/service/IDataService.class" afterPath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/service/IDataService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/service/impl/DataServiceImpl$1.class" afterPath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/service/impl/DataServiceImpl$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/service/impl/DataServiceImpl.class" afterPath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/service/impl/DataServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/target/test-classes/org/nero/click/data/dao/BeesDaoTest.class" afterPath="$PROJECT_DIR$/data_service/target/test-classes/org/nero/click/data/dao/BeesDaoTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/target/test-classes/org/nero/click/data/dao/ManhattanDaoTest.class" afterPath="$PROJECT_DIR$/data_service/target/test-classes/org/nero/click/data/dao/ManhattanDaoTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/target/test-classes/org/nero/click/data/service/impl/DataServiceImplTest.class" afterPath="$PROJECT_DIR$/data_service/target/test-classes/org/nero/click/data/service/impl/DataServiceImplTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/App.class" afterPath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/App.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/dto/Operate.class" afterPath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/dto/Operate.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/entity/Authpair.class" afterPath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/entity/Authpair.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/entity/User.class" afterPath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/entity/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/exceptions/UserException.class" afterPath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/exceptions/UserException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/exceptions/user/ActiveException.class" afterPath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/exceptions/user/ActiveException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/exceptions/user/LoginException.class" afterPath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/exceptions/user/LoginException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/exceptions/user/NoSuchUserException.class" afterPath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/exceptions/user/NoSuchUserException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/exceptions/user/RegisterException.class" afterPath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/exceptions/user/RegisterException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/exceptions/user/TimeOutException.class" afterPath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/exceptions/user/TimeOutException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_parent/target/test-classes/org/click/AppTest.class" afterPath="$PROJECT_DIR$/sso_parent/target/test-classes/org/click/AppTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_service/target/classes/org/nero/click/sso/dao/UserDao.class" afterPath="$PROJECT_DIR$/sso_service/target/classes/org/nero/click/sso/dao/UserDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/CONSTANT.class" afterPath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/CONSTANT.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/dto/AccessToken.class" afterPath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/dto/AccessToken.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/dto/Token.class" afterPath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/dto/Token.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/dto/UserInfo.class" afterPath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/dto/UserInfo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/entity/Access.class" afterPath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/entity/Access.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/entity/AccessRequest.class" afterPath="$PROJECT_DIR$/sso_parent/target/classes/org/nero/click/sso/entity/AccessRequest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_service/target/classes/org/nero/click/sso/dao/AccessDao.class" afterPath="$PROJECT_DIR$/sso_service/target/classes/org/nero/click/sso/dao/AccessDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_service/target/classes/org/nero/click/sso/service/IAuthService.class" afterPath="$PROJECT_DIR$/sso_service/target/classes/org/nero/click/sso/service/IAuthService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_service/target/classes/org/nero/click/sso/service/IUserService.class" afterPath="$PROJECT_DIR$/sso_service/target/classes/org/nero/click/sso/service/IUserService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_service/target/classes/org/nero/click/sso/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/sso_service/target/classes/org/nero/click/sso/service/impl/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/admin_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/admin_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/data_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/data_war.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/data_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/data_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/sso_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/sso_war.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/sso_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/sso_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/44428ae5-ab85-4811-aa27-08a313061886.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/44428ae5-ab85-4811-aa27-08a313061886.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/admin.iml" afterPath="$PROJECT_DIR$/admin/admin.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_parent/admin_parent.iml" afterPath="$PROJECT_DIR$/admin_parent/admin_parent.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_service/admin_service.iml" afterPath="$PROJECT_DIR$/admin_service/admin_service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/click.iml" afterPath="$PROJECT_DIR$/click.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/common.iml" afterPath="$PROJECT_DIR$/common/common.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/pom.xml" afterPath="$PROJECT_DIR$/common/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/email/MailSenderFactory.java" afterPath="$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/email/MailSenderFactory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/jdbc.properties" afterPath="$PROJECT_DIR$/common/src/main/resources/jdbc.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/target/classes/jdbc.properties" afterPath="$PROJECT_DIR$/common/target/classes/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/data.iml" afterPath="$PROJECT_DIR$/data/data.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/service/IDataService.java" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/service/IDataService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/web/controller/Data.java" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/web/controller/Data.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/target/click/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/data/target/click/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_parent/data_parent.iml" afterPath="$PROJECT_DIR$/data_parent/data_parent.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/entity/Gene.java" afterPath="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/entity/Gene.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/data_service.iml" afterPath="$PROJECT_DIR$/data_service/data_service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/dao/BeesDao.java" afterPath="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/dao/BeesDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/dao/GeneDao.java" afterPath="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/dao/GeneDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/dto/Point.java" afterPath="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/dto/Point.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/dao/ManhattanDao.java" afterPath="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/dao/ManhattanDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/dao/MoutainDao.java" afterPath="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/dao/MoutainDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/IDataService.java" afterPath="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/IDataService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/impl/DataServiceImpl.java" afterPath="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/impl/DataServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/src/main/resources/mapper/geneMapper.xml" afterPath="$PROJECT_DIR$/data_service/src/main/resources/mapper/geneMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/src/main/resources/dubbo/provider.xml" afterPath="$PROJECT_DIR$/data_service/src/main/resources/dubbo/provider.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/src/main/resources/mapper/manhattanMapper.xml" afterPath="$PROJECT_DIR$/data_service/src/main/resources/mapper/manhattanMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/src/main/resources/mapper/moutainMapper.xml" afterPath="$PROJECT_DIR$/data_service/src/main/resources/mapper/moutainMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/dao/BeesDaoTest.java" afterPath="$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/dao/BeesDaoTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/dao/ManhattanDaoTest.java" afterPath="$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/dao/ManhattanDaoTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/service/impl/DataServiceImplTest.java" afterPath="$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/service/impl/DataServiceImplTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/target/classes/mapper/geneMapper.xml" afterPath="$PROJECT_DIR$/data_service/target/classes/mapper/geneMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/target/classes/dubbo/provider.xml" afterPath="$PROJECT_DIR$/data_service/target/classes/dubbo/provider.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/target/classes/mapper/manhattanMapper.xml" afterPath="$PROJECT_DIR$/data_service/target/classes/mapper/manhattanMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/target/classes/mapper/moutainMapper.xml" afterPath="$PROJECT_DIR$/data_service/target/classes/mapper/moutainMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/service/IUserService.java" afterPath="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/service/IUserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso/src/main/resources/dubbo/consumer.xml" afterPath="$PROJECT_DIR$/sso/src/main/resources/dubbo/consumer.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/sso/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso/sso.iml" afterPath="$PROJECT_DIR$/sso/sso.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_parent/sso_parent.iml" afterPath="$PROJECT_DIR$/sso_parent/sso_parent.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso/target/classes/dubbo/consumer.xml" afterPath="$PROJECT_DIR$/sso/target/classes/dubbo/consumer.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso/target/click/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/sso/target/click/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/CONSTANT.java" afterPath="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/CONSTANT.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/dto/AccessToken.java" afterPath="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/dto/AccessToken.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/dto/Token.java" afterPath="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/dto/Token.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/dto/UserInfo.java" afterPath="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/dto/UserInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/entity/Access.java" afterPath="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/entity/Access.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/entity/AccessRequest.java" afterPath="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/entity/AccessRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_service/pom.xml" afterPath="$PROJECT_DIR$/sso_service/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/dao/AccessDao.java" afterPath="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/dao/AccessDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/IAccessService.java" afterPath="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/IAccessService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/IAuthService.java" afterPath="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/IAuthService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/IUserService.java" afterPath="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/IUserService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/impl/AccessServiceImpl.java" afterPath="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/impl/AccessServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/impl/AuthServiceImpl.java" afterPath="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/impl/AuthServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/impl/UserServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_service/src/main/resources/dubbo/provider.xml" afterPath="$PROJECT_DIR$/sso_service/src/main/resources/dubbo/provider.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_service/src/main/resources/spring/spring-dao.xml" afterPath="$PROJECT_DIR$/sso_service/src/main/resources/spring/spring-dao.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_service/sso_service.iml" afterPath="$PROJECT_DIR$/sso_service/sso_service.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_service/target/classes/dubbo/provider.xml" afterPath="$PROJECT_DIR$/sso_service/target/classes/dubbo/provider.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_service/target/classes/spring/spring-dao.xml" afterPath="$PROJECT_DIR$/sso_service/target/classes/spring/spring-dao.xml" />
     </list>
     <ignored path="click.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -355,6 +284,12 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/click$RegisterObserverTest_update.coverage" NAME="RegisterObserverTest.update Coverage Results" MODIFIED="1475752331694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>org.nero.click.service.observer.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/click$org_nero_click_data_entity_in_data_parent.coverage" NAME="org.nero.click.data.entity in data_parent Coverage Results" MODIFIED="1488519103545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.nero.click.data.entity.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/click$ManhattanDaoTest_getSampleAll.coverage" NAME="ManhattanDaoTest.getSampleAll Coverage Results" MODIFIED="1488880542158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.nero.click.data.dao.*</FILTER>
     </SUITE>
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -398,60 +333,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="IDataService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/IDataService.java">
+      <file leaf-file-name="AuthServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/impl/AuthServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1620">
-              <caret line="117" column="110" lean-forward="false" selection-start-line="112" selection-start-column="4" selection-end-line="117" selection-end-column="110" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Data.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/src/main/java/org/nero/click/data/web/controller/Data.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6390">
-              <caret line="435" column="13" lean-forward="false" selection-start-line="435" selection-start-column="13" selection-end-line="435" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Point.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/dto/Point.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="-165">
+              <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IDataService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/src/main/java/org/nero/click/data/service/IDataService.java">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1620">
-              <caret line="117" column="111" lean-forward="false" selection-start-line="117" selection-start-column="111" selection-end-line="117" selection-end-column="111" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manhattanMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_service/src/main/resources/mapper/manhattanMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
               <folding>
-                <element signature="imports" expanded="false" />
+                <marker date="1490541690000" expanded="true" signature="317:395" ph="SELECT ID,uc... ${dataType}" />
+                <marker date="1490541690000" expanded="true" signature="1441:1547" ph="SELECT id,uc... ${dataType}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IDataServiceTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/service/IDataServiceTest.java">
+      <file leaf-file-name="Data.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/src/main/java/org/nero/click/data/web/controller/Data.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state relative-caret-position="414">
+              <caret line="507" column="9" lean-forward="false" selection-start-line="507" selection-start-column="9" selection-end-line="507" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PGene.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/entity/PGene.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -459,10 +389,31 @@
       <file leaf-file-name="DataServiceImplTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/service/impl/DataServiceImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+            <state relative-caret-position="666">
+              <caret line="124" column="30" lean-forward="false" selection-start-line="124" selection-start-column="30" selection-end-line="124" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IDataService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/IDataService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="144" column="22" lean-forward="false" selection-start-line="144" selection-start-column="22" selection-end-line="144" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/impl/DataServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="false" />
+                <element signature="e#9847#9855#0" expanded="true" />
+                <element signature="e#12038#12051#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -471,48 +422,19 @@
       <file leaf-file-name="ManhattanDaoTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/dao/ManhattanDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="18" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state relative-caret-position="202">
+              <caret line="101" column="5" lean-forward="false" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/impl/DataServiceImpl.java">
+      <file leaf-file-name="IAuthService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/IAuthService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3510">
-              <caret line="250" column="64" lean-forward="false" selection-start-line="250" selection-start-column="64" selection-end-line="250" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MoutainDaoTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/dao/MoutainDaoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="25" selection-start-column="3" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manhattanMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_service/src/main/resources/mapper/manhattanMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="71" lean-forward="false" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
-              <folding>
-                <marker date="1488211172000" expanded="true" signature="286:356" ph="SELECT ID fr... ${dataType}" />
-                <marker date="1488211172000" expanded="true" signature="455:671" ph="SELECT y fro... ${cancerType}" />
-              </folding>
+            <state relative-caret-position="49">
+              <caret line="28" column="18" lean-forward="false" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -522,19 +444,24 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="package-info" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Jsp File" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Gene</find>
+      <find>ucChrom</find>
     </findStrings>
+    <replaceStrings>
+      <replace>ucStart</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -547,57 +474,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/dto/AppToken.java" />
-        <option value="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/impl/AppServiceImpl.java" />
-        <option value="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/entity/AccessRequest.java" />
-        <option value="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/dto/Application.java" />
-        <option value="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/entity/Token.java" />
-        <option value="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/dto/Token.java" />
-        <option value="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/dto/AccessToken.java" />
-        <option value="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/IAccessService.java" />
-        <option value="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/IAuthService.java" />
-        <option value="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/dto/UserInfo.java" />
-        <option value="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/IUserService.java" />
-        <option value="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/impl/AuthServiceImpl.java" />
-        <option value="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/CONSTANT.java" />
-        <option value="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/dao/AccessDao.java" />
-        <option value="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/entity/Gene.java" />
+        <option value="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/dto/manhattan/ManhattanPoint.java" />
         <option value="$PROJECT_DIR$/common/src/main/resources/jdbc.properties" />
-        <option value="$PROJECT_DIR$/data_service/src/main/resources/mapper/geneMapper.xml" />
-        <option value="$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/dao/GeneDaoTest.java" />
-        <option value="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/impl/AccessServiceImpl.java" />
-        <option value="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/CONSTANT.java" />
-        <option value="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/dao/BeesDao.java" />
-        <option value="$PROJECT_DIR$/data_service/src/main/resources/mapper/beesMapper.xml" />
-        <option value="$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/dao/BeesDaoTest.java" />
-        <option value="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/dao/GeneDao.java" />
-        <option value="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/entity/moutain/Gene.java" />
-        <option value="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/dto/MoutainPoint.java" />
-        <option value="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/dto/moutain/Arm.java" />
-        <option value="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/dto/moutain/Cyto.java" />
-        <option value="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/dto/moutain/Moutain.java" />
-        <option value="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/dto/moutain/MPoint.java" />
-        <option value="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/entity/moutain/MoutainData.java" />
-        <option value="$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/dao/MoutainDaoTest.java" />
-        <option value="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/dao/MoutainDao.java" />
-        <option value="$PROJECT_DIR$/data_service/src/main/resources/spring/spring-dao.xml" />
+        <option value="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/dto/Point.java" />
+        <option value="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/dto/Token.java" />
+        <option value="$PROJECT_DIR$/sso_service/src/main/resources/SqlSchema/schema.sql" />
         <option value="$PROJECT_DIR$/sso_service/src/main/resources/spring/spring-dao.xml" />
-        <option value="$PROJECT_DIR$/common/pom.xml" />
-        <option value="$PROJECT_DIR$/common/src/main/resources/redis.properties" />
+        <option value="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/IAccessService.java" />
+        <option value="$PROJECT_DIR$/sso_service/src/test/java/org/nero/click/sso/service/impl/AccessServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/CONSTANT.java" />
+        <option value="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/dto/Ticket.java" />
+        <option value="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/dto/AccessToken.java" />
         <option value="$PROJECT_DIR$/sso/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/IVerifyService.java" />
-        <option value="$PROJECT_DIR$/data_service/src/main/resources/mapper/moutainMapper.xml" />
+        <option value="$PROJECT_DIR$/sso/src/main/resources/dubbo/consumer.xml" />
+        <option value="$PROJECT_DIR$/sso/src/main/webapp/WEB-INF/error.jsp" />
+        <option value="$PROJECT_DIR$/sso/src/main/webapp/WEB-INF/jsp/error.jsp" />
+        <option value="$PROJECT_DIR$/sso_service/src/test/java/org/nero/click/sso/dao/AccessDaoTest.java" />
+        <option value="$PROJECT_DIR$/sso_service/pom.xml" />
+        <option value="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/entity/AccessRequest.java" />
+        <option value="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/utils/TTest.java" />
+        <option value="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/dto/manhattan/MTPoint.java" />
+        <option value="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/dto/UserInfo.java" />
+        <option value="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/IUserService.java" />
+        <option value="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/service/IUserService.java" />
+        <option value="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/impl/AccessServiceImpl.java" />
+        <option value="$PROJECT_DIR$/common/src/sql/homework.sql" />
+        <option value="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/dto/AccessInfo.java" />
+        <option value="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/dao/AccessDao.java" />
+        <option value="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/entity/Access.java" />
+        <option value="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/IAuthService.java" />
+        <option value="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/service/IAuthService.java" />
+        <option value="$PROJECT_DIR$/sso/src/main/webapp/WEB-INF/jsp/login.jsp" />
+        <option value="$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/email/MailSenderFactory.java" />
+        <option value="$PROJECT_DIR$/sso_service/src/test/java/org/nero/click/sso/service/observer/RegisterObserverTest.java" />
+        <option value="$PROJECT_DIR$/sso_service/src/main/resources/mapper/appMapper.xml" />
+        <option value="$PROJECT_DIR$/data_service/src/main/resources/dubbo/provider.xml" />
+        <option value="$PROJECT_DIR$/sso_service/src/main/resources/dubbo/provider.xml" />
+        <option value="$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/web/controller/ThirdSSO.java" />
+        <option value="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/entity/SimpleGene.java" />
         <option value="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/dao/ManhattanDao.java" />
         <option value="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/IDataService.java" />
-        <option value="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/impl/DataServiceImpl.java" />
-        <option value="$PROJECT_DIR$/data_service/src/main/resources/mapper/manhattanMapper.xml" />
-        <option value="$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/dao/ManhattanDaoTest.java" />
-        <option value="$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/service/IDataServiceTest.java" />
-        <option value="$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/service/impl/DataServiceImplTest.java" />
         <option value="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/service/IDataService.java" />
         <option value="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/web/controller/Data.java" />
-        <option value="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/dto/Point.java" />
+        <option value="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/entity/PGene.java" />
+        <option value="$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/dto/FeedBack.java" />
+        <option value="$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/impl/AuthServiceImpl.java" />
+        <option value="$PROJECT_DIR$/sso_service/src/test/java/org/nero/click/sso/service/impl/AuthServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/dao/ManhattanDaoTest.java" />
+        <option value="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/impl/DataServiceImpl.java" />
+        <option value="$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/service/impl/DataServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/data_service/src/main/resources/mapper/manhattanMapper.xml" />
       </list>
     </option>
   </component>
@@ -619,9 +546,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="821" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -752,9 +678,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -775,22 +701,38 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="click" />
     <property name="js.eslint.eslintPackage" value="/usr/local/lib/node_modules/eslint" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/neroyang/project/click/click/sso_service/src/main/java/org/nero/click/sso/service/impl/AuthServiceImpl.java" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="org.nero.click.data.service.impl" />
-      <recent name="org.nero.click.data.service" />
       <recent name="org.nero.click.data.dao" />
-      <recent name="org.nero.click.admin.dao" />
-      <recent name="org.nero.click.admin.service.impl" />
+      <recent name="org.nero.click.sso.service.impl" />
+      <recent name="org.nero.click.sso.service.observer" />
+      <recent name="org.nero.click.sso.dao" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
       <recent name="groovy.util.GroovyTestCase" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sso/src/main/webapp/WEB-INF/jsp" />
+      <recent name="$PROJECT_DIR$/admin_service/src/main/resources/mapper" />
+      <recent name="$PROJECT_DIR$/sso_service/src/main/resources" />
+      <recent name="$PROJECT_DIR$/sso/src/main/resources/spring" />
+      <recent name="$PROJECT_DIR$/sso_parent/src/main/resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.nero" />
       <recent name="org.nero.click.cache" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.nero.click.sso.service" />
+      <recent name="org.nero.click.admin.service" />
+      <recent name="org.nero.click.data.service" />
+      <recent name="org.nero.click.sso.web.controller" />
+      <recent name="org.nero.click.common.utils.verifycode" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/build/bin" />
@@ -799,35 +741,21 @@
       <recent name="$PROJECT_DIR$/admin_service/src/main/java/org/nero/click" />
       <recent name="$PROJECT_DIR$/admin_service/src/test" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.nero.click.admin.service" />
-      <recent name="org.nero.click.sso.service" />
-      <recent name="org.nero.click.data.service" />
-      <recent name="org.nero.click.sso.web.controller" />
-      <recent name="org.nero.click.common.utils.verifycode" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/admin_service/src/main/resources/mapper" />
-      <recent name="$PROJECT_DIR$/sso_service/src/main/resources" />
-      <recent name="$PROJECT_DIR$/sso/src/main/resources/spring" />
-      <recent name="$PROJECT_DIR$/sso_parent/src/main/resources" />
-      <recent name="$PROJECT_DIR$/data_service/src/main/resources/dubbo" />
-    </key>
   </component>
-  <component name="RunManager" selected="JUnit.DataServiceImplTest.getManhattan">
-    <configuration default="false" name="DataServiceImplTest.getMantainPoint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DataServiceImplTest.getPanhattan">
+    <configuration default="false" name="AuthServiceImplTest.thirdLoginAccess2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="org.nero.click.data.service.impl.*" />
+          <option name="PATTERN" value="org.nero.click.sso.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="data_service" />
+      <module name="sso_service" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.nero.click.data.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="org.nero.click.data.service.impl.DataServiceImplTest" />
-      <option name="METHOD_NAME" value="getMantainPoint" />
+      <option name="PACKAGE_NAME" value="org.nero.click.sso.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="org.nero.click.sso.service.impl.AuthServiceImplTest" />
+      <option name="METHOD_NAME" value="thirdLoginAccess2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -841,33 +769,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="DataServiceImplTest.moutain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="org.nero.click.data.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="data_service" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.nero.click.data.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="org.nero.click.data.service.impl.DataServiceImplTest" />
-      <option name="METHOD_NAME" value="moutain" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ManhattanDaoTest.getMoutainData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="ManhattanDaoTest.getPanhattanData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="org.nero.click.data.dao.*" />
@@ -879,7 +781,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="org.nero.click.data.dao" />
       <option name="MAIN_CLASS_NAME" value="org.nero.click.data.dao.ManhattanDaoTest" />
-      <option name="METHOD_NAME" value="getMoutainData" />
+      <option name="METHOD_NAME" value="getPanhattanData" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -893,19 +795,19 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="ManhattanDaoTest.getSampleAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="AccessServiceImplTest.access" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="org.nero.click.data.dao.*" />
+          <option name="PATTERN" value="org.nero.click.sso.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="data_service" />
+      <module name="sso_service" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.nero.click.data.dao" />
-      <option name="MAIN_CLASS_NAME" value="org.nero.click.data.dao.ManhattanDaoTest" />
-      <option name="METHOD_NAME" value="getSampleAll" />
+      <option name="PACKAGE_NAME" value="org.nero.click.sso.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="org.nero.click.sso.service.impl.AccessServiceImplTest" />
+      <option name="METHOD_NAME" value="access" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -919,7 +821,33 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="DataServiceImplTest.getManhattan" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="AuthServiceImplTest.thirdLogin2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.nero.click.sso.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="sso_service" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.nero.click.sso.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="org.nero.click.sso.service.impl.AuthServiceImplTest" />
+      <option name="METHOD_NAME" value="thirdLogin2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="DataServiceImplTest.getPanhattan" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="org.nero.click.data.service.impl.*" />
@@ -931,7 +859,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="org.nero.click.data.service.impl" />
       <option name="MAIN_CLASS_NAME" value="org.nero.click.data.service.impl.DataServiceImplTest" />
-      <option name="METHOD_NAME" value="getManhattan" />
+      <option name="METHOD_NAME" value="getPanhattan" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1408,19 +1336,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.DataServiceImplTest.getMantainPoint" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.DataServiceImplTest.moutain" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ManhattanDaoTest.getMoutainData" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ManhattanDaoTest.getSampleAll" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.DataServiceImplTest.getManhattan" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.AuthServiceImplTest.thirdLoginAccess2" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ManhattanDaoTest.getPanhattanData" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.AccessServiceImplTest.access" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.AuthServiceImplTest.thirdLogin2" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.DataServiceImplTest.getPanhattan" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.DataServiceImplTest.getManhattan" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ManhattanDaoTest.getSampleAll" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ManhattanDaoTest.getMoutainData" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.DataServiceImplTest.getMantainPoint" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.DataServiceImplTest.moutain" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.DataServiceImplTest.getPanhattan" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ManhattanDaoTest.getPanhattanData" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.AuthServiceImplTest.thirdLoginAccess2" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.AuthServiceImplTest.thirdLogin2" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.AccessServiceImplTest.access" />
       </list>
     </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -1550,43 +1478,55 @@
       <workItem from="1488107771852" duration="14327000" />
       <workItem from="1488259187385" duration="411000" />
       <workItem from="1488267433972" duration="385000" />
+      <workItem from="1488508343776" duration="1423000" />
+      <workItem from="1488510369669" duration="261000" />
+      <workItem from="1488518534176" duration="1832000" />
+      <workItem from="1488520636828" duration="54983000" />
+      <workItem from="1489047496614" duration="1809000" />
+      <workItem from="1489112234589" duration="1801000" />
+      <workItem from="1489114063880" duration="1769000" />
+      <workItem from="1489302617242" duration="835000" />
+      <workItem from="1489631031503" duration="2290000" />
+      <workItem from="1489934757285" duration="754000" />
+      <workItem from="1490275083375" duration="598000" />
+      <workItem from="1490444165596" duration="16627000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DataServiceImplTest_getManhattan - 2017.02.28 at 00h 06m 21s.xml">
-      <configuration name="DataServiceImplTest.getManhattan" configurationId="JUnit" />
+    <history-entry file="DataServiceImplTest_getPanhattan - 2017.03.26 at 20h 13m 28s.xml">
+      <configuration name="DataServiceImplTest.getPanhattan" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DataServiceImplTest_getManhattan - 2017.02.28 at 00h 11m 40s.xml">
-      <configuration name="DataServiceImplTest.getManhattan" configurationId="JUnit" />
+    <history-entry file="DataServiceImplTest_getPanhattan - 2017.03.26 at 20h 14m 23s.xml">
+      <configuration name="DataServiceImplTest.getPanhattan" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ManhattanDaoTest_getSampleAll - 2017.02.26 at 23h 08m 53s.xml">
-      <configuration name="ManhattanDaoTest.getSampleAll" configurationId="JUnit" />
+    <history-entry file="DataServiceImplTest_getPanhattan - 2017.03.26 at 20h 15m 20s.xml">
+      <configuration name="DataServiceImplTest.getPanhattan" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ManhattanDaoTest_getSampleAll - 2017.02.27 at 13h 16m 51s.xml">
-      <configuration name="ManhattanDaoTest.getSampleAll" configurationId="JUnit" />
+    <history-entry file="DataServiceImplTest_getPanhattan - 2017.03.26 at 23h 10m 59s.xml">
+      <configuration name="DataServiceImplTest.getPanhattan" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ManhattanDaoTest_getSampleAll - 2017.02.27 at 13h 32m 44s.xml">
-      <configuration name="ManhattanDaoTest.getSampleAll" configurationId="JUnit" />
+    <history-entry file="DataServiceImplTest_getPanhattan - 2017.03.26 at 23h 11m 30s.xml">
+      <configuration name="DataServiceImplTest.getPanhattan" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ManhattanDaoTest_getSampleAll - 2017.02.27 at 23h 11m 04s.xml">
-      <configuration name="ManhattanDaoTest.getSampleAll" configurationId="JUnit" />
+    <history-entry file="DataServiceImplTest_getPanhattan - 2017.03.26 at 23h 12m 43s.xml">
+      <configuration name="DataServiceImplTest.getPanhattan" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ManhattanDaoTest_getSampleAll - 2017.02.27 at 23h 55m 49s.xml">
-      <configuration name="ManhattanDaoTest.getSampleAll" configurationId="JUnit" />
+    <history-entry file="DataServiceImplTest_getPanhattan - 2017.03.26 at 23h 13m 42s.xml">
+      <configuration name="DataServiceImplTest.getPanhattan" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ManhattanDaoTest_getSampleAll - 2017.02.27 at 23h 57m 07s.xml">
-      <configuration name="ManhattanDaoTest.getSampleAll" configurationId="JUnit" />
+    <history-entry file="DataServiceImplTest_getPanhattan - 2017.03.26 at 23h 21m 09s.xml">
+      <configuration name="DataServiceImplTest.getPanhattan" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ManhattanDaoTest_getSampleAll - 2017.02.27 at 23h 58m 57s.xml">
-      <configuration name="ManhattanDaoTest.getSampleAll" configurationId="JUnit" />
+    <history-entry file="ManhattanDaoTest_getPanhattanData - 2017.03.26 at 20h 10m 31s.xml">
+      <configuration name="ManhattanDaoTest.getPanhattanData" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ManhattanDaoTest_getSampleAll - 2017.02.27 at 23h 59m 59s.xml">
-      <configuration name="ManhattanDaoTest.getSampleAll" configurationId="JUnit" />
+    <history-entry file="ManhattanDaoTest_getPanhattanData - 2017.03.26 at 20h 11m 58s.xml">
+      <configuration name="ManhattanDaoTest.getPanhattanData" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="626313000" />
+    <option name="totallyTimeSpent" value="711295000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1598,96 +1538,76 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="821" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3059789" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30319148" sideWeight="0.50555557" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32796487" sideWeight="0.4877651" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6471278" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32582322" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30319148" sideWeight="0.4969743" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58147717" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32582322" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2326389" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5122349" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.816641" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32626426" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3235639" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven-2 Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3059789" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32796487" sideWeight="0.4877651" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32796487" sideWeight="0.4877651" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5716487" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4947245" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32582322" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30662557" sideWeight="0.4969743" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3024619" sideWeight="0.49444443" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.77195686" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5122349" order="13" side_tool="true" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32582322" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.816641" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17083333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845744" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5791325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32582322" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2326389" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32626426" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3235639" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven-2 Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Analyze Dataflow to" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5122349" order="14" side_tool="true" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.816641" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32626426" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3231383" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven-2 Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.go" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1705,7 +1625,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="24" />
+      <option name="time" value="25" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1714,399 +1634,444 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/verifycode/exception/VerifyFailedException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/IUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/observer/RegisterObserver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/impl/AccessServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/resources/redis.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_service/src/main/resources/spring/spring-dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso_service/src/main/resources/spring/spring-dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="59" lean-forward="false" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/IAccessService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/observer/RegisterObserver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/impl/AccessServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3405">
-          <caret line="227" column="28" lean-forward="false" selection-start-line="227" selection-start-column="28" selection-end-line="227" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="29" lean-forward="false" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/src/main/resources/spring/spring-web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_service/src/main/resources/spring/spring-service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3405">
-          <caret line="227" column="28" lean-forward="false" selection-start-line="227" selection-start-column="28" selection-end-line="227" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/resources/redis.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso_service/src/main/resources/spring/spring-dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="59" lean-forward="false" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="11" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/impl/AccessServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/observer/RegisterObserver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/IAccessService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/verifycode/Verify.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/verifycode/exception/VerifyFailedException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/IAuthService.java">
+    <entry file="file://$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/CONSTANT.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/IUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/IVerifyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/dao/BeesDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/dao/MoutainDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_service/src/main/resources/mapper/geneMapper.xml">
+    <entry file="file://$PROJECT_DIR$/common/src/sql/schema.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_service/src/main/resources/mapper/beesMapper.xml">
+    <entry file="file://$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/dto/AccessInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="25" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso/src/main/webapp/WEB-INF/jsp/error.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="9" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="29" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/entity/Access.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="37" column="18" lean-forward="false" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/sql/homework.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso_service/src/test/java/org/nero/click/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/email/SimpleMailSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="59" column="30" lean-forward="false" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/email/MailSenderFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/observer/RegisterObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="36" column="35" lean-forward="false" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso_service/src/test/java/org/nero/click/sso/service/observer/RegisterObserverTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso/src/main/webapp/WEB-INF/jsp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="140" lean-forward="false" selection-start-line="31" selection-start-column="140" selection-end-line="31" selection-end-column="140" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/impl/AccessServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso_service/src/main/resources/mapper/appMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <marker date="1490446097000" expanded="true" signature="386:466" ph="SELECT * FRO... apps" />
+            <marker date="1490446097000" expanded="true" signature="602:682" ph="UPDATE apps " />
+            <marker date="1490446097000" expanded="true" signature="861:916" ph="SELECT * FRO... apps" />
+            <marker date="1490446097000" expanded="true" signature="1085:1152" ph="UPDATE apps " />
+            <marker date="1490446097000" expanded="true" signature="1254:1297" ph="select * fro... apps" />
+            <marker date="1490446097000" expanded="true" signature="1521:1672" ph="select id,ap... apps" />
+            <marker date="1490446097000" expanded="true" signature="1847:1962" ph="select id,ap... apps" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso_service/src/main/resources/mapper/userMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="44" column="24" lean-forward="false" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+          <folding>
+            <marker date="1482057483000" expanded="true" signature="343:466" ph="INSERT INTO user" />
+            <marker date="1482057483000" expanded="true" signature="636:842" ph="UPDATE user " />
+            <marker date="1482057483000" expanded="true" signature="925:968" ph="UPDATE user " />
+            <marker date="1482057483000" expanded="true" signature="1101:1136" ph="SELECT * fro... user" />
+            <marker date="1482057483000" expanded="true" signature="1280:1323" ph="select * fro... user" />
+            <marker date="1482057483000" expanded="true" signature="1461:1504" ph="select * fro... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_service/src/main/resources/dubbo/provider.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/bin/start.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/bin/stop.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/bin/start.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/bin/server.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso_service/src/main/resources/dubbo/provider.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="52" lean-forward="false" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="17" />
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/dao/BeesDaoTest.java">
+    <entry file="file://$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/dao/AccessDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        <state relative-caret-position="420">
+          <caret line="30" column="11" lean-forward="false" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/dao/ManhattanDao.java">
+    <entry file="file://$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/dto/UserInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="16" lean-forward="false" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+        <state relative-caret-position="405">
+          <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_service/src/main/resources/spring/spring-dao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_service/src/main/resources/mapper/moutainMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="75" lean-forward="false" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="75" />
-          <folding>
-            <marker date="1485013275000" expanded="true" signature="307:367" ph="SELECT * fro... ${dataType}" />
-            <marker date="1485013275000" expanded="true" signature="440:541" ph="SELECT y fro... ${cancerType}" />
-            <marker date="1485013275000" expanded="true" signature="616:868" ph="select ${whi... ${dataType}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/dao/MoutainDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="25" selection-start-column="3" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_service/src/main/resources/mapper/manhattanMapper.xml">
+    <entry file="file://$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/dto/manhattan/MTPoint.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="71" lean-forward="false" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
-          <folding>
-            <marker date="1488211172000" expanded="true" signature="286:356" ph="SELECT ID fr... ${dataType}" />
-            <marker date="1488211172000" expanded="true" signature="455:671" ph="SELECT y fro... ${cancerType}" />
-          </folding>
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/dao/ManhattanDaoTest.java">
+    <entry file="file://$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/dto/manhattan/ManhattanPoint.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="18" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/service/IDataServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/entity/SimpleGene.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        <state relative-caret-position="180">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="12" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/impl/DataServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3510">
-          <caret line="250" column="64" lean-forward="false" selection-start-line="250" selection-start-column="64" selection-end-line="250" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/service/impl/DataServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/IDataService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
-          <caret line="117" column="110" lean-forward="false" selection-start-line="112" selection-start-column="4" selection-end-line="117" selection-end-column="110" />
-          <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#318#319#0" expanded="false" />
+            <element signature="e#343#344#0" expanded="false" />
+            <element signature="e#377#378#0" expanded="false" />
+            <element signature="e#405#406#0" expanded="false" />
+            <element signature="e#439#440#0" expanded="false" />
+            <element signature="e#469#470#0" expanded="false" />
+            <element signature="e#515#516#0" expanded="false" />
+            <element signature="e#553#554#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/src/main/java/org/nero/click/data/service/IDataService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
-          <caret line="117" column="111" lean-forward="false" selection-start-line="117" selection-start-column="111" selection-end-line="117" selection-end-column="111" />
+        <state relative-caret-position="771">
+          <caret line="144" column="71" lean-forward="false" selection-start-line="144" selection-start-column="71" selection-end-line="144" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/dao/ManhattanDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/dao/MoutainDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-113">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso_service/src/test/java/org/nero/click/sso/service/impl/AccessServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/web/controller/Auth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1179">
+          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/IUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="26" column="28" lean-forward="false" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/service/IUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="26" column="14" lean-forward="false" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/IAccessService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso_service/src/test/java/org/nero/click/sso/service/impl/AuthServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-24">
+          <caret line="37" column="101" lean-forward="false" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/dto/FeedBack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#540#541#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/web/controller/ThirdSSO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="96" column="40" lean-forward="false" selection-start-line="96" selection-start-column="40" selection-end-line="96" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/service/IAuthService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="37" column="22" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/IAuthService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="28" column="18" lean-forward="false" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/impl/AuthServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-165">
+          <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/dao/ManhattanDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="101" column="5" lean-forward="false" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/entity/PGene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/IDataService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="144" column="22" lean-forward="false" selection-start-line="144" selection-start-column="22" selection-end-line="144" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/impl/DataServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="e#9847#9855#0" expanded="true" />
+            <element signature="e#12038#12051#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/service/impl/DataServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="124" column="30" lean-forward="false" selection-start-line="124" selection-start-column="30" selection-end-line="124" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_service/src/main/resources/mapper/manhattanMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding>
+            <marker date="1490541690000" expanded="true" signature="317:395" ph="SELECT ID,uc... ${dataType}" />
+            <marker date="1490541690000" expanded="true" signature="1441:1547" ph="SELECT id,uc... ${dataType}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/src/main/java/org/nero/click/data/web/controller/Data.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6390">
-          <caret line="435" column="13" lean-forward="false" selection-start-line="435" selection-start-column="13" selection-end-line="435" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/dto/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="414">
+          <caret line="507" column="9" lean-forward="false" selection-start-line="507" selection-start-column="9" selection-end-line="507" selection-end-column="9" />
           <folding />
         </state>
       </provider>

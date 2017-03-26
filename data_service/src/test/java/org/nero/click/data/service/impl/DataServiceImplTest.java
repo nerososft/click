@@ -5,6 +5,7 @@ import org.junit.runner.RunWith;
 import org.nero.click.data.dao.BeesDao;
 import org.nero.click.data.dao.MoutainDao;
 import org.nero.click.data.dto.Point;
+import org.nero.click.data.entity.PGene;
 import org.nero.click.data.service.IDataService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
@@ -104,7 +105,25 @@ public class DataServiceImplTest {
     }
     @Test
     public void getManhattan() throws Exception {
+        long startTime = System.currentTimeMillis();    //获取开始时间
+
         System.out.println(dataService.getManhattan("cead","e"));
+
+        long endTime = System.currentTimeMillis();    //获取结束时间
+        System.out.println("程序运行时间：" + (endTime - startTime) + "ms");    //输出程序运行时
+    }
+
+    @Test
+    public void getTanhattan() throws Exception {
+        System.out.println(dataService.getTanhattan("cead","cead","n","t","e","l"));
+    }
+
+    @Test
+    public void getPanhattan() throws Exception {
+        List<List<PGene>> p = dataService.getPanhattan("gbm","c");
+        System.out.println("____________________________________________________________________________________");
+        System.out.println(p);
+        System.out.println("____________________________________________________________________________________");
     }
 
 }

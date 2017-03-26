@@ -20,6 +20,15 @@ public class UserInfo implements Serializable {
     public UserInfo() {
     }
 
+    public UserInfo(long id, String username, String email, String token, String phone, Timestamp ctime) {
+        this.id = id;
+        this.username = username;
+        this.email = email;
+        this.token = token;
+        this.phone = phone;
+        this.ctime = ctime;
+    }
+
     public long getId() {
         return id;
     }

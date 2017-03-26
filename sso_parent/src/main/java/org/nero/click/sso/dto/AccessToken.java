@@ -12,9 +12,18 @@ public class AccessToken implements Serializable {
 
     private Token token;
 
-    private String expirationTime;
+    private Long expirationTime;
 
     public AccessToken() {
+    }
+
+    public AccessToken(Token token){
+        this.token = token;
+    }
+
+    public AccessToken(Token token, Long expirationTime) {
+        this.token = token;
+        this.expirationTime = expirationTime;
     }
 
     public Token getToken() {
@@ -25,11 +34,11 @@ public class AccessToken implements Serializable {
         this.token = token;
     }
 
-    public String getExpirationTime() {
+    public Long getExpirationTime() {
         return expirationTime;
     }
 
-    public void setExpirationTime(String expirationTime) {
+    public void setExpirationTime(Long expirationTime) {
         this.expirationTime = expirationTime;
     }
 

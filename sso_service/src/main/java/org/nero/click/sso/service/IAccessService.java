@@ -5,6 +5,7 @@ import org.nero.click.sso.dto.Application;
 import org.nero.click.sso.dto.Operate;
 import org.nero.click.sso.dto.Token;
 import org.nero.click.sso.entity.AccessRequest;
+import org.springframework.stereotype.Service;
 
 /**
  * Author neroyang

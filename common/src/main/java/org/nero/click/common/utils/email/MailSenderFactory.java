@@ -22,8 +22,8 @@ public class MailSenderFactory {
     public static SimpleMailSender getSender(MailSenderType type) {
         if (type == MailSenderType.SERVICE) {
             if (serviceSms == null) {
-                serviceSms = new SimpleMailSender("click@smilewithu.com",
-                        "c.l.i.c.k.123");
+                serviceSms = new SimpleMailSender("yxf535177134@163.com",
+                        "baby520587");
             }
             return serviceSms;
         }

@@ -4,14 +4,28 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.nero.click.data.dao.ManhattanDao">
 
-    <select id="getManhattanData" resultType="String">
-        SELECT ID from ${dataType}_gene_manhadun where ucChrom = ${chromosome} ;
+    <select id="getManhattanData" resultType="org.nero.click.data.entity.SimpleGene">
+        SELECT ID,ucStart from ${dataType}_gene_manhadun where ucChrom = ${chromosome} ;
     </select>
-    <select id="getSampleAll" resultType="org.nero.click.data.dto.Point">
-        select * FROM ${cancerType}_${normal}_${dataType}_l_0_1_manhadun WHERE geneid in
+    <select id="getSampleAll" resultType="org.nero.click.data.dto.manhattan.ManhattanPoint">
+        select * FROM ${cancerType}_${normal}_${dataType}_${islog}_0_1_manhadun WHERE geneid in
         <foreach collection="geneId" index="index" item="item" open="(" separator="," close=")">
             ${item}
         </foreach>
+--         SELECT
+--         ${dataType}_gene_manhadun.ucStart,
+--         ${cancerType}_${normal}_${dataType}_l_0_1_manhadun.y,
+--         ${cancerType}_${normal}_${dataType}_l_0_1_manhadun.sampleid
+--         FROM ${dataType}_gene_manhadun
+--         INNER JOIN ${cancerType}_${normal}_${dataType}_l_0_1_manhadun
+--         ON ${dataType}_gene_manhadun.ID=${cancerType}_${normal}_${dataType}_l_0_1_manhadun.geneid
+    </select>
+
+    <!--List<SimpleGene> getPanhattanData(@Param("chromosome") String chromosome,-->
+    <!--@Param("dataType") String dataType,-->
+    <!--@Param("cancerType") String cancerType);-->
+    <select id="getPanhattanData" resultType="org.nero.click.data.entity.PGene">
+        SELECT id,ucStart,pvalue${cancerType} as pvalue from ${dataType}_gene_xiugai where ucChrom = ${chromosome} ;
     </select>
 
 </mapper>

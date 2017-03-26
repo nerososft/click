@@ -1,6 +1,8 @@
 package org.nero.click.sso.service;
 
 import org.nero.click.sso.dto.Operate;
+import org.nero.click.sso.dto.Token;
+import org.nero.click.sso.dto.UserInfo;
 import org.nero.click.sso.entity.Authpair;
 import org.nero.click.sso.entity.User;
 import org.nero.click.sso.exceptions.user.LoginException;
@@ -21,5 +23,7 @@ public interface IUserService {
     Operate Register(User user) throws UnsupportedEncodingException, NoSuchAlgorithmException;
 
     Operate RegisterAuth(String token) throws NoSuchAlgorithmException, UnsupportedEncodingException;
+
+    Operate<UserInfo> getUserInfo(Token appToken, Token userToken);
 
 }

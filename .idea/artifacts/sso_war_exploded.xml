@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="sso:war exploded">
-    <output-path>$PROJECT_DIR$/sso/target/click</output-path>
+    <output-path>$PROJECT_DIR$/build/web/sso</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">

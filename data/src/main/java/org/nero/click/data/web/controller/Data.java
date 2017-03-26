@@ -4,7 +4,9 @@ import org.apache.ibatis.annotations.Param;
 import org.nero.click.Consumer;
 import org.nero.click.data.dto.Operate;
 import org.nero.click.data.dto.Point;
+import org.nero.click.data.dto.manhattan.MTPoint;
 import org.nero.click.data.dto.moutain.Moutain;
+import org.nero.click.data.entity.PGene;
 import org.nero.click.data.service.IDataService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -446,18 +448,80 @@ public class Data {
 
 
     /*********************************************曼哈顿**************************************************/
+    @RequestMapping(value = "/{cancerType}/{dataType}/bydeflection",
+            method = RequestMethod.GET,
+            produces = {"application/json;charset=UTF-8"})
+    @ResponseBody
+    public Operate<List<List<Point>>> getDeflection(@PathVariable("cancerType") String cancerType,
+                                                   @PathVariable("dataType") String dataType){
+
+        try{
+            iDataService = (IDataService) Consumer.singleton().getBean("IDataService");
+
+            return new Operate<List<List<Point>>>(true,iDataService.getManhattan(cancerType,dataType));
+        }catch(IllegalStateException e){
+            return new Operate<List<List<Point>>>(false,"服务异常！",null);
+        }
+
+    }
     @RequestMapping(value = "/{cancerType}/{dataType}/bymanhattan",
             method = RequestMethod.GET,
             produces = {"application/json;charset=UTF-8"})
     @ResponseBody
     public Operate<List<List<Point>>> getManhattan(@PathVariable("cancerType") String cancerType,
+                                                    @PathVariable("dataType") String dataType){
+
+        try{
+            iDataService = (IDataService) Consumer.singleton().getBean("IDataService");
+            List<List<Point>>  manhattan = iDataService.getManhattan(cancerType,dataType);
+
+            for(List<Point> ml:manhattan){
+                for(Point m:ml) {
+                    m.setY(Math.abs(m.getY()));
+                }
+            }
+            return new Operate<List<List<Point>>>(true,manhattan);
+        }catch(IllegalStateException e){
+            return new Operate<List<List<Point>>>(false,"服务异常！",null);
+        }
+
+    }
+
+//    String cancerType1, String cancerType2, String normal1, String normal2, String dataType, String isLog
+    @RequestMapping(value = "/{cancertype1}/{cancertype2}/{normal1}/{normal2}/{datatype}/{islog}/bytanhattan",
+            method = RequestMethod.GET,
+            produces = {"application/json;charset=UTF-8"})
+    @ResponseBody
+    public Operate<List<List<MTPoint>>> getTanhattan(@PathVariable("cancertype1") String cancerType1,
+                                                     @PathVariable("cancertype2") String cancerType2,
+                                                     @PathVariable("normal1") String normal1,
+                                                     @PathVariable("normal2") String normal2,
+                                                     @PathVariable("datatype") String datatype,
+                                                     @PathVariable("islog") String islog){
+
+        try{
+            iDataService = (IDataService) Consumer.singleton().getBean("IDataService");
+            List<List<MTPoint>>  manhattan = iDataService.getTanhattan(cancerType1,cancerType2,normal1,normal2,datatype,islog);
+            return new Operate<List<List<MTPoint>>>(true,manhattan);
+        }catch(IllegalStateException e){
+            return new Operate<List<List<MTPoint>>>(false,"服务异常！",null);
+        }
+
+    }
+
+    @RequestMapping(value = "/{cancertype}/{dataType}/bypanhattan",
+            method = RequestMethod.GET,
+            produces = {"application/json;charset=UTF-8"})
+    @ResponseBody
+    public Operate<List<List<PGene>>> getPanhattan(@PathVariable("cancertype") String cancerType,
                                                    @PathVariable("dataType") String dataType){
 
         try{
             iDataService = (IDataService) Consumer.singleton().getBean("IDataService");
-            return new Operate<List<List<Point>>>(true,iDataService.getManhattan(cancerType,dataType));
+            List<List<PGene>>  manhattan = iDataService.getPanhattan(cancerType,dataType);
+            return new Operate<List<List<PGene>>>(true,manhattan);
         }catch(IllegalStateException e){
-            return new Operate<List<List<Point>>>(false,"服务异常！",null);
+            return new Operate<List<List<PGene>>>(false,"服务异常！",null);
         }
 
     }

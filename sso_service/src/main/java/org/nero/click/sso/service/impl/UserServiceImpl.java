@@ -1,10 +1,13 @@
 package org.nero.click.sso.service.impl;
 
+import org.nero.click.App;
 import org.nero.click.common.utils.md5.MD5;
+import org.nero.click.sso.dao.AccessDao;
 import org.nero.click.sso.dao.UserDao;
 import org.nero.click.sso.dto.Operate;
 import org.nero.click.sso.dto.Token;
 import org.nero.click.sso.dto.UserInfo;
+import org.nero.click.sso.entity.Access;
 import org.nero.click.sso.entity.Authpair;
 import org.nero.click.sso.exceptions.user.*;
 import org.nero.click.sso.service.IUserService;
@@ -18,6 +21,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.io.UnsupportedEncodingException;
 import java.security.NoSuchAlgorithmException;
+import java.sql.Timestamp;
+
+import static org.nero.click.sso.CONSTANT.TOKEN_EXPIR;
 
 /**
  * author： nero
@@ -30,6 +36,9 @@ public class UserServiceImpl implements IUserService {
 
     @Autowired
     private UserDao userDao;
+
+    @Autowired
+    private AccessDao accessDao;
 
     @Transactional
     public synchronized Operate Login(Authpair authpair) throws LoginException, NoSuchAlgorithmException, UnsupportedEncodingException {
@@ -114,8 +123,15 @@ public class UserServiceImpl implements IUserService {
 
     public Operate<UserInfo> getUserInfo(Token appToken, Token userToken) {
 
+        Access access = accessDao.findByToken(appToken.getToken());
 
-        return null;
+        if(access==null){
+            return new Operate<UserInfo>(false,TOKEN_EXPIR.DESC,null);
+        }
+
+        User user = userDao.queryByToken(userToken.getToken());
+
+        return new Operate<UserInfo>(true,new UserInfo(user.getId(),user.getUsername(),user.getEmail(),user.getToken(),user.getPhone(),user.getCtime()));
 
     }
 }

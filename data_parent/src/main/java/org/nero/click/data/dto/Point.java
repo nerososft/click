@@ -16,6 +16,12 @@ public class Point implements Serializable{
     public Point() {
     }
 
+    public Point(double x, double y, String sampleID) {
+        this.x = x;
+        this.y = y;
+        this.sampleID = sampleID;
+    }
+
     public double getX() {
         return x;
     }

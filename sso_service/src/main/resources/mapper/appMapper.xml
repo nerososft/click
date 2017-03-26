@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.nero.click.sso.dao.AccessDao">
+
+    <!--Access findByAccessRequest(String appKey,String appSecretKey);-->
+
+    <select id="findByAccessRequest" resultType="org.nero.click.sso.entity.Access">
+        SELECT * FROM apps WHERE appkey = '${appkey}' and appsecretkey='${appsecretkey}';
+    </select>
+
+
+    <!--Long updateAccessToken(String appKey,String token,Long exper);-->
+    <update id="updateAccessToken">
+        UPDATE apps SET accesstoken='${token}',expir='${exper}' WHERE appkey='${appkey}';
+    </update>
+
+    <!--findByAccessToken(@Param("accessToken") String accessToken);-->
+    <select id="findByAccessToken" resultType="org.nero.click.sso.entity.Access">
+        SELECT * FROM apps WHERE accesstoken = '${accessToken}';
+    </select>
+
+
+
+    <!--Long updateToken(@Param("accesstoken") String accessToken,-->
+    <!--@Param("token") String token);-->
+    <update id="updateToken">
+        UPDATE apps SET token='${token}' WHERE accesstoken='${accesstoken}';
+    </update>
+
+
+    <select id="findByToken" resultType="org.nero.click.sso.entity.Access">
+        select * from apps where token = '${token}';
+    </select>
+
+    <!--AccessInfo getAppByKey(@Param("appkey") String appKey,-->
+    <!--@Param("appsecretkey") String appSecretKey);-->
+    <select id="getAppByKey" resultType="org.nero.click.sso.dto.AccessInfo">
+        select id,appkey,appsecretkey,feedbackurl,appname,appavatar,expir,ctime from apps
+        WHERE appkey = '${appkey}' AND appsecretkey='${appsecretkey}';
+    </select>
+
+    <!--AccessInfo getAppByTicket(@Param("ticket") String ticket);-->
+    <select id="getAppByTicket" resultType="org.nero.click.sso.dto.AccessInfo">
+        select id,appkey,appsecretkey,feedbackurl,appname,appavatar,expir,ctime from apps
+        WHERE token = '${ticket}';
+    </select>
+</mapper>

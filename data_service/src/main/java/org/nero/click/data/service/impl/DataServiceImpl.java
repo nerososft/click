@@ -1,18 +1,22 @@
 package org.nero.click.data.service.impl;
 
-import org.apache.ibatis.annotations.Param;
 import org.nero.click.data.dao.GeneDao;
 import org.nero.click.data.dao.ManhattanDao;
 import org.nero.click.data.dto.Operate;
 import org.nero.click.data.dto.Point;
 import org.nero.click.data.dao.BeesDao;
 import org.nero.click.data.dao.MoutainDao;
+import org.nero.click.data.dto.manhattan.MTPoint;
+import org.nero.click.data.dto.manhattan.ManhattanPoint;
 import org.nero.click.data.dto.moutain.Arm;
 import org.nero.click.data.dto.moutain.Cyto;
 import org.nero.click.data.dto.moutain.MPoint;
 import org.nero.click.data.dto.moutain.Moutain;
 import org.nero.click.data.entity.Gene;
+import org.nero.click.data.entity.PGene;
+import org.nero.click.data.entity.SimpleGene;
 import org.nero.click.data.service.IDataService;
+import org.nero.click.data.utils.TTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -241,18 +245,110 @@ public class DataServiceImpl implements IDataService {
         return new Moutain(getMantainPoint(chromosomes,dataType,cancerType,value,showValue),getCyto(samples),getArm(samples));
     }
 
-
+    public List<String> getMGeneId(List<SimpleGene> simpleGenes) {
+        List<String> geneid = new ArrayList<String>();
+        for(SimpleGene ss:simpleGenes){
+            geneid.add(String.valueOf(ss.getID()));
+        }
+        return geneid;
+    }
     /**
      * 曼哈顿数据出来啦
      * @param cancerType
      * @return
      */
     public List<List<Point>> getManhattan(String cancerType,String dataType){
-        List<List<Point>> manhattanData =  new ArrayList<List<Point>>();
+        List<List<ManhattanPoint>> manhattanData =  new ArrayList<List<ManhattanPoint>>();
+
 
         for(int i = 0;i<22;i++){ //22对染色体
-            manhattanData.add(manhattanDao.getSampleAll(cancerType,dataType,manhattanDao.getManhattanData(String.valueOf(i),dataType),"t"));
+
+            List<String> geneid = new ArrayList<String>();
+            Map<String,String> geneMap = new HashMap<String, String>();
+            List<SimpleGene> ss = manhattanDao.getManhattanData(String.valueOf(i),dataType);
+            for(SimpleGene simpleGene :ss ){
+                geneid.add(String.valueOf(simpleGene.getID()));
+                geneMap.put(String.valueOf(simpleGene.getID()),simpleGene.getucStart());
+            }
+
+            List<ManhattanPoint> genes = manhattanDao.getSampleAll(cancerType,dataType,
+                    geneid,
+                    "t","l");
+            for(ManhattanPoint mp:genes){
+                mp.setX(Double.valueOf(geneMap.get(String.valueOf(mp.getGeneId()))));
+            }
+
+            manhattanData.add(genes);
         }
-        return manhattanData;
+
+
+        List<List<Point>> all = new ArrayList<List<Point>>();
+        for(List<ManhattanPoint> mp:manhattanData){
+            List<Point> mmmp = new ArrayList<Point>();
+            for(ManhattanPoint mppp:mp){
+                mmmp.add(new Point(mppp.getX(),mppp.getY(),mppp.getSampleID()));
+            }
+            all.add(mmmp);
+        }
+        return all;
+    }
+    public List<List<MTPoint>> getTanhattan(String cancerType1,String cancerType2,String normal1,String normal2,String dataType,String isLog){
+        List<List<MTPoint>> result =  new ArrayList<List<MTPoint>>();
+        for(int i = 1;i<22;i++) {
+            List<String> geneid = new ArrayList<String>();
+            Map<String,String> geneMap = new HashMap<String, String>();
+            List<SimpleGene> ss = manhattanDao.getManhattanData(String.valueOf(i), dataType);
+            for (SimpleGene simpleGene : ss) {
+                geneid.add(String.valueOf(simpleGene.getID()));
+                geneMap.put(String.valueOf(simpleGene.getID()),simpleGene.getucStart());
+            }
+
+            List<ManhattanPoint> genes1 = manhattanDao.getSampleAll(cancerType1,
+                    dataType,
+                    geneid,
+                    normal1,isLog);
+            List<ManhattanPoint> genes2 = manhattanDao.getSampleAll(cancerType2,
+                    dataType,
+                    geneid,
+                    normal2,isLog);
+
+            Map<String, List<Double>> mapa = new HashMap<String, List<Double>>();
+            Map<String, List<Double>> mapb = new HashMap<String, List<Double>>();
+
+            for (ManhattanPoint a : genes1) {
+                if (mapa.get(String.valueOf(a.getGeneId())) == null) {
+                    List<Double> doubles = new ArrayList<Double>();
+                    doubles.add(a.getY());
+                    mapa.put(String.valueOf(a.getGeneId()), doubles);
+                } else {
+                    mapa.get(String.valueOf(a.getGeneId())).add(a.getY());
+                }
+            }
+            for (ManhattanPoint b : genes2) {
+                if (mapb.get(String.valueOf(b.getGeneId())) == null) {
+                    List<Double> doubles = new ArrayList<Double>();
+                    doubles.add(b.getY());
+                    mapb.put(String.valueOf(b.getGeneId()), doubles);
+                } else {
+                    mapb.get(String.valueOf(b.getGeneId())).add(b.getY());
+                }
+            }
+
+            List<MTPoint> ttttttt = new ArrayList<MTPoint>();
+            for (String gen : geneid) {
+                ttttttt.add(new MTPoint(geneMap.get(gen),TTest.test(mapa.get(gen), mapb.get(gen)),gen));
+            }
+            result.add(ttttttt);
+        }
+        return result;
+    }
+
+    public List<List<PGene>> getPanhattan(String cancerType,String dataType){
+        List<List<PGene>> result =  new ArrayList<List<PGene>>();
+        for(int i = 1;i<22;i++) {
+            List<PGene> pGenes= manhattanDao.getPanhattanData(String.valueOf(i),dataType,cancerType);
+            result.add(pGenes);
+        }
+        return result;
     }
 }
