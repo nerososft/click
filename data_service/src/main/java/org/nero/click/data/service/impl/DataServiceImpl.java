@@ -3,6 +3,7 @@ package org.nero.click.data.service.impl;
 import org.nero.click.data.dao.*;
 import org.nero.click.data.dto.Operate;
 import org.nero.click.data.dto.Point;
+import org.nero.click.data.dto.deflection.DPoint;
 import org.nero.click.data.dto.linear.LinearCalPoint;
 import org.nero.click.data.dto.linear.LinearPoint;
 import org.nero.click.data.dto.manhattan.MTPoint;
@@ -44,6 +45,9 @@ public class DataServiceImpl implements IDataService {
 
     @Autowired
     private ManhattanDao manhattanDao;
+
+    @Autowired
+    private DeflectionDao deflectionDao;
 
     @Autowired
     private LinearDao linearDao;
@@ -386,5 +390,54 @@ public class DataServiceImpl implements IDataService {
         }
         return all;
 
+    }
+
+    /**
+     * deflection 单癌症双样本校验
+     *
+     * @param cancerType
+     * @param dataType
+     * @return
+     */
+    public List<PGene> getDeflection(String cancerType,String dataType){
+
+        List<PGene> pGenes = deflectionDao.getDel(String.valueOf(1),dataType);
+        List<String> geneid = new ArrayList<String>();
+        for(PGene po:pGenes){
+            geneid.add(String.valueOf(po.getId()));
+        }
+
+        List<DPoint> nPoint = deflectionDao.getDSim(geneid,cancerType,"n",dataType,"y","0","1");
+        List<DPoint> tPoint = deflectionDao.getDSim(geneid,cancerType,"t",dataType,"y","0","1");
+
+
+        List<Double> tmpn  = new ArrayList<Double>();
+        List<Double> tmpt  = new ArrayList<Double>();
+        for(PGene po:pGenes){
+            for(DPoint pn:nPoint){
+                if(po.getId().equals(pn.getGeneId())){
+                    tmpn.add(pn.getY());
+                }
+            }
+            //此处计算中位数
+            Double nmid =  Math.ceil(tmpn.size()/2);
+            Double nmiden = tmpn.get(nmid.intValue());
+
+
+            for(DPoint pt:tPoint){
+                if(po.getId().equals(pt.getGeneId())){
+                    tmpt.add(pt.getY());
+                }
+            }
+            Double tmid =  Math.ceil(tmpt.size()/2);
+            Double tmiden = tmpn.get(tmid.intValue());
+
+            if(nmiden>tmiden){
+                po.setPvalue(String.valueOf(-Double.valueOf(po.getPvalue())));
+            }
+        }
+
+
+        return pGenes;
     }
 }

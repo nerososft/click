@@ -16,6 +16,12 @@ public class PGene implements Serializable {
     public PGene() {
     }
 
+    public PGene(Long id, String ucStart, String pvalue) {
+        this.id = id;
+        this.ucStart = ucStart;
+        this.pvalue = pvalue;
+    }
+
     public Long getId() {
         return id;
     }

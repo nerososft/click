@@ -145,11 +145,6 @@ public interface IDataService {
      */
     List<List<PGene>> getPanhattan(String cancerType,String dataType);
 
-<<<<<<< HEAD
-
-
-
-=======
     /**
      * Linear regression点数据
      * Created by Whishou
@@ -160,7 +155,19 @@ public interface IDataService {
     List<LinearPoint> getLinearPoint(String cancerType, String geneId, String dataType, String sampleType, String isLog);
 
     List<LinearPoint> getLinearPoint2(String cancerType, String geneId,String dataType2, String sampleType, String isLog);
->>>>>>> 02d3beffa07b4295d140e965a36830fd3b3e2880
+
+
+    /**
+     * deflection
+     * author:neroYang
+     * email:nerosoft@outlook.com
+     * date: 2017/4/2
+     * @param cancerType
+     * @param dataType
+     * @return
+     */
+    List<PGene> getDeflection(String cancerType,String dataType);
+
 
 
 }

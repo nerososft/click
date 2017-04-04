@@ -2,6 +2,7 @@ package org.nero.click.data.dao;
 
 import org.apache.ibatis.annotations.Param;
 import org.nero.click.data.dto.Point;
+import org.nero.click.data.dto.deflection.DPoint;
 import org.nero.click.data.entity.PGene;
 
 import java.util.List;
@@ -14,14 +15,14 @@ import java.util.List;
  */
 public interface DeflectionDao {
 
-    List<List<PGene>> getDel(@Param("chroosome") String chroosome,
+    List<PGene> getDel(@Param("chroosome") String chroosome,
                              @Param("dataType") String dataType);
 
-    List<Point> getDSim( @Param("geneId") List<String> geneId,
+    List<DPoint> getDSim(@Param("geneId") List<String> geneId,
                          @Param("cancerType") String cancerType,
-                        @Param("normal") String normal,
-                        @Param("dataType") String dataType,
-                        @Param("value") String value,
-                        @Param("index") String index,
-                        @Param("page") String page );
+                         @Param("normal") String normal,
+                         @Param("dataType") String dataType,
+                         @Param("value") String value,
+                         @Param("index") String index,
+                         @Param("page") String page );
 }
