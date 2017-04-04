@@ -3,6 +3,7 @@ package org.nero.click.data.service;
 import org.apache.ibatis.annotations.Param;
 import org.nero.click.data.dto.Operate;
 import org.nero.click.data.dto.Point;
+import org.nero.click.data.dto.linear.LinearPoint;
 import org.nero.click.data.dto.manhattan.MTPoint;
 import org.nero.click.data.dto.manhattan.ManhattanPoint;
 import org.nero.click.data.dto.moutain.Arm;
@@ -144,9 +145,22 @@ public interface IDataService {
      */
     List<List<PGene>> getPanhattan(String cancerType,String dataType);
 
+<<<<<<< HEAD
 
 
 
+=======
+    /**
+     * Linear regression点数据
+     * Created by Whishou
+     * Email: whishoutan@gmail.com
+     * date: 2017/2/24
+     */
+
+    List<LinearPoint> getLinearPoint(String cancerType, String geneId, String dataType, String sampleType, String isLog);
+
+    List<LinearPoint> getLinearPoint2(String cancerType, String geneId,String dataType2, String sampleType, String isLog);
+>>>>>>> 02d3beffa07b4295d140e965a36830fd3b3e2880
 
 
 }
