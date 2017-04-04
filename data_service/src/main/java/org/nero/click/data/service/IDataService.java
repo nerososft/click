@@ -144,4 +144,9 @@ public interface IDataService {
      */
     List<List<PGene>> getPanhattan(String cancerType,String dataType);
 
+
+
+
+
+
 }

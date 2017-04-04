@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.nero.click.data.dao.DeflectionDao">
+
+    <!--新的mapper-->
+    <select id="getDel" resultType="org.nero.click.data.entity.PGene">
+        SELECT * from ${dataType}_gene where ucChrom = ${chroosome} ;
+    </select>
+
+    <select id="getDSim" resultType="org.nero.click.data.dto.Point">
+        SELECT * from  ${cancerType}_${normal}_${dataType}_${value}_${index}_${page} where geneid IN
+        <foreach collection="list" index="index" item="item" open="(" separator="," close=")">
+            ${item}
+        </foreach>
+    </select>
+
+
+</mapper>
