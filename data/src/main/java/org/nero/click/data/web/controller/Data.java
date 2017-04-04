@@ -449,7 +449,7 @@ public class Data {
 
 
     /*********************************************曼哈顿**************************************************/
-    @RequestMapping(value = "/{cancerType}/{dataType}/bydeflection",
+    @RequestMapping(value = "/{cancerType}/{dataType}/bydeflect",
             method = RequestMethod.GET,
             produces = {"application/json;charset=UTF-8"})
     @ResponseBody
