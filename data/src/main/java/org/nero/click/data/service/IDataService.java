@@ -160,6 +160,18 @@ public interface IDataService {
      */
 
     List<LinearCalPoint> calculate(String cancerType, String geneName, String dataType, String dataType2, String sampleType, String isLog);
+    /**
+     * deflection
+     * author:neroYang
+     * email:nerosoft@outlook.com
+     * date: 2017/4/2
+     * @param cancerType
+     * @param dataType
+     * @return
+     */
+    List<List<PGene>> getDeflection(String cancerType,String dataType);
+
+
 
 
 }

@@ -166,7 +166,7 @@ public interface IDataService {
      * @param dataType
      * @return
      */
-    List<PGene> getDeflection(String cancerType,String dataType);
+    List<List<PGene>> getDeflection(String cancerType,String dataType);
 
 
 

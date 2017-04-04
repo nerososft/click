@@ -125,5 +125,13 @@ public class DataServiceImplTest {
         System.out.println(p);
         System.out.println("____________________________________________________________________________________");
     }
-
+    @Test
+    public void getDeflection() throws Exception {
+        //System.out.println(dataService.getDeflection("gbm","c").size());
+        List<List<PGene>> a = new ArrayList<List<PGene>>();
+        a = dataService.getDeflection("gbm","c");
+        for(int i = 0;i<a.size();i++){
+            System.out.println("::::::::::::::"+a.get(i).size());
+        }
+    }
 }

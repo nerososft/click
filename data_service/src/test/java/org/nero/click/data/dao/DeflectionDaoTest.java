@@ -23,12 +23,9 @@ public class DeflectionDaoTest {
 
     @Test
     public void getDel() throws Exception {
-        System.out.println(deflectionDao.getDel("1","c"));
+        System.out.println(deflectionDao.getDel("1","gbm","c").size());
     }
 
-    @Test
-    public void getDSim() throws Exception {
-        System.out.println(deflectionDao.getDSim("gbm","n","c","y","0","1"));
-    }
+
 
 }

@@ -527,6 +527,23 @@ public class Data {
 
     }
 
+    @RequestMapping(value = "/{cancertype}/{dataType}/bydeflection",
+            method = RequestMethod.GET,
+            produces = {"application/json;charset=UTF-8"})
+    @ResponseBody
+    public Operate<List<List<PGene>>> byDeflection(@PathVariable("cancertype") String cancerType,
+                                                   @PathVariable("dataType") String dataType){
+
+        try{
+            iDataService = (IDataService) Consumer.singleton().getBean("IDataService");
+            List<List<PGene>>  manhattan = iDataService.getDeflection(cancerType,dataType);
+            return new Operate<List<List<PGene>>>(true,manhattan);
+        }catch(IllegalStateException e){
+            return new Operate<List<List<PGene>>>(false,"服务异常！",null);
+        }
+
+    }
+
 
     /***********************************************LINEAR*************************************************************/
 
