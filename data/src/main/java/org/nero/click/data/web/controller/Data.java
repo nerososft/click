@@ -4,6 +4,7 @@ import org.apache.ibatis.annotations.Param;
 import org.nero.click.Consumer;
 import org.nero.click.data.dto.Operate;
 import org.nero.click.data.dto.Point;
+import org.nero.click.data.dto.linear.LinearCalPoint;
 import org.nero.click.data.dto.manhattan.MTPoint;
 import org.nero.click.data.dto.moutain.Moutain;
 import org.nero.click.data.entity.PGene;
@@ -526,5 +527,46 @@ public class Data {
 
     }
 
+
+    /***********************************************LINEAR*************************************************************/
+
+    /**
+     * Linear Point
+     * Created by Whishou
+     * Email: whishoutan@gmail.com
+     * date: 2017/2/24
+     * @param cancerType
+     * @param geneName
+     * @param dataType
+     * @param dataType2
+     * @param sampleType
+     * @param isLog
+     * @return
+     */
+
+
+    @RequestMapping(value = "/{cancerType}/{geneName}/{dataType}/{dataType2}/{sampleType}/{isLog}/linearPoint",
+            method = RequestMethod.GET,
+            produces = {"application/json;charest=UTF-8"})
+
+    @ResponseBody
+    public List<LinearCalPoint> getAll(@PathVariable("cancerType") String cancerType,
+                                       @PathVariable("geneName") String geneName,
+                                       @PathVariable("dataType") String dataType,
+                                       @PathVariable("dataType2") String dataType2,
+                                       @PathVariable("sampleType") String sampleType,
+                                       @PathVariable("isLog") String isLog){
+        try {
+            iDataService = (IDataService) Consumer.singleton().getBean("IDataService");
+
+            List<LinearCalPoint> calculate=iDataService.calculate(cancerType,geneName,dataType,dataType2,sampleType,isLog);
+            return calculate;
+        }
+        catch (IllegalStateException e){
+            List<LinearCalPoint> error= new ArrayList<LinearCalPoint>();
+            error.add(new LinearCalPoint());
+            return error;
+        }
+    }
 
 }

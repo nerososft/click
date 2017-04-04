@@ -3,6 +3,7 @@ package org.nero.click.data.service;
 import org.apache.ibatis.annotations.Param;
 import org.nero.click.data.dto.Operate;
 import org.nero.click.data.dto.Point;
+import org.nero.click.data.dto.linear.LinearCalPoint;
 import org.nero.click.data.dto.manhattan.MTPoint;
 import org.nero.click.data.dto.manhattan.ManhattanPoint;
 import org.nero.click.data.dto.moutain.Arm;
@@ -143,5 +144,22 @@ public interface IDataService {
      * @return
      */
     List<List<PGene>> getPanhattan(String cancerType, String dataType);
+
+
+    /**
+     * Linear Point
+     * Created by Whishou
+     * Email: whishoutan@gmail.com
+     * date: 2017/2/24
+     * @param cancerType
+     * @param geneName
+     * @param dataType
+     * @param dataType2
+     * @param isLog
+     * @return
+     */
+
+    List<LinearCalPoint> calculate(String cancerType, String geneName, String dataType, String dataType2, String sampleType, String isLog);
+
 
 }

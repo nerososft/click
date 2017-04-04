@@ -1,11 +1,10 @@
 package org.nero.click.data.service.impl;
 
-import org.nero.click.data.dao.GeneDao;
-import org.nero.click.data.dao.ManhattanDao;
+import org.nero.click.data.dao.*;
 import org.nero.click.data.dto.Operate;
 import org.nero.click.data.dto.Point;
-import org.nero.click.data.dao.BeesDao;
-import org.nero.click.data.dao.MoutainDao;
+import org.nero.click.data.dto.linear.LinearCalPoint;
+import org.nero.click.data.dto.linear.LinearPoint;
 import org.nero.click.data.dto.manhattan.MTPoint;
 import org.nero.click.data.dto.manhattan.ManhattanPoint;
 import org.nero.click.data.dto.moutain.Arm;
@@ -45,6 +44,9 @@ public class DataServiceImpl implements IDataService {
 
     @Autowired
     private ManhattanDao manhattanDao;
+
+    @Autowired
+    private LinearDao linearDao;
 
     public Operate<Boolean> checkGene(String dataType, String geneName){
         String[] genes = geneName.split(",");
@@ -350,5 +352,39 @@ public class DataServiceImpl implements IDataService {
             result.add(pGenes);
         }
         return result;
+    }
+
+
+    /**
+     * Linear regression
+     * Created by Whishou
+     * Email: whishoutan@gmail.com
+     * date: 2017/2/24
+     */
+
+
+    public List<LinearPoint> getLinearPoint(String cancerType, String geneName, String dataType, String sampleType, String isLog){
+        String geneId= linearDao.getLinearId(geneName);
+        return linearDao.getLinearPoint(cancerType,geneId,dataType, sampleType,isLog);
+    }
+
+    public List<LinearPoint> getLinearPoint2(String cancerType, String geneName, String dataType2, String sampleType, String isLog){
+        String geneId= linearDao.getLinearId(geneName);
+        return linearDao.getLinearPoint2(cancerType, geneId, dataType2,sampleType,isLog);
+    }
+
+    public List<LinearCalPoint> calculate(String cancerType, String geneName, String dataType, String dataType2, String sampleType, String isLog){
+        List<LinearCalPoint> all= new ArrayList<LinearCalPoint>();
+        List<LinearPoint> e= getLinearPoint(cancerType,geneName,dataType,sampleType,isLog);
+        List<LinearPoint> c= getLinearPoint2(cancerType,geneName,dataType2,sampleType,isLog);
+        for (LinearPoint a:e) {
+            for (LinearPoint b : c) {
+                if (a.getSampleID().equals(b.getSampleID())) {
+                    all.add(new LinearCalPoint(a.getY(),b.getY(),a.getSampleID()));
+                }
+            }
+        }
+        return all;
+
     }
 }

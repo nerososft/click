@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.nero.click.data.dao.LinearDao">
+    <!--获取gene_id-->
+    <select id="getLinearId" resultType="String">
+        select id from type_gene WHERE geneName_c like '${geneName}' or geneName_e like '${geneName}';
+    </select>
+    <!--获取x轴数据 -->
+    <select id="getLinearPoint" resultType="org.nero.click.data.dto.linear.LinearPoint" >
+        SELECT y,sampleID FROM ${cancerType}_${sampleType}_${dataType}_${isLog}_0_1 WHERE geneid = ${geneId};
+    </select>
+
+    <!--获取y轴数据 -->
+    <select id="getLinearPoint2" resultType="org.nero.click.data.dto.linear.LinearPoint">
+        SELECT y,sampleID FROM ${cancerType}_${sampleType}_${dataType2}_${isLog}_0_1 WHERE geneid = ${geneId};
+    </select>
+
+
+</mapper>
