@@ -182,4 +182,12 @@ public interface IDataService {
 
     List<VolcanoData> getVolcanoData(String cancerType, String dataType);
 
+    /**
+     * Mattest
+     * Created by Whishou
+     * Email: whishoutan@gmail.com
+     * date: 2017/4/14
+     */
+
+    Object mattest(List<Float> x,List<Float> y);
 }
