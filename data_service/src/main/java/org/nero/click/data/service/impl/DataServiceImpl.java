@@ -1,8 +1,10 @@
 package org.nero.click.data.service.impl;
 
+import com.mathworks.toolbox.javabuilder.MWException;
 import org.nero.click.data.dao.*;
 import org.nero.click.data.dto.Operate;
 import org.nero.click.data.dto.Point;
+import mymattest.*;
 import org.nero.click.data.dto.deflection.DPoint;
 import org.nero.click.data.dto.linear.LinearCalPoint;
 import org.nero.click.data.dto.linear.LinearPoint;
@@ -381,6 +383,8 @@ public class DataServiceImpl implements IDataService {
 
     public List<LinearCalPoint> calculate(String cancerType, String geneName, String dataType, String dataType2, String sampleType, String isLog){
         List<LinearCalPoint> all= new ArrayList<LinearCalPoint>();
+        List<Float> r= new ArrayList<Float>();
+        List<Float> s= new ArrayList<Float>();
         List<LinearPoint> e= getLinearPoint(cancerType,geneName,dataType,sampleType,isLog);
         List<LinearPoint> c= getLinearPoint2(cancerType,geneName,dataType2,sampleType,isLog);
         for (LinearPoint a:e) {
@@ -390,6 +394,16 @@ public class DataServiceImpl implements IDataService {
                 }
             }
         }
+        for(LinearPoint a:e){
+            r.add(new Float(a.getY()));
+        }
+        for(LinearPoint b:c){
+            s.add(new Float(b.getY()));
+        }
+        Object p= mattest(r,s);
+        String pvalue=p.toString();
+        LinearCalPoint linearCalPoint=new LinearCalPoint(pvalue);
+        all.add(linearCalPoint);
         return all;
 
     }
@@ -442,5 +456,34 @@ public class DataServiceImpl implements IDataService {
             point.add(new VolcanoPoint(a.getGeneName(),x,y,a.getPvalue()));
         }
         return point;
+    }
+
+    /**
+     * Mattest
+     * Created by Whishou
+     * Email: whishoutan@gmail.com
+     * date: 2017/4/14
+     */
+
+    public Object mattest(List<Float> x, List<Float> y){
+        Object result[]=null;
+        try {
+            int size1=x.size();
+            int size2=y.size();
+            Float[] a= new Float[size1];
+            Float[] b= new Float[size2];
+            for (int i=0;i<size1;i++){
+                a[i]= x.get(i);
+            }
+            for (int i=0;i<size2;i++){
+                b[i]=y.get(i);
+            }
+            mymattestclass myMattest=new mymattestclass();
+            result= myMattest.mymattest(1,a,b);
+            return result[0];
+        }catch (MWException e){
+            e.printStackTrace();
+            return e;
+        }
     }
 }

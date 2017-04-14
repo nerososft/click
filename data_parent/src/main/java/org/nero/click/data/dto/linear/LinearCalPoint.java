@@ -39,7 +39,11 @@ public class LinearCalPoint implements Serializable {
 
     }
 
-    public LinearCalPoint(float y1, float y2,String sampleid) {
+    public LinearCalPoint(String sampleid) {
+        this.sampleid = sampleid;
+    }
+
+    public LinearCalPoint(float y1, float y2, String sampleid) {
         this.y1 = y1;
         this.y2 = y2;
         this.sampleid= sampleid;

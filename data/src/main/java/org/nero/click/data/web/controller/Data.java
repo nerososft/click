@@ -596,7 +596,7 @@ public class Data {
      * date: 2017/4/9
      * @param cancerType
      * @param dataType
-     * @return 
+     * @return
      */
 
     @RequestMapping(value = "/{cancerType}/{dataType}/volcano",
