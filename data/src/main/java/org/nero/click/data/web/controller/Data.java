@@ -7,6 +7,7 @@ import org.nero.click.data.dto.Point;
 import org.nero.click.data.dto.linear.LinearCalPoint;
 import org.nero.click.data.dto.manhattan.MTPoint;
 import org.nero.click.data.dto.moutain.Moutain;
+import org.nero.click.data.dto.volcano.VolcanoPoint;
 import org.nero.click.data.entity.PGene;
 import org.nero.click.data.service.IDataService;
 import org.springframework.stereotype.Controller;
@@ -582,6 +583,38 @@ public class Data {
         catch (IllegalStateException e){
             List<LinearCalPoint> error= new ArrayList<LinearCalPoint>();
             error.add(new LinearCalPoint());
+            return error;
+        }
+    }
+
+    /***********************************************VOLCANO*************************************************************/
+
+    /**
+     * Volcano plot
+     * Created by Whishou
+     * Email: whishoutan@gmail.com
+     * date: 2017/4/9
+     * @param cancerType
+     * @param dataType
+     * @return 
+     */
+
+    @RequestMapping(value = "/{cancerType}/{dataType}/volcano",
+            method = RequestMethod.GET,
+            produces = {"application/json;charest=UTF-8"})
+
+    @ResponseBody
+    public List<VolcanoPoint> getPoint(@PathVariable("cancerType") String cancerType,
+                                       @PathVariable("dataType") String dataType)
+    {
+        try {
+            iDataService = (IDataService) Consumer.singleton().getBean("IDataService");
+            List<VolcanoPoint> point=iDataService.getVolcanoPoint(cancerType,dataType);
+            return point;
+        }
+        catch (IllegalAccessError e) {
+            List<VolcanoPoint> error=new ArrayList<VolcanoPoint>();
+            error.add(new VolcanoPoint());
             return error;
         }
     }

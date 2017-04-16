@@ -12,10 +12,8 @@ import org.nero.click.data.dto.moutain.Arm;
 import org.nero.click.data.dto.moutain.Cyto;
 import org.nero.click.data.dto.moutain.MPoint;
 import org.nero.click.data.dto.moutain.Moutain;
-import org.nero.click.data.entity.DGene;
-import org.nero.click.data.entity.Gene;
-import org.nero.click.data.entity.PGene;
-import org.nero.click.data.entity.SimpleGene;
+import org.nero.click.data.dto.volcano.VolcanoPoint;
+import org.nero.click.data.entity.*;
 import org.nero.click.data.service.IDataService;
 import org.nero.click.data.utils.TTest;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -52,6 +50,9 @@ public class DataServiceImpl implements IDataService {
 
     @Autowired
     private LinearDao linearDao;
+
+    @Autowired
+    private VolcanoDao volcanoDao;
 
     public Operate<Boolean> checkGene(String dataType, String geneName){
         String[] genes = geneName.split(",");
@@ -417,5 +418,29 @@ public class DataServiceImpl implements IDataService {
         }
 
         return result;
+    }
+
+    /**
+     * Volcano plot
+     * Created by Whishou
+     * Email: whishoutan@gmail.com
+     * date: 2017/4/9
+     */
+
+    public List<VolcanoData> getVolcanoData(String cancerType, String dataType){
+        return volcanoDao.getVolcanoData(cancerType, dataType);
+    }
+
+    public List<VolcanoPoint> getVolcanoPoint(String cancerType, String dataType){
+        List<VolcanoPoint> point= new ArrayList<VolcanoPoint>();
+        List<VolcanoData> data= getVolcanoData(cancerType, dataType);
+        for(VolcanoData a:data){
+            double p= Double.valueOf(a.getMet())/Double.valueOf(a.getMen());
+            double q= 1/Double.valueOf(a.getPvalue());
+            double x= Math.log(p)/Math.log(2);
+            double y= Math.log(q)/Math.log(10);
+            point.add(new VolcanoPoint(a.getGeneName(),x,y,a.getPvalue()));
+        }
+        return point;
     }
 }

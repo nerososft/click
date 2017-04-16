@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.nero.click.data.dao.VolcanoDao">
+    <select id="getVolcanoData" resultType="org.nero.click.data.entity.VolcanoData">
+        SELECT  geneName,met${cancerType} AS met, men${cancerType} AS men, pvalue${cancerType} AS pvalue FROM ${dataType}_gene_xiugai;
+    </select>
+</mapper>

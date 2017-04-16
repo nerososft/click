@@ -13,6 +13,7 @@ import org.nero.click.data.dto.moutain.Moutain;
 import org.nero.click.data.entity.Gene;
 import org.nero.click.data.entity.PGene;
 import org.nero.click.data.entity.SimpleGene;
+import org.nero.click.data.entity.VolcanoData;
 
 import java.util.List;
 
@@ -169,5 +170,16 @@ public interface IDataService {
     List<List<PGene>> getDeflection(String cancerType,String dataType);
 
 
+    /**
+     * Volcano plot
+     * Created by Whishou
+     * Email:whishoutan@gmail.com
+     * date: 2017/4/9
+     * @param cancerType
+     * @param dataType
+     * @return
+     */
+
+    List<VolcanoData> getVolcanoData(String cancerType, String dataType);
 
 }
