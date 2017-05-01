@@ -7,7 +7,8 @@ package org.nero.click.data;
  * Time   下午3:30
  */
 public enum CONSTANT {
-    CHECK_FAILED("检测异常");
+    CHECK_FAILED("检测异常"),
+    UNKNOWN_ERROR("未知异常");
 
     public String DESC;
 

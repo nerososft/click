@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 
+import static org.nero.click.data.CONSTANT.UNKNOWN_ERROR;
+
 /**
  * Author nero
  * Date   2016/10/16 0016
@@ -626,7 +628,7 @@ public class Data {
             method = RequestMethod.GET,
             produces = {"application/json;charest=UTF-8"})
     @ResponseBody
-    public String mattest2(@PathVariable("List1") String x,
+    public Operate<String> mattest2(@PathVariable("List1") String x,
                            @PathVariable("List2") String y){
         try {
             String[] r=x.split(",");
@@ -641,10 +643,10 @@ public class Data {
             }
             Object ttest=org.nero.click.common.utils.math.Mattest.mattest(xx,yy);
             String pvalue=ttest.toString();
-            return pvalue;
+            return new Operate<String>(true,pvalue);
         } catch (MWException e) {
             e.printStackTrace();
-            return e.toString();
+            return new Operate<String>(false,UNKNOWN_ERROR.DESC);
         }
     }
 
