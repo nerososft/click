@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="sso:war exploded">
-    <output-path>$PROJECT_DIR$/build/web/sso</output-path>
+    <output-path>$PROJECT_DIR$/sso/target/click</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -61,6 +61,8 @@
           <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.21" />
           <element id="library" level="project" name="Maven: org.springframework.session:spring-session:1.2.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.apache.commons:commons-pool2:2.4.2" />
+          <element id="library" level="project" name="Maven: org.nero.click.math:buildertool:2:1" />
+          <element id="library" level="project" name="Maven: org.nero.click.math:ttest:1" />
           <element id="archive" name="sso_parent-1.0-SNAPSHOT.jar">
             <element id="module-output" name="sso_parent" />
           </element>

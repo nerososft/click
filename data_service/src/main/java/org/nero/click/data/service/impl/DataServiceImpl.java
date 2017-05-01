@@ -381,7 +381,7 @@ public class DataServiceImpl implements IDataService {
         return linearDao.getLinearPoint2(cancerType, geneId, dataType2,sampleType,isLog);
     }
 
-    public List<LinearCalPoint> calculate(String cancerType, String geneName, String dataType, String dataType2, String sampleType, String isLog){
+    public List<LinearCalPoint> calculate(String cancerType, String geneName, String dataType, String dataType2, String sampleType, String isLog) throws MWException {
         List<LinearCalPoint> all= new ArrayList<LinearCalPoint>();
         List<Float> r= new ArrayList<Float>();
         List<Float> s= new ArrayList<Float>();
@@ -400,7 +400,7 @@ public class DataServiceImpl implements IDataService {
         for(LinearPoint b:c){
             s.add(new Float(b.getY()));
         }
-        Object p= mattest(r,s);
+        Object p= org.nero.click.common.utils.math.Mattest.mattest(r,s);
         String pvalue=p.toString();
         LinearCalPoint linearCalPoint=new LinearCalPoint(pvalue);
         all.add(linearCalPoint);
@@ -458,32 +458,4 @@ public class DataServiceImpl implements IDataService {
         return point;
     }
 
-    /**
-     * Mattest
-     * Created by Whishou
-     * Email: whishoutan@gmail.com
-     * date: 2017/4/14
-     */
-
-    public Object mattest(List<Float> x, List<Float> y){
-        Object result[]=null;
-        try {
-            int size1=x.size();
-            int size2=y.size();
-            Float[] a= new Float[size1];
-            Float[] b= new Float[size2];
-            for (int i=0;i<size1;i++){
-                a[i]= x.get(i);
-            }
-            for (int i=0;i<size2;i++){
-                b[i]=y.get(i);
-            }
-            mymattestclass myMattest=new mymattestclass();
-            result= myMattest.mymattest(1,a,b);
-            return result[0];
-        }catch (MWException e){
-            e.printStackTrace();
-            return e;
-        }
-    }
 }

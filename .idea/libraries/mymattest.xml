@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="mymattest">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/build/lib/data_service_jar/mymattest.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

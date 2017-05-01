@@ -1,5 +1,6 @@
 package org.nero.click.data.web.controller;
 
+import com.mathworks.toolbox.javabuilder.MWException;
 import org.apache.ibatis.annotations.Param;
 import org.nero.click.Consumer;
 import org.nero.click.data.dto.Operate;
@@ -616,6 +617,34 @@ public class Data {
             List<VolcanoPoint> error=new ArrayList<VolcanoPoint>();
             error.add(new VolcanoPoint());
             return error;
+        }
+    }
+
+    /***********************************************Mattest2***********************************************************/
+
+    @RequestMapping(value = "/{List1}/{List2}/mattest2",
+            method = RequestMethod.GET,
+            produces = {"application/json;charest=UTF-8"})
+    @ResponseBody
+    public String mattest2(@PathVariable("List1") String x,
+                           @PathVariable("List2") String y){
+        try {
+            String[] r=x.split(",");
+            String[] s=y.split(",");
+            List<Float> xx=new ArrayList<Float>();
+            List<Float> yy=new ArrayList<Float>();
+            for (String p:r) {
+                xx.add(Float.valueOf(p));
+            }
+            for (String q:s) {
+                yy.add(Float.valueOf(q));
+            }
+            Object ttest=org.nero.click.common.utils.math.Mattest.mattest(xx,yy);
+            String pvalue=ttest.toString();
+            return pvalue;
+        } catch (MWException e) {
+            e.printStackTrace();
+            return e.toString();
         }
     }
 

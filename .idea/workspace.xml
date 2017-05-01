@@ -7,28 +7,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8024c39b-073a-4770-87b0-31ac06e9e2c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/javabuilder.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/mymattest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/web/data/click.war" afterPath="$PROJECT_DIR$/build/web/data/click.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/target/classes/org/nero/click/data/service/IDataService.class" afterPath="$PROJECT_DIR$/data/target/classes/org/nero/click/data/service/IDataService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_nero_click_math_buildertool_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_nero_click_math_ttest_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/math/Mattest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/javabuilder.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/mymattest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web/data/click.war" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/target/classes/org/nero/click/data/web/controller/Data.class" afterPath="$PROJECT_DIR$/data/target/classes/org/nero/click/data/web/controller/Data.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/target/click/WEB-INF/classes/org/nero/click/data/service/IDataService.class" afterPath="$PROJECT_DIR$/data/target/click/WEB-INF/classes/org/nero/click/data/service/IDataService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/target/click/WEB-INF/classes/org/nero/click/data/web/controller/Data.class" afterPath="$PROJECT_DIR$/data/target/click/WEB-INF/classes/org/nero/click/data/web/controller/Data.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/target/click/WEB-INF/lib/common-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/data/target/click/WEB-INF/lib/common-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/target/click/WEB-INF/lib/data_parent-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/data/target/click/WEB-INF/lib/data_parent-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/target/click/WEB-INF/lib/sso_parent-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/data/target/click/WEB-INF/lib/sso_parent-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_parent/target/classes/org/nero/click/data/dto/linear/LinearCalPoint.class" afterPath="$PROJECT_DIR$/data_parent/target/classes/org/nero/click/data/dto/linear/LinearCalPoint.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/service/IDataService.class" afterPath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/service/IDataService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/service/impl/DataServiceImpl$1.class" afterPath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/service/impl/DataServiceImpl$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/service/impl/DataServiceImpl.class" afterPath="$PROJECT_DIR$/data_service/target/classes/org/nero/click/data/service/impl/DataServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/admin_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/admin_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/data_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/data_war.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/data_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/data_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/sso_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/sso_war.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/sso_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/sso_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/admin.iml" afterPath="$PROJECT_DIR$/admin/admin.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_parent/admin_parent.iml" afterPath="$PROJECT_DIR$/admin_parent/admin_parent.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_service/admin_service.iml" afterPath="$PROJECT_DIR$/admin_service/admin_service.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/click.iml" afterPath="$PROJECT_DIR$/click.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/common.iml" afterPath="$PROJECT_DIR$/common/common.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/pom.xml" afterPath="$PROJECT_DIR$/common/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/data.iml" afterPath="$PROJECT_DIR$/data/data.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/web/controller/Data.java" afterPath="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/web/controller/Data.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/target/click/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/data/target/click/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/dto/linear/LinearCalPoint.java" afterPath="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/dto/linear/LinearCalPoint.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_parent/data_parent.iml" afterPath="$PROJECT_DIR$/data_parent/data_parent.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/data_service.iml" afterPath="$PROJECT_DIR$/data_service/data_service.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/IDataService.java" afterPath="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/IDataService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/impl/DataServiceImpl.java" afterPath="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/impl/DataServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_service/target/classes/dubbo/provider.xml" afterPath="$PROJECT_DIR$/data_service/target/classes/dubbo/provider.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso/sso.iml" afterPath="$PROJECT_DIR$/sso/sso.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_parent/sso_parent.iml" afterPath="$PROJECT_DIR$/sso_parent/sso_parent.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sso_service/sso_service.iml" afterPath="$PROJECT_DIR$/sso_service/sso_service.iml" />
     </list>
     <ignored path="click.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -97,29 +109,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DataServiceImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DataServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/impl/DataServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="483" column="31" lean-forward="false" selection-start-line="483" selection-start-column="31" selection-end-line="483" selection-end-column="31" />
+            <state relative-caret-position="681">
+              <caret line="461" column="0" lean-forward="true" selection-start-line="461" selection-start-column="0" selection-end-line="461" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#13423#13430#0" expanded="true" />
-                <element signature="e#13470#13477#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LinearCalPoint.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/dto/linear/LinearCalPoint.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-              <folding>
-                <element signature="e#739#740#0" expanded="true" />
-                <element signature="e#779#780#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="631">
+              <caret line="282" column="21" lean-forward="false" selection-start-line="282" selection-start-column="21" selection-end-line="282" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -137,19 +144,22 @@
       <file leaf-file-name="provider.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_service/src/main/resources/dubbo/provider.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="61" lean-forward="false" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+            <state relative-caret-position="322">
+              <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IDataService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/IDataService.java">
+      <file leaf-file-name="Data.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/src/main/java/org/nero/click/data/web/controller/Data.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="681">
-              <caret line="191" column="48" lean-forward="false" selection-start-line="191" selection-start-column="48" selection-end-line="191" selection-end-column="48" />
-              <folding />
+            <state relative-caret-position="624">
+              <caret line="648" column="5" lean-forward="false" selection-start-line="648" selection-start-column="5" selection-end-line="648" selection-end-column="5" />
+              <folding>
+                <element signature="e#25401#25408#0" expanded="true" />
+                <element signature="e#25452#25459#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -175,8 +185,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sso/src/main/resources/dubbo/consumer.xml" />
-        <option value="$PROJECT_DIR$/sso/src/main/webapp/WEB-INF/error.jsp" />
         <option value="$PROJECT_DIR$/sso/src/main/webapp/WEB-INF/jsp/error.jsp" />
         <option value="$PROJECT_DIR$/sso_service/src/test/java/org/nero/click/sso/dao/AccessDaoTest.java" />
         <option value="$PROJECT_DIR$/sso_service/pom.xml" />
@@ -220,11 +228,13 @@
         <option value="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/dao/VolcanoDao.java" />
         <option value="$PROJECT_DIR$/data_service/src/main/resources/mapper/volcanoMapper.xml" />
         <option value="$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/dao/VolcanoDaoTest.java" />
-        <option value="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/web/controller/Data.java" />
         <option value="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/service/IDataService.java" />
-        <option value="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/IDataService.java" />
         <option value="$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/dto/linear/LinearCalPoint.java" />
+        <option value="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/IDataService.java" />
+        <option value="$PROJECT_DIR$/common/pom.xml" />
+        <option value="$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/math/Mattest.java" />
         <option value="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/impl/DataServiceImpl.java" />
+        <option value="$PROJECT_DIR$/data/src/main/java/org/nero/click/data/web/controller/Data.java" />
         <option value="$PROJECT_DIR$/data_service/src/main/resources/dubbo/provider.xml" />
       </list>
     </option>
@@ -243,10 +253,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="407" />
-    <option name="y" value="40" />
-    <option name="width" value="1325" />
-    <option name="height" value="995" />
+    <option name="x" value="85" />
+    <option name="y" value="49" />
+    <option name="width" value="1555" />
+    <option name="height" value="1014" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -266,6 +276,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -280,18 +293,14 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="FullScreen" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/build/lib/data_service_jar/mymattest.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.32459018" />
@@ -311,16 +320,16 @@
       <recent name="" />
       <recent name="groovy.util.GroovyTestCase" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/dao" />
-      <recent name="$PROJECT_DIR$/data_service/src/main/resources/mapper" />
-      <recent name="$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/dao" />
-      <recent name="$PROJECT_DIR$/sso/src/main/webapp/WEB-INF/jsp" />
-      <recent name="$PROJECT_DIR$/admin_service/src/main/resources/mapper" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.nero" />
       <recent name="org.nero.click.cache" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/build/bin" />
+      <recent name="$PROJECT_DIR$/admin_service/src/main/resources/mapper" />
+      <recent name="$PROJECT_DIR$/admin_service/src/main/resources/dubbo" />
+      <recent name="$PROJECT_DIR$/admin_service/src/main/java/org/nero/click" />
+      <recent name="$PROJECT_DIR$/admin_service/src/test" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.nero.click.sso.service" />
@@ -329,12 +338,12 @@
       <recent name="org.nero.click.sso.web.controller" />
       <recent name="org.nero.click.common.utils.verifycode" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/build/bin" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/dao" />
+      <recent name="$PROJECT_DIR$/data_service/src/main/resources/mapper" />
+      <recent name="$PROJECT_DIR$/data_service/src/test/java/org/nero/click/data/dao" />
+      <recent name="$PROJECT_DIR$/sso/src/main/webapp/WEB-INF/jsp" />
       <recent name="$PROJECT_DIR$/admin_service/src/main/resources/mapper" />
-      <recent name="$PROJECT_DIR$/admin_service/src/main/resources/dubbo" />
-      <recent name="$PROJECT_DIR$/admin_service/src/main/java/org/nero/click" />
-      <recent name="$PROJECT_DIR$/admin_service/src/test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1017,7 +1026,14 @@
       <workItem from="1490685383505" duration="311000" />
       <workItem from="1491310467555" duration="9967000" />
       <workItem from="1491733717628" duration="3543000" />
-      <workItem from="1492170461038" duration="6067000" />
+      <workItem from="1492170461038" duration="6645000" />
+      <workItem from="1492334437855" duration="781000" />
+      <workItem from="1492439786544" duration="116000" />
+      <workItem from="1492683860278" duration="1218000" />
+      <workItem from="1492695223018" duration="1369000" />
+      <workItem from="1492836839651" duration="577000" />
+      <workItem from="1492922793947" duration="34000" />
+      <workItem from="1493640724963" duration="3452000" />
     </task>
     <servers />
   </component>
@@ -1054,11 +1070,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16401000" />
+    <option name="totallyTimeSpent" value="24526000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="407" y="40" width="1325" height="995" extended-state="1" />
-    <editor active="true" />
+    <frame x="85" y="49" width="1555" height="1014" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1073,16 +1088,16 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49466667" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32582322" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25407925" sideWeight="0.49444443" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17445838" sideWeight="0.49444443" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845744" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18997669" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14481185" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32582322" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27467483" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23357189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1145,41 +1160,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso_service/src/main/java/org/nero/click/sso/service/IAccessService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso_service/src/test/java/org/nero/click/sso/service/impl/AuthServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
-          <caret line="37" column="101" lean-forward="false" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso_parent/src/main/java/org/nero/click/sso/dto/FeedBack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/web/controller/ThirdSSO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="96" column="40" lean-forward="false" selection-start-line="96" selection-start-column="40" selection-end-line="96" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sso/src/main/java/org/nero/click/sso/service/IAuthService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1233,7 +1213,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1241,7 +1220,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1277,7 +1255,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1285,7 +1262,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1293,7 +1269,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="21" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1301,7 +1276,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="58" lean-forward="false" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1316,7 +1290,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1338,9 +1311,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1348,12 +1318,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="736">
           <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1186#1194#0" expanded="false" />
-            <element signature="e#1400#1419#0" expanded="false" />
-            <element signature="e#1546#1559#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1361,7 +1325,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="562">
           <caret line="27" column="113" lean-forward="false" selection-start-line="27" selection-start-column="103" selection-end-line="27" selection-end-column="113" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1385,7 +1348,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1242">
           <caret line="70" column="1" lean-forward="false" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1400,9 +1362,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-          <folding>
-            <marker date="1491735228271" expanded="true" signature="313:438" ph="SELECT geneN... ${dataType}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1417,9 +1376,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <marker date="1491733294041" expanded="true" signature="323:476" ph="SELECT id,uc... ${dataType}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1427,9 +1383,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
           <caret line="23" column="65" lean-forward="false" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1437,9 +1390,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1491733292883" expanded="true" signature="851:891" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1447,25 +1397,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/src/main/java/org/nero/click/data/service/IDataService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1146">
-          <caret line="185" column="0" lean-forward="true" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/src/main/java/org/nero/click/data/web/controller/Data.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="598" column="14" lean-forward="false" selection-start-line="598" selection-start-column="14" selection-end-line="598" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1473,7 +1404,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1481,11 +1411,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1491733294041" expanded="true" signature="298:391" ph="select id fr... type_gene" />
-            <marker date="1491733294041" expanded="true" signature="524:624" ph="SELECT y,sam... ${cancerType}" />
-            <marker date="1491733294041" expanded="true" signature="758:859" ph="SELECT y,sam... ${cancerType}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1493,14 +1418,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/IDataService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
-          <caret line="191" column="48" lean-forward="false" selection-start-line="191" selection-start-column="48" selection-end-line="191" selection-end-column="48" />
+        <state relative-caret-position="613">
+          <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/utils/TTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1515,32 +1447,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data_parent/src/main/java/org/nero/click/data/dto/linear/LinearCalPoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
+        <state relative-caret-position="690">
           <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/click.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/org/nero/click/common/utils/math/Mattest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
           <folding>
-            <element signature="e#739#740#0" expanded="true" />
-            <element signature="e#779#780#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/impl/DataServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="681">
+          <caret line="461" column="0" lean-forward="true" selection-start-line="461" selection-start-column="0" selection-end-line="461" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_service/src/main/resources/dubbo/provider.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="61" lean-forward="false" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+        <state relative-caret-position="322">
+          <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_service/src/main/java/org/nero/click/data/service/impl/DataServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/data/src/main/java/org/nero/click/data/service/IDataService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="483" column="31" lean-forward="false" selection-start-line="483" selection-start-column="31" selection-end-line="483" selection-end-column="31" />
+        <state relative-caret-position="1245">
+          <caret line="185" column="0" lean-forward="true" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/src/main/java/org/nero/click/data/web/controller/Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="648" column="5" lean-forward="false" selection-start-line="648" selection-start-column="5" selection-end-line="648" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#13423#13430#0" expanded="true" />
-            <element signature="e#13470#13477#0" expanded="true" />
+            <element signature="e#25401#25408#0" expanded="true" />
+            <element signature="e#25452#25459#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="282" column="21" lean-forward="false" selection-start-line="282" selection-start-column="21" selection-end-line="282" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1590,7 +1570,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.20437159" />
+                <option value="0.32459018" />
               </list>
             </option>
           </splitter-proportions>
@@ -1611,7 +1591,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>mymattest</last-edited>
+          <last-edited>Maven: taglibs:standard:1.1.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
