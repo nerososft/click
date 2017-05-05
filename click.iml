@@ -8,13 +8,13 @@
           <file>file://$MODULE_DIR$/build/web/sso/WEB-INF/classes/dubbo/consumer.xml</file>
           <file>file://$MODULE_DIR$/build/web/admin/WEB-INF/classes/spring/spring-web.xml</file>
           <file>file://$MODULE_DIR$/build/web/sso/WEB-INF/classes/spring/spring-web.xml</file>
-          <file>jar://$USER_HOME$/.m2/repository/org/jboss/netty/netty/3.2.5.Final/netty-3.2.5.Final.jar!/org/jboss/netty/container/spring/beans.xml</file>
-          <file>file://$USER_HOME$/.m2/repository/org/jboss/netty/netty/3.2.5.Final/netty-3.2.5.Final.jar</file>
+          <file>jar://$MAVEN_REPOSITORY$/org/jboss/netty/netty/3.2.5.Final/netty-3.2.5.Final.jar!/org/jboss/netty/container/spring/beans.xml</file>
+          <file>file://$MAVEN_REPOSITORY$/org/jboss/netty/netty/3.2.5.Final/netty-3.2.5.Final.jar</file>
         </fileset>
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -27,6 +27,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
+    <orderEntry type="library" name="Maven: org.nero.click.math:buildertool:2:1" level="project" />
+    <orderEntry type="library" name="Maven: org.nero.click.math:ttest:1" level="project" />
     <orderEntry type="module" module-name="common" />
     <orderEntry type="library" name="Maven: junit:junit:4.11" level="project" />
     <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />

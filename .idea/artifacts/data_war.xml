@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="war" name="data:war">
-    <output-path>$PROJECT_DIR$/data/target</output-path>
+    <output-path>$PROJECT_DIR$/build/web/data</output-path>
     <root id="archive" name="click.war">
       <element id="artifact" artifact-name="data:war exploded" />
     </root>
