@@ -51,6 +51,8 @@
       <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.5.4" />
       <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.1.7.RELEASE" />
       <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.5.4" />
+      <element id="library" level="project" name="Maven: org.nero.click.math:buildertool:2:1" />
+      <element id="library" level="project" name="Maven: org.nero.click.math:ttest:1" />
     </root>
   </artifact>
 </component>

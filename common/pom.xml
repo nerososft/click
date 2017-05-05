@@ -27,12 +27,7 @@
         </pluginRepository>
     </pluginRepositories>
     <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.11</version>
-            <scope>test</scope>
-        </dependency>
+
         <!-- project dependencies-->
         <!--1:log log4j,slf4j,logback,common-logging-->
         <dependency>
@@ -268,7 +263,12 @@
             <artifactId>commons-pool2</artifactId>
             <version>2.4.2</version>
         </dependency>
-
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>
         <!--ttest-->
         <dependency>
             <groupId>org.nero.click.math</groupId>

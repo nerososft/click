@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.nero.click.math:buildertool:2:1">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.m2/repository/org/nero/click/math/buildertool/1/buildertool-1-2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/nero/click/math/buildertool/1/buildertool-1-2.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/.m2/repository/org/nero/click/math/buildertool/1/buildertool-1-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/nero/click/math/buildertool/1/buildertool-1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/.m2/repository/org/nero/click/math/buildertool/1/buildertool-1-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/nero/click/math/buildertool/1/buildertool-1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
